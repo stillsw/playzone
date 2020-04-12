@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/dialog_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+    <!-- just to receive focus, on marshmallow the name field always causes the keyboard to show, even if don't want to -->
+    <LinearLayout android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:layout_width="0px"
+                  android:layout_height="0px" />
+    <EditText
+        android:id="@+id/rhythm_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="@string/setUniqueNameHint"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="@integer/maxRhythmNameLen"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/textLenIndicator"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rhythm_name"
+        android:layout_alignEnd="@+id/rhythm_name"
+        android:layout_alignRight="@+id/rhythm_name"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rhythm_name"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        >
+
+        <com.stillwindsoftware.keepyabeat.gui.wefika.flowlayout.FlowLayout
+            android:id="@+id/chosen_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/choose_tags_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/rhythms_tags_button"
+        />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/ok_button"
+        />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_toLeftOf="@+id/ok_btn"
+        android:layout_toStartOf="@+id/ok_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/cancel_button"
+        />
+
+</RelativeLayout>
+

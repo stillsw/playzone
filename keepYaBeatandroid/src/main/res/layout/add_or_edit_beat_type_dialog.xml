@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:animateLayoutChanges="true">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/nameLabel"
+                android:gravity="center_vertical"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/beat_type_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/setUniqueNameHint"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="@integer/maxRhythmNameLen"
+                    android:maxLines="1"/>
+                <!-- max length of name, same as rhythm name seems ok for now -->
+
+                <TextView
+                    android:id="@+id/textLenIndicator"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/beat_type_name"
+                    android:layout_alignEnd="@+id/beat_type_name"
+                    android:layout_alignRight="@+id/beat_type_name"
+                    />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/colour_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/colourLabel"
+                android:gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:id="@+id/colour_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="Change beat type display colour"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+                <!-- blank to fill the space -->
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/sound_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soundLabel"
+                />
+
+            <Spinner
+                android:id="@+id/sound_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/broken_sound_warning_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/broken_sound_warning_id"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_warning_white_24dp"
+                />
+
+            <TextView
+                android:id="@+id/broken_sound_warning_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beatTypesSoundError"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fallback_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fallback_sound_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fallbackSoundLabel"
+                />
+
+            <Spinner
+                android:id="@+id/fallback_sound_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

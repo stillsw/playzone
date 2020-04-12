@@ -1,0 +1,53 @@
+// THIS FUNCTION creates a sphere with lines of long/latitude
+// but not exactly sure how it's used from there
+
+function initSphereBuffers() {
+
+    var spRadius = 1.0;
+    var latitudeBands = 30;
+    var longitudeBands = 30;
+    var latNumber;
+    var longNumber;
+    
+    for (latNumber = 0; latNumber <= latitudeBands; latNumber++) {
+        var spTheta = latNumber * Math.PI / latitudeBands;
+        var sinTheta = Math.sin(spTheta);
+        var cosTheta = Math.cos(spTheta);
+
+        for (longNumber = 0; longNumber <= longitudeBands; longNumber++) {
+            var spPhi = longNumber * 2 * Math.PI / longitudeBands;
+            var sinPhi = Math.sin(spPhi);
+            var cosPhi = Math.cos(spPhi);
+
+            var x = sinPhi * sinTheta;
+            var y = cosTheta;
+            var z = cosPhi * sinTheta;
+
+            indexVertexData.push(spRadius * x);
+            indexVertexData.push(spRadius * y;
+            indexVertexData.push(spRadius * z);
+
+//normalize x,y,z
+            var nPoints = vec3(x, y, z);//var nPoints = vec4(x, y, z, 1.0);
+            nPoints = normalize (nPoints, true);
+            normalsArray.push(nPoints[0], nPoints[1], nPoints[2], 0.0);
+
+        }
+    }
+/*
+//building indexData buffer for indexing
+    for (latNumber = 0; latNumber < latitudeBands; latNumber++) {
+        for (longNumber = 0; longNumber < longitudeBands; longNumber++) {
+            var first = (latNumber * (longitudeBands + 1)) + longNumber;
+            var second = first + longitudeBands + 1;
+            indexData.push(first);
+            indexData.push(second);
+            indexData.push(first + 1);
+
+            indexData.push(first+1);
+            indexData.push(second );
+            indexData.push(second + 1);
+        }
+    }
+*/
+}

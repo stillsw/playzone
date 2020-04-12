@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="fragment_drop_back_duration">150</integer>
+    <item name="fragment_drop_back_alpha" type="fraction">50%</item>
+    <item name="fragment_drop_back_scale" type="fraction">85%</item>
+    <integer name="fragment_slide_in_duration">250</integer>
+    
+</resources>

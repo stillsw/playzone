@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="beat_dialog_title">Tiempo %1$s : </string>
+    <plurals name="beat_dialog_title_plurals">
+        <item quantity="one">tiempo sin dividir</item>
+        <item quantity="other">dividido en partes</item>
+    </plurals>
+    <plurals name="beat_dialog_parts_plural">
+        <item quantity="one">parte única</item>
+        <item quantity="other">%d partes</item>
+    </plurals>
+    <string name="beat_dialog_beat_type_label">%1$s %2$s</string>
+    <plurals name="beat_dialog_beat_type_label_plurals">
+        <item quantity="one"> </item>
+        <item quantity="other">Parte %d : </item>
+    </plurals>
+    <string name="beat_dialog_change_sound_volume_warning">Cambios de sonido/volumen se aplican a todos los tiempos del mismo tipo en el ritmo</string>
+    <string name="beat_dialog_dont_show_warning">no mostrar advertencia otra vez</string>
+    <string name="beat_number_dialog_title">Tiempo Número</string>
+    <string name="beat_number_dialog_full_beat_num_label">Número</string>
+    <string name="beat_number_dialog_show_beat_num_label">Mostrar</string>
+    <string name="copy_beat_dialog_title">Copiar Tiempo %1$s a Otros Tiempos</string>
+
+    <string name="settingsKeep_screen_awake_while_playing_label">Mantener la pantalla encendida mientras reproducir un ritmo</string>
+    <string name="settingsKeep_screen_awake_while_playing_summaryOn">Mantener la pantalla encendida</string>
+    <string name="settingsKeep_screen_awake_while_playing_summaryOff">No mantener la pantalla encendida</string>
+
+    <!-- common strings -->
+    <string name="ok_button">Aceptar</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="info_abbr">i</string>
+    <string name="remove_tag_from_search_button">Quitar etiqueta del filtro</string>
+    <string name="help_menu">Ayuda</string>
+    <string name="remove_ads_menu">Actualizar a Premium</string>
+    <string name="consent_ads_menu">Cambiar consentimiento para Anuncios</string>
+    <string name="thanks_for_upgrading_title">¡Gracias!</string>
+    <string name="thanks_for_upgrading_msg">¡Gracias por actualizar a Premium!</string>
+    <string name="nag_user_for_ads_title">Keep Ya Beat - Versión Gratuita</string>
+    <string name="nag_user_for_ads_msg">Estas usando la versión gratuita de Keep Ya Beat, por favor permite el uso de internet o actualizar quitar anuncios</string>
+
+    <!-- loading and other system messages -->
+    <string name="checking_install">Comprobando la instalación</string>
+    <string name="loading">Cargando</string>
+    <string name="load_installing">Instalando</string>
+    <string name="loading_complete">Completo</string>
+    <string name="system_low_memory_title">Memoria Baja</string>
+    <string name="system_low_memory_body">El sistema se está ejecutando con escasa memoria.
+\n Keep Ya Beat está liberando todos los recursos posibles.</string>
+
+    <!-- notifications/audio focus messages for playback -->
+    <string name="notification_playing_n_of_n">Reproduciendo %1$s/%2$s</string>
+    <string name="notification_playing">Reproduciendo</string>
+    <string name="notification_paused_n_of_n">En pausa %1$s/%2$s</string>
+    <string name="notification_paused">En pausa</string>
+    <string name="notification_action_play">Reproducir</string>
+    <string name="notification_action_pause">Poner en pausa</string>
+    <string name="notification_action_stop">Parar</string>
+    <string name="audio_focus_unavailable_title">Audio no disponible</string>
+    <string name="audio_focus_unavailable_body">Otra app puede estar usando el audio, ¿continuar sin sonidos?</string>
+
+    <!-- rhythms dialog_simple_list -->
+    <string name="rhythms_search_hint">Buscar nombre&#8230;</string>
+    <string name="rhythms_tags_search_hint">Elegir etiquetas de búsqueda</string>
+    <string name="rhythms_empty_list">No hay coincidencias</string>
+    <!-- rhythm change name/tags -->
+    <string name="setUniqueNameHint">Insertar un nombre no en uso</string>
+    <string name="rhythms_tags_button">Etiquetas</string>
+    <string name="addNewTag">Etiqueta nueva</string>
+    <!-- beat numbering -->
+    <string name="beatNumberLabelHint">Mostrar</string>
+
+    <!-- content descriptions (for accessibility) -->
+    <string name="kyb_banner_desc">Logo de Keep Ya Beat</string>
+    <string name="play_rhythm_img">Imagen de reproducir</string>
+    <string name="play_rhythm_backimg">Imagen de fondo de pantalla de reproducir</string>
+    <string name="play_button_img">Imagen de botón para reproducir</string>
+    <string name="pause_button_img">Imagen de botón para poner en pausa</string>
+    <string name="stop_button_img">Imagen de botón de parar</string>
+    <string name="bpm_button_img">Imagen de botón de BPM</string>
+    <string name="repeats_button_img">Imagen de botón de ajustar repetición</string>
+    <string name="kyb_logo_img">Logo de Keep Ya Beat</string>
+    <string name="bpm_tapper_img">Imagen de botón de ajustar BPM</string>
+    <string name="undo_button_img">Imagen de botón de deshacer</string>
+
+    <!-- new/changed errors/warnings -->
+    <string name="email_bug_report">Registra una incidencia</string>
+    <string name="bugReportSubmitDesc">Por favor dinos como ha ocurrido el error aquí … </string>
+    <string name="error_calling_change_details">No ha sido posible cargar el ritmo, por favor registra una incidencia</string>
+
+    <string name="LOAD_FAILED_INVALID_FORMAT">No se reconoce el formato de sonido</string>
+
+    <string name="welcomeHeading">¡Gracias por elegir Keep Ya Beat!</string>
+    <string name="welcomeBody">
+Mucho más que un metrónomo
+\n
+Reproduce ritmos populares o crea tus propios
+    </string>
+
+    <string name="UNEXPECTED_WRITE_FORMAT_ERROR">Error inesperado ha ocurrido durante los cambios
+\n\nNos gustaría investigarlo puesto que no debería haber ocurrido. Por favor registra una incidencia.
+    </string>
+
+    <string name="UNEXPECTED_PROGRAM_ERROR">Error inesperado
+\n\nNos gustaría investigarlo puesto que no debería haber ocurrido. Por favor registra una incidencia.
+    </string>
+
+    <string name="non_critical_error_restart_activity">Error inesperado pero no crítico ha ocurrido durante los cambios y ha sido necesario reiniciar.
+\n\nSi sigue con problemas por favor registra una incidencia.</string>
+
+    <string name="UNEXPECTED_SAVE_ERROR">Error inesperado ha ocurrido durante los cambios.
+\n\nNo ha sido posible completar la operacion.
+\n\nNos gustaría investigarlo puesto que no debería haber ocurrido. Por favor registra una incidencia.
+    </string>
+
+    <string name="INTERMITTENT_BUG_ERROR">Error inesperado pero no grave ha ocurrido.
+\nSi todo parece bien esta bien continuar. Si no reinciar.
+\n\nNos gustaría investigarlo puesto que no debería haber ocurrido. Por favor registra una incidencia.
+	</string>
+
+    <!-- new or changed for beats and sounds -->
+    <string name="beat_types_internal_data">Tipos de tiempo estándar</string>
+    <string name="beat_types_user_data">Mis tipos de tiempo</string>
+    <string name="sounds_internal_data">Sonidos estándar</string>
+    <string name="sounds_user_data">Mis sonidos</string>
+    <string name="delete_beat_type_migrate_title">Cambiar a \'%1$s\'</string>
+    <string name="soundUriLoadedLabel">Sonido cargado</string>
+    <!-- IMPORTANT: this one is used for delete sound too now, so don't add beat type in translations-->
+    <string name="changeRefBeatTypeLabel">Cambiar a</string>
+    <string name="delete_sound_migrate_title">Cambiar a \'%1$s\'</string>
+    <string name="deleteBeatTypeRefs">Usado por</string>
+    <string name="soundUriHint">Localizar sonido</string>
+    <string name="uriLabel">URI</string>
+    <string name="allowed_format_label">Formato\nreconocido</string>
+    <string name="allowed_format_desc">Wave PCM\nMono 22050Hz\nProfundidad de bits 16\nDuración máxima 0,4 segs</string>
+    <string name="open_chosen_sound_error">No es posible abrir el fichero de sonido</string>
+    <string name="open_chosen_sound_auth_error">No tiene permiso para abrir el fichero de sonido</string>
+    <string name="sound_file_compat_error_title">Error en el Fichero de Sonido</string>
+    <string name="sound_file_compat_error_format">No se reconoce el formato del fichero de sonido</string>
+    <string name="errorSoundFileLength">La duración del sonido es demasiado larga para un metrónomo (0,4 segundos como máximo)</string>
+    <!-- originally had a sound name for fallback, and didn't include the fix it part) -->
+    <string name="rbtTableSoundError">Error del fichero de sonido, usando sonido por defecto. (Cambiar en Tiempos y Sonidos)</string>
+    <!-- new -->
+    <string name="beatTypesSoundError">Error del fichero de sonido. (Cambiar en Sonidos)</string>
+    <string name="customSoundDeleteConfirm">Aviso: para deshacer esta acción de borrado es necesario adjuntar un nuevo fichero</string>
+    <string name="deleteSoundInvalidReferencesRhythms">No se puede eliminar el sonido, está siendo usado en Ritmo(s)</string>
+    <!--string name="beatTypeMissingName">[sin nombre]</string-->
+
+    <!-- new or changed for rhythms -->
+    <string name="menuSetNameRhythm">Cambiar detalles</string>
+    <string name="menuOpenRhythm">Abrir</string>
+    <string name="menuEditRhythm">Editar</string>
+    <string name="menuDeleteRhythm">Eliminar</string>
+    <string name="menuCloneRhythm">Duplicar</string>
+    <string name="saveRhythmLabel">Guardar</string>
+    <string name="rhythmDetailsMore">Más</string>
+    <string name="rhythmDetailsLess">Menos</string>
+
+    <!-- changed for rhythm editor -->
+    <string name="editRhythmLabel">%1$s [editando]</string><!-- was 'editting' -->
+    <string name="invokeDragBeatType">Mantenga pulsado para seleccionar</string>
+
+    <!-- new for settings -->
+    <string name="settingsToggleWelcomeLabel">Mostrar la bienvenida cuando empieza la aplicación</string>
+    <string name="settingsRhythmPlayerHeadingLabel">Enumeración de Tiempos</string>
+    <string name="settingsToggleDrawBeatNumsAboveLabel">Introducir los números encima de los tiempos</string>
+    <string name="settingsToggleDrawBeatNumsLabel">Enumerar tiempos</string>
+    <string name="settingsToggleAnimateBeatsUpwardsLabel">Mover animación hacía arriba</string>
+    <string name="settingsToggleColourPlayedFullBeatsLabel">Cambiar el color de los tiempos reproducidos</string>
+    <string name="settingsToggleColourPlayedSubBeatsLabel">Cambiar el color de las partes reproducidas de los tiempos</string>
+    <string name="settingsPlayedFullBeatsColourLabel">Color</string>
+    <string name="settingsPlayedSubBeatsColourLabel">Color</string>
+    <string name="settingsToggleBeatRipplesLabel">Mostrar el efecto de ondas del sonido</string>
+    <string name="settingsBeatMovementDistanceLabel">Distancia del movimiento</string>
+    <string name="settingsBeatMovementDistanceTooltip">Deslizar hacía la derecha para mover los tiempos más lejos</string>
+    <string name="settingsBeatMovementSpeedLabel">Rápidez del movimiento</string>
+    <string name="settingsBeatMovementSpeedTooltip">Deslizar hacía la derecha para mover los tiempos más lento</string>
+    <!-- used to be joined to prev -->
+    <string name="settingsToggleDrawBeatNumsAboveSummaryOn">Enumerar encima de los tiempos (excepto en el editor de ritmos)</string>
+    <string name="settingsToggleDrawBeatNumsAboveSummaryOff">Enumerar dentro de los tiempos</string>
+    <string name="settingsToggleDrawBeatNumsSummaryOn">Enumerar a no ser que no esté establecido para un ritmo en particular</string>
+    <string name="settingsToggleDrawBeatNumsSummaryOff">Nunca enumerar los tiempos</string>
+    <string name="settingsToggleAnimateBeatsUpwardsSummaryOn">Mover los tiempos reproducidos hacia arriba</string>
+    <string name="settingsToggleAnimateBeatsUpwardsSummaryOff">Mover los tiempos reproducidos hacia abajo</string>
+    <string name="settingsToggleProgressIndSummaryOn">Mostrar el progreso del ritmo reproducido con una barra</string>
+    <string name="settingsToggleProgressIndSummaryOff">No mostrar el progreso del ritmo reproducido</string>
+    <string name="settingsRedefaultButtonSummary">Restaurar a los valores por defecto</string>
+
+    <string name="drawSilentPartBeatTitle">Mostrar las partes sin sonido de tiempos divididos</string>
+    <string name="drawSilentPartBeatSummary">Una parte sin sonido puede ser mostrado cuando es reproducida, siempre o nunca</string>
+    <string-array name="drawSilentPartBeat_options">
+        <item>Siempre</item>
+        <item>Solo cuando estan siendo reproducidas</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="drawSilentPartBeat_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="UNDONE_FEEDBACK">Deshaciendo %1$s</string>
+    <string name="UNDONE_FEEDBACK_WITH_CONTEXT">Deshaciendo %1$s (%2$s)</string>
+    <string name="UNDO_NOT_RECOVERABLE">Error de datos impedido el deshacer seguro y ha sido rectificado. Si sigue con problemas, intenta reiniciar la aplicación.
+\n\nNos gustaría investigarlo puesto que no debería haber ocurrido. Por favor registra una incidencia.</string>
+
+    <!-- THE FOLLOWING SECTIONS ARE ALL EXISTING STRINGS THAT DON'T NEED TRANSLATIONS -->
+
+    <string name="app_name">Keep Ya Beat</string>
+    <string name="appVersion">android %1$s</string>
+    <string name="APP_EMAIL">stillwind.software@gmail.com</string>
+
+    <!-- menu bar and modules -->
+    <string name="appMenuPlayer">Reproducir Ritmos</string>
+    <string name="appMenuBeatsSounds">Tiempos y Sonidos</string>
+    <string name="moduleTags">Etiquetas</string>
+
+    <!-- web links -->
+    <string name="tourHelpLink">https://www.youtube.com/playlist?list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4</string>
+    <string name="rhythmPlayerLink">https://www.youtube.com/watch?v=UlcUMuMb7gE&amp;t=0s&amp;list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4&amp;index=3</string>
+    <string name="rhythmsListLink">https://www.youtube.com/watch?v=RSQkcIgjWSo&amp;list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4&amp;index=3</string>
+    <string name="rhythmEditorLink">https://www.youtube.com/watch?v=WehRaFbdaBg&amp;index=4&amp;list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4</string>
+    <string name="beatsSoundsLink">https://www.youtube.com/watch?v=ACRCiHkqWNg&amp;index=5&amp;list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4</string>
+
+    <!-- welcome screen -->
+    <string name="welcomeHelpLabel">Tour</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Español</item>
+    </string-array>
+    <!-- language-codes here is an array that matches the languages strings array, keep in step and same order -->
+    <string-array name="language_codes">
+        <item>en</item>
+        <item>es</item>
+    </string-array>
+    <string name="welcomeToggleLabel">Mostrar la bienvenida la próxima vez</string>
+
+    <!-- generic options and confirmations -->
+    <string name="confirmCancelEditsTitle">Confirmar Cancelar</string>
+    <string name="confirmCancelEditsBody">¿Cancelar y perder cambios?</string>
+    <string name="enterUniqueName">Insertar un nombre no en uso</string>
+    <string name="nameUsed">Nombre ya está en uso</string>
+    <string name="nameLabel">Nombre</string>
+
+    <!-- beat types and sounds sub headings -->
+    <string name="titleBeatTypes">Tipos de Tiempo</string>
+    <string name="titleSounds">Sonidos</string>
+    <string name="colourLabel">Color</string>
+    <string name="addNewBeatTypeTitle">Añadir un Nuevo Tipo de Tiempo</string>
+    <string name="changeBeatTypeTitle">Cambiar el Tipo de Tiempo</string>
+    <string name="soundLabel">Sonido</string>
+    <string name="fallbackSoundLabel">Recurso</string>
+    <string name="menuDeleteBeatType">Eliminar el tipo de tiempo</string>
+    <string name="menuChangeBeatType">Cambiar el tipo de tiempo</string>
+    <string name="menuChangeSoundName">Cambiar el nombre</string>
+    <string name="menuRepairSound">Reparar el sonido</string>
+    <string name="repairSoundTitle">Reparar el Sonido</string>
+    <string name="menuDeleteSound">Eliminar el sonido</string>
+    <string name="changeSoundNameTitle">Cambiar el Nombre del Sonido</string>
+    <string name="addNewSoundTitle">Añadir un Nuevo Sonido</string>
+    <string name="fileLabel">Fichero</string>
+    <string name="testBtnLabel">Probarlo</string>
+
+    <!-- default sounds -->
+    <string name="BEEP1_SOUND_NAME">Bip 1</string>
+    <string name="BEEP2_SOUND_NAME">Bip 2</string>
+    <string name="BEEP3_SOUND_NAME">Bip 3</string>
+    <string name="CLAP_HIGH_SOUND_NAME">Palmas (claras)</string>
+    <string name="CLAP_LOW_SOUND_NAME">Palmas (sordas)</string>
+    <string name="CLAP_DOUBLE_SOUND_NAME">Palmas (doble)</string>
+    <string name="HIGH_HAT_SOUND_NAME">Hi Hat</string>
+    <string name="BASS_DRUM_SOUND_NAME">Bombo</string>
+    <string name="MARACAS_SOUND_NAME">Maracas</string>
+    <string name="TAMBORINE_SOUND_NAME">Pandereta</string>
+    <string name="TICK_MIDDLE_SOUND_NAME">Tic (medio)</string>
+    <string name="TICK_WOODEN_SOUND_NAME">Tic (clave)</string>
+    <string name="TOCK_LOW_SOUND_NAME">Toc (bajo)</string>
+    <string name="TOCK_SHALLOW_SOUND_NAME">Toc (medio)</string>
+    <string name="TOCK_WOODEN_SOUND_NAME">Toc (clave)</string>
+    <string name="NO_SOUND_NAME">Silencio</string>
+
+    <!-- default beat types -->
+    <string name="NORMAL_BEAT_TYPE_NAME">Tiempo normal</string>
+    <string name="ACCENT_BEAT_TYPE_NAME">Tiempo acentuado</string>
+    <string name="ALTERNATE_BEAT_TYPE_NAME">Tiempo alterno</string>
+    <string name="SILENT_BEAT_TYPE_NAME">Tiempo silencioso</string>
+    <string name="FIRST_BEAT_TYPE_NAME">Primer tiempo</string>
+    <string name="GHOST_BEAT_TYPE_NAME">Nota fantasma</string>
+
+    <!-- default colours -->
+    <string name="normalColour">#FF17B0A1</string>
+    <string name="accentColour">#FFB7B701</string>
+    <string name="alternateColour">#FFD764BD</string>
+    <string name="quietColour">#FF19A419</string>
+    <string name="firstColour">#FFE24D34</string>
+    <string name="ghostColour">#FF7475AA</string>
+
+    <!-- play controls -->
+    <string name="changeBpmTitle">Ajustar BPM</string>
+    <string name="changeRepeatsTitle">Ajustar Repeticiones</string>
+    <string name="tooltipPlayPause">Reproducir/Poner en pausa</string>
+    <string name="tooltipStopPlay">Parar</string>
+    <string name="tooltipSetBpm">Ajustar BPM</string>
+    <string name="tooltipBpmTapper">Tocar para ajustar BPM</string>
+    <string name="tooltipSetRepeat">Ajustar Repetición</string>
+    <string name="labelRepeatInfinite">Continuo</string>
+    <string name="labelNoRepeat">Reproducir una vez</string>
+    <string name="labelRepeatN">Número de repeticiones</string>
+
+    <!-- rhythm module -->
+    <string name="newRhythm">Crear un ritmo nuevo</string>
+    <string name="saveNewRhythm">Guardar el Nuevo Ritmo</string>
+
+    <!-- tags -->
+    <string name="tagsSearchTooltip">Elegir etiquetas</string>
+    <string name="noTagsMessage">Sin etiquetas</string>
+    <string name="changeTagMenu">Cambiar el nombre de la etiqueta</string>
+    <string name="changeTagTitle">Cambiar el Nombre de la Etiqueta</string>
+    <string name="deleteTagMenu">Eliminar la etiqueta</string>
+
+    <!-- settings -->
+    <string name="settingsTitle">Preferencias</string>
+    <string name="settingsPlayAnimationsHeadingLabel">Animaciones y Efectos</string>
+    <string name="settingsToggleAnimateBeatsLabel">Animar los tiempos reproducidos</string>
+    <string name="settingsToggleBeatsKeepBouncingLabel">Los tiempos reproducidos siguen rebotando</string>
+    <string name="settingsToggleProgressIndLabel">Mostrar el progreso del ritmo reproducido</string>
+    <string name="settingsRedefaultButtonLabel">Restaurar lo predeterminado</string>
+
+    <!-- errors -->
+    <string name="titleLoadingProblems">Problemas al cargar datos</string>
+    <string name="unexpectedErrorTitle">Error Inesperado</string>
+    <string name="errorSelectFile">Elegir un fichero</string>
+
+    <!-- rhythms (and editing) -->
+    <string name="NEW_RHYTHM_NAME">Ritmo Nuevo</string>
+    <string name="toggleRhythmsList">Lista de ritmos</string>
+    <string name="toggleRhythmBeatTypes">Ajustes de los tipos de tiempo</string>
+    <string name="quickEditTooltip">Varita mágica, cambiar número de tiempos</string>
+    <string name="quickEditRhythmTitle">Cambiar Número de Tiempos</string>
+    <string name="changeDisplayColour">Cambiar color</string>
+    <string name="addChangeBeatTypeTooltip">Añadir o cambiar un tipo de tiempo</string>
+    <string name="lovChooseBeatType">Elegir tipo de tiempo</string>
+    <string name="VALIDATION_ALREADY_MAX_BEATS">El ritmo ya está completo (%1$s tiempos)</string>
+    <string name="VALIDATION_ALREADY_MIN_BEATS">El ritmo debe tener por lo menos un tiempo</string>
+
+    <!-- beat length change options -->
+    <string name="beatLenFullLabel">Un tiempo completo</string>
+    <string name="beatLenQuarterLabel">Un cuarto de un tiempo</string>
+    <string name="beatLenThirdLabel">Un tercio de un tiempo</string>
+    <string name="beatLenHalfLabel">Medio tiempo</string>
+    <string name="beatLen2ThirdsLabel">Dos tercios de un tiempo</string>
+    <string name="beatLen3QuartersLabel">Tres cuartos de un tiempo</string>
+
+    <!-- undoing -->
+    <string name="UNDO_DESC_PREFIX">Deshacer %1$s</string>
+    <string name="NO_UNDO_DESC">Deshacer &lt;no hay nada que deshacer&gt;</string>
+
+    <string name="UNDO_IMPORT_RHTYHMS">importar ritmos</string>
+    <string name="UNDO_ADD_BEAT_TYPE">añadir un tipo de tiempo</string>
+    <string name="UNDO_CLONE_BEAT_TYPE">duplicar el tipo de tiempo</string>
+    <string name="UNDO_DELETE_BEAT_TYPE">eliminar el tipo de tiempo</string>
+    <string name="UNDO_CHANGE_BEAT_TYPE">cambiar el tipo de tiempo</string>
+    <string name="UNDO_CHANGE_COLOUR">cambiar el color</string>
+    <string name="UNDO_CHANGE_BEAT_SOUND">cambiar el sonido del tiempo</string>
+    <string name="UNDO_CHANGE_BEAT_FALLBACK_SOUND">cambiar el sonido del recurso del tiempo</string>
+    <string name="UNDO_ADD_SOUND">añadir el sonido</string>
+    <string name="UNDO_CHANGE_SOUND">cambiar el nombre del sonido</string>
+    <string name="UNDO_DELETE_SOUND">eliminar el sonido</string>
+
+    <string name="UNDO_RHYTHM_CHANGE_REPEATS_NAME">cambiar el ajuste de repetición</string>
+    <string name="UNDO_RHYTHM_CHANGE_BPM_NAME">cambiar BPM</string>
+    <string name="UNDO_RHYTHM_DELETE_NAME">eliminar el ritmo</string>
+    <string name="UNDO_SAVE_RHYTHM">guardar el ritmo</string>
+    <string name="UNDO_CHANGE_VOLUME_COMMAND">cambiar el volúmen</string>
+    <string name="UNDO_CHANGE_DISPLAY_NUMBERS_COMMAND">cambiar la enumeración de los tiempos</string>
+    <string name="UNDO_CHANGE_BEAT_SOUND_COMMAND">cambiar el sonido del tiempo</string>
+
+    <string name="UNDO_EDIT_BEAT_PARTS_COMMAND">dividir el tiempo en partes</string>
+    <string name="UNDO_DELETE_FULL_BEAT_COMMAND">eliminar el tiempo</string>
+    <string name="UNDO_MOVE_FULL_BEAT_COMMAND">mover el tiempo</string>
+    <string name="UNDO_REPLACE_FULL_BEAT_COMMAND">sustituir el tiempo</string>
+    <string name="UNDO_COPY_TO_OTHER_BEATS">copiar tiempo</string>
+    <string name="UNDO_CHANGE_NUM_FULLBEATS_COMMAND">cambiar el número de tiempos</string>
+    <string name="UNDO_CHANGE_BEAT_TYPE_COMMAND">cambiar el tipo de tiempo</string>
+    <string name="UNDO_ADD_NEW_BEAT_COMMAND">añadir el tipo de tiempo nuevo</string>
+    <string name="UNDO_CLONE_FULL_BEAT_COMMAND">duplicar el tipo de tiempo</string>
+    <string name="UNDO_RENUMBER_BEAT_ONE_COMMAND">cambiar el tiempo con el número 1</string>
+    <string name="UNDO_CHANGE_DISPLAY_NUMBER_COMMAND">cambiar el número mostrado</string>
+    <string name="UNDO_MAKE_IRREGULAR_BEAT_COMMAND">hacer el tiempo de menos duración</string>
+    <string name="UNDO_CHANGE_BEAT_VALUE_COMMAND">cambiar la duración del tiempo</string>
+    <string name="UNDO_CLONE_RHYTHM_COMMAND">duplicar el ritmo</string>
+
+    <string name="UNDO_ADD_TAG_COMMAND">añadir una etiqueta</string>
+    <string name="UNDO_CHANGE_TAG_COMMAND">cambiar la etiqueta de nombre</string>
+    <string name="UNDO_DELETE_TAG_COMMAND">eliminar la etiqueta</string>
+
+    <!-- menu options for beat changes (invoked from core) -->
+    <string name="MENU_EDIT_BEAT">Dividir el tiempo en partes</string>
+    <string name="MENU_COPY_TO_OTHER_BEATS">Copiar a otros tiempos</string>
+    <string name="MENU_EDIT_BEAT_NUMBERING">Número mostrado</string>
+    <string name="MENU_DELETE_FULL_BEAT">Eliminar el tiempo</string>
+    <string name="MENU_RENUMBER_BEAT_ONE">Contar 1 desde este tiempo</string>
+    <string name="MENU_MAKE_IRREGULAR_BEAT">Hacer el tiempo de menos duración</string>
+    <string name="MENU_CHANGE_BEAT_VALUE">Cambiar la duración del tiempo</string>
+    <string name="MENU_CLONE_FULL_BEAT">Duplicar el tiempo</string>
+
+    <!-- core messages -->
+    <string name="UNREADABLE_INSTALL_RHYTHMS_DATA_ERROR">Error al instalar los ritmos predeterminados, por favor registra una incidencia</string>
+    <string name="ILLEGAL_SOUND_FILE_LIBRARY_ERROR">Error al cargar el sonido, esta plataforma no soporta el tipo de fichero: %1$s</string>
+    <string name="MISSING_SOUND_FILE_LIBRARY_ERROR">Datos incompletos, falta el fichero de sonido: %1$s</string>
+    <string name="MISSING_SOUND_BEAT_TYPE_ERROR">Falta el sonido para el tipo de tiempo \'%1$s\', se está usando el sonido de recurso</string>
+    <string name="CORRUPT_LIBRARY_ERROR">Error inesperado, la biblioteca puede estar corrupta, por favor registra una incidencia</string>
+    <string name="NOT_INIT_SOUNDS_ERROR">Error inesperado en inicializar los sonidos, por favor registra una incidencia</string>
+    <string name="INSTALL_DEFAULT_RHYTHMS_DATA_WARNINGS_TITLE">La colección de ritmos predeterminada se ha cargado con advertencias : %1$s</string>
+    <string name="MALFORMED_RHYTHM_ERROR">Los datos del ritmo tienen errores de formato y no se pueden leer</string>
+    <string name="MISSING_BEAT_TYPE_RHYTHM_ERROR">Falta un tipo de tiempo a los datos del ritmo</string>
+    <string name="MISSING_SOURCE_EDIT_RHYTHM_ERROR">El ritmo corriente es inconsistente, cambiado al estado no guardado por defecto</string>
+    <string name="NO_UTF8_LIBRARY_ERROR">Error interno inesperado, la plataforma no soporta UTF-8, por favor registra una incidencia</string>
+    <string name="CORRUPT_RHYTHM_LIBRARY_ERROR">No ha sido posible cargar todos los ritmos por errores de formato</string>
+    <string name="INCONSISTENT_BEATS_RHYTHM_ERROR">El ritmo corriente contiene tiempos inconsistentes, ha sido reparado</string>
+    <string name="UNREACHABLE_SOUND_LIBRARY_ERROR">La bliblioteca contiene un fichero de sonido inaccesible, abre Tiempos y Sonidos para corregir el problema</string>
+    <string name="DUPLICATE_IGNORED_BEAT_TYPE_ERROR">El tipo de tiempo \'%1$s\' está duplicado y ha sido ignorado</string>
+    <string name="DUPLICATE_NAME_BEAT_TYPE_ERROR">El nombre del tipo de tiempo \'%1$s\' está duplicado y cambiado a \'%2$s\', abre Tiempos y Sonidos para cambiarlo</string>
+    <string name="DUPLICATE_IGNORED_SOUND_ERROR">Sonido en duplicado ignorado</string>
+
+    <!-- import errors -->
+    <string name="SOME_INVALID_IMPORT_FILE_ERROR_BATCH_MODE">Han ocurrido problemas al cargar los ritmos predeterminados</string>
+    <string name="VERSION_HIGHER_IMPORT_FILE_ERROR">Los ritmos vienen de una versión más antigua de Keep Ya Beat,
+\n\nse pueden usar pero es mejor conseguir la versión
+\n\nmás reciente.</string>
+    <string name="MISSING_INTERNAL_SOUND_IMPORT_FILE_ERROR">El sonido predeterminado (%1$s) no existe y se ha cambiado a \'%2$s\', actualizar Keep Ya Beat para conseguir sonidos nuevos</string>
+    <string name="MISSING_CUSTOM_SOUND_IMPORT_FILE_ERROR">El sonido (%1$s) se ha cargado sin un fichero. Abre Tiempos y Sonidos para cambiarlo
+\n&#8230; o pide el fichero del sonido de donde has conseguido la colección de ritmos</string>
+
+    <!-- report a bug -->
+    <string name="bugReportTitle">Algún error con Keep Ya Beat</string>
+    <string name="dark_semi_transparent_shadow">Oscuro sombra semi-transparente</string>
+
+</resources>

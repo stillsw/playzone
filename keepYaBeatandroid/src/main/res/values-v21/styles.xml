@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar"> <!--"android:Theme.Material"-->
+        <!-- base theme customizations can go here. -->
+        <item name="android:colorPrimary">@color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@color/accent_material_dark</item>
+        <item name="android:colorBackground">@color/background_material_dark</item>
+        <!--item name="android:navigationBarColor">?attr/colorPrimaryDark</item-->
+    </style>
+
+    <style name="WelcomeActivityTheme" parent="AppTheme">
+        <item name="android:colorPrimaryDark">@color/welcome_screen_bgd</item>
+        <!--item name="android:navigationBarColor">@android:color/black</item-->
+    </style>
+</resources>

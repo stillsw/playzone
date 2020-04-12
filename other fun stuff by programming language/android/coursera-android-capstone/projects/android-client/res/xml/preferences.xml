@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/prefkey_filter_content"
+        android:summary="@string/pref_filter_content_summary"
+        android:title="@string/pref_filter_content"
+        android:layout="@layout/preferences_layout" />
+
+    <ListPreference
+        android:key="@string/prefkey_interval"
+        android:title="@string/pref_interval"
+        android:dialogTitle="@string/pref_interval"
+        android:entries="@array/pref_interval_entries"
+        android:entryValues="@array/pref_interval_values"
+        android:defaultValue="5" 
+        android:layout="@layout/preferences_layout"/><!-- default will never show because it comes from the server -->
+    
+</PreferenceScreen>

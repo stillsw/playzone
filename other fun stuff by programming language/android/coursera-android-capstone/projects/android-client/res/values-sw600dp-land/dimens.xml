@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        for adding a new gift, want the image size to be about
+    	40% the height in port and 50% in land, need to set these
+    	dimensions for each step up in size both port and land
+    -->
+
+
+    <!-- land above 600x480 (width match_parent) -->
+    <dimen name="add_gift_image_height">240dp</dimen>
+
+</resources>

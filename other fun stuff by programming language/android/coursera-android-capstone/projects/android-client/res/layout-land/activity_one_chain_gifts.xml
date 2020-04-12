@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cards_backgrd"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    android:weightSum="1" > <!-- 48dp is for the nav bar, as this goes under it, if need more add to 48dp -->
+
+    <include layout="@layout/view_gift_image" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/fab_margin_overlap"
+        android:layout_weight="0.60" />
+
+    <ImageButton
+        android:id="@+id/fabbutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:background="@drawable/fab_add_gift_ripple"
+        android:contentDescription="@string/add_gift_fab"
+        android:elevation="3dp"
+        android:src="@drawable/fab_add"
+        android:visibility="gone" />
+
+</LinearLayout>

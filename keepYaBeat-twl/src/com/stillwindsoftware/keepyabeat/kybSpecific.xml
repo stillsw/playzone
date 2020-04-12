@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE themes PUBLIC "-//www.matthiasmann.de//TWL-Theme//EN" "http://hg.l33tlabs.org/twl/raw-file/tip/src/de/matthiasmann/twl/theme/theme.dtd">
+<!--
+    Document   : kybSpecific.xml
+    Author     : Tomas Stubbs
+    Description:
+        Theme for KYB contians extra images not related to basic widgets
+--><themes>
+    <images file="ktb.png" format="COLOR">
+        <area name="zoomInIcon22" xywh="547,152,22,23" splitx="L0,R21" splity="T22,B0"/>
+        <area name="socialMediaImg" xywh="406,254,199,26" center="true"/>
+        <area name="kybLogoImg" xywh="470,380,131,128" splitx="L130,R1" splity="T127,B0"/>
+        <area name="beatDivisionHoriLarge" xywh="490,236,11,6" splitx="L5,R5"/>
+        <area name="beatDivisionLeft3x3" xywh="510,237,2,3"/>
+        <area name="beatDivisionRight3x3" xywh="505,237,2,3"/>
+        <area name="beatDivision1x1" xywh="515,240,1,1"/>
+        <area name="pointerImg" xywh="8,25,9,-7"/>
+        <area name="nextNavIcon" xywh="5,105,12,22" center="true"/>
+        <select name="nextNavSelect">
+            <alias ref="nextNavIcon" if="disabled" tint="#80FFFFFF"/>
+            <alias ref="nextNavIcon"/>
+        </select>
+        <area name="prevNavIcon" xywh="23,105,12,22" center="true"/>
+        <select name="prevNavSelect">
+            <alias ref="prevNavIcon" if="disabled" tint="#80FFFFFF"/>
+            <alias ref="prevNavIcon"/>
+        </select>
+        <select name="reversiblePointerImg">
+            <alias ref="pointerImg" if="reverseVideo" tint="#D7D7D7"/>
+            <alias ref="pointerImg" tint="#3F3F3F"/>
+        </select>
+        
+        <area name="simplehelpBoxArrowTopBackgrd" xywh="2,253,50,35" border="24,10,10,10" splity="T24,B10" splitx="L39,R10"/>
+        <area name="simplehelpBoxArrowLeftBackgrd" xywh="2,253,50,35" border="10,24,10,10" splity="T24,B10" splitx="L39,R10" rot="270"/>
+        <area name="simplehelpBoxArrowBottomBackgrd" xywh="2,253,50,-35" border="10,10,24,10" splity="T10,B24" splitx="L39,R10"/>
+        <area name="simplehelpBoxArrowRightBackgrd" xywh="2,253,50,35" border="10,10,10,24" splity="T24,B10" splitx="L39,R10" rot="90"/>
+        <area name="simplehelpBoxArrowTopRightBackgrd" xywh="58,244,62,57" border="16,10,10,51" splity="T46,B10" splitx="L10,R51"/>
+        <area name="simplehelpBoxArrowBottomRightBackgrd" xywh="58,244,62,-57" border="10,10,16,51" splity="T10,B46" splitx="L10,R51"/>
+        <area name="simplehelpBoxArrowTopLeftBackgrd" xywh="58,244,-62,57" border="16,51,10,10" splity="T46,B10" splitx="L51,R10"/>
+        <area name="simplehelpBoxArrowBottomLeftBackgrd" xywh="58,244,-62,-57" border="10,51,16,10" splity="T10,B46" splitx="L51,R10"/>        
+        
+        <area name="beatImg55" xywh="5,148,55,55" splitx="L18,R18" splity="T18,B18"/>
+        <area name="beatOverlayImg55" xywh="4,329,55,55" splitx="L18,R18" splity="T18,B16"/>
+        <area name="selectedBeatImg55" xywh="4,392,55,55" splitx="L18,R18" splity="T18,B18"/>
+        <area name="subZoneImg55Overlay" xywh="379,288,55,55" splitx="L18,R18" splity="T18,B18"/>
+        <!-- not used now, in favour of grid area name="beatImg55Overlay" xywh="4,251,55,55" splitx="L18,R18" splity="T19,B25"/-->
+    
+        <area name="beatImg25" xywh="95,160,25,25" splitx="L8,R8" splity="T8,B8"/>
+        <!-- not used now, in favour of grid area name="beatImg55Overlay" xywh="4,251,55,55" splitx="L18,R18" splity="T19,B25"/-->
+    
+        <area name="beatOverlayImg25" xywh="95,329,25,25" splitx="L8,R8" splity="T8,B8"/>
+    
+        <area name="selectedBeatImg25" xywh="95,399,25,25" splitx="L8,R8" splity="T8,B8"/>
+    
+        <area name="subZoneImg25Overlay" xywh="349,314,25,25" splitx="L8,R8" splity="T8,B8"/>
+        <!-- not used now, in favour of grid area name="beatImg25Overlay" xywh="95,263,25,25" splitx="L8,R8" splity="T8,B8"/-->
+    
+        <area name="beatImg11" xywh="164,168,11,11" splitx="L4,R4" splity="T4,B4"/>
+        <!-- not used now, in favour of grid area name="beatImg25Overlay" xywh="95,263,25,25" splitx="L8,R8" splity="T8,B8"/-->
+    
+        <area name="beatOverlayImg11" xywh="164,329,11,11" splitx="L3,R4" splity="T3,B3"/>
+    
+        <area name="selectedBeatImg11" xywh="164,399,11,11" splitx="L4,R4" splity="T4,B4"/>
+        <!-- not used now, in favour of grid area name="beatImg11Overlay" xywh="164,268,11,11" splitx="L4,R4" splity="T3,B4"/-->
+        <area name="beatImg3" xywh="295,175,3,3" splitx="L1,R1" splity="T1,B1"/>
+        <area name="beatImg3Overlay" xywh="295,270,3,3" splitx="L1,R1" splity="T1,B1"/>
+        <area name="beatImgOverlay" xywh="116,6,13,11" splitx="L5,R5" splity="T5,B5" if="selected"/>
+        <area name="numbersBgd32" xywh="347,256,32,32" splitx="L12,R12" splity="T12,B12"/>
+        <area name="fraction_1_4_25high" xywh="458,312,14,25"/>
+        <area name="fraction_1_3_25high" xywh="484,312,15,25"/>
+        <area name="fraction_1_2_25high" xywh="510,312,15,25"/>
+        <area name="fraction_2_3_25high" xywh="535,312,18,25"/>
+        <area name="fraction_3_4_25high" xywh="562,312,15,25"/>
+        <area name="fractionLine6" xywh="515,349,6,16" splity="T3,B6"/>
+        <area name="fractionHoveredLine6" xywh="499,349,6,16" splity="T3,B6"/>
+        <area name="explodeBeatImg" xywh="366,378,72,72"/>
+        <area name="playedRipple" xywh="215,286,100,100"/>
+        <area name="openEyeImg" xywh="68,38,24,20" center="true"/>
+        <area name="closedEyeImg" xywh="96,39,23,20" center="true"/>
+        <select name="eyeSelectImg">
+            <alias ref="closedEyeImg" if="!selected"/>
+            <alias ref="openEyeImg"/>
+        </select>
+    
+        <area name="bpmBgdImg" xywh="448,141,48,30" center="true"/>
+        <area name="largeBtnImg" xywh="2,65,33,30" splitx="L3,R3" splity="T3,B3"/>
+        <area name="repeatInfinityOverlay" xywh="442,92,57,39" center="true"/>
+        <area name="noRepeatOverlay" xywh="564,102,54,18" center="true"/>
+        <area name="repeatNOverlay" xywh="502,92,57,39" center="true"/>
+        <select name="repeatBtnOverlay">
+            <alias ref="noRepeatOverlay" if="noRepeat"/>
+            <alias ref="repeatNOverlay" if="repeatN"/>
+            <alias ref="repeatInfinityOverlay"/>
+        </select>
+        <area name="searchIcon" xywh="157,9,22,22" center="true" border="2"/>
+        <area name="upSliderIcon" xywh="133,11,9,6" center="true" border="2"/>
+        <area name="upSliderHoverIcon" xywh="109,113,17,13"/>
+        <area name="downSliderIcon" xywh="133,5,9,6" center="true" border="2"/>
+        <area name="downSliderHoverIcon" xywh="109,97,17,13"/>
+        <area name="leftSliderIcon" xywh="130,19,6,9" center="true" border="2"/>
+        <area name="leftSliderHoverIcon" xywh="75,112,13,17"/>
+    
+    
+        <area name="rightSliderIcon" xywh="139,19,6,9" center="true" border="2"/>
+        <area name="rightSliderHoverIcon" xywh="92,112,13,17"/>
+        <area name="newIcon" xywh="319,69,24,24" center="true" border="2"/>
+        <area name="editIcon" xywh="354,68,25,25" center="true" border="2"/>
+        <area name="helpIcon" xywh="402,68,12,22" center="true" border="2"/>
+    
+        <area name="tagSearchIcon" xywh="190,9,26,24" border="2" center="true"/>
+        <area name="tagListIcon" xywh="190,9,26,24" border="2" splitx="L25,R0" splity="T23,B0"/>
+        
+        <area name="undoIcon" xywh="155,38,22,20" center="true" border="2"/>
+        <select name="undoIconSelect">
+            <alias ref="undoIcon" if="disabled" tint="#80FFFFFF"/>
+            <alias ref="undoIcon"/>
+        </select>
+        <area name="listIcon" xywh="192,65,28,34" center="true" border="2"/>
+        <area name="searchListIcon" xywh="225,2,27,28" center="true" border="2"/>
+        <area name="shareIcon" xywh="263,4,22,24" center="true" border="2"/>
+        <select name="shareIconSelect">
+            <alias ref="shareIcon" if="disabled" tint="#80FFFFFF"/>
+            <alias ref="shareIcon"/>
+        </select>
+        <area name="copyIcon" xywh="298,2,22,26" center="true" border="2"/>
+        <area name="settingsIcon" xywh="159,65,28,34" center="true" border="2"/>
+        <area name="buttonBgd" xywh="48,70,31,22" splitx="L7,R7" splity="T7,B7"/>
+        <select name="highlightedBtnBgdSelect">
+            <alias ref="buttonBgd" if="disabled" tint="#20FFFFFF"/>
+            <alias ref="buttonBgd" if="hover"/>
+            <alias ref="buttonBgd" tint="#40FFFFFF"/>    
+        </select>
+        <select name="confirmBtnBgdSelect">
+            <!-- disabled same as default, but have it BEFORE the hover test, otherwise it will show as hover -->
+            <alias ref="buttonBgd" if="disabled" tint="#40FFFFFF"/>
+            <alias ref="buttonBgd" if="hover | defaulted"/>
+            <alias ref="buttonBgd" tint="#40FFFFFF"/>    
+        </select>
+
+        <alias name="menuButtonBgd" ref="buttonBgd" tint="#40FFFFFF"/>    
+    
+        <area name="okIcon" xywh="92,70,26,18" center="true" border="2"/>
+        <select name="okBtnBgdSelect">
+            <alias ref="okIcon" if="disabled" tint="#40FFFFFF"/>
+            <alias ref="okIcon"/>    
+        </select>
+        <area name="cancelIcon" xywh="128,73,18,18" center="true" border="2"/>
+        <area name="playBtnImg" xywh="165,112,16,19" center="true" border="2"/>
+        <area name="playPauseBtnImg" xywh="112,135,20,22" center="true" border="2"/>
+        <area name="pauseBtnImg" xywh="165,136,20,20" center="true" border="2"/>
+        <select name="playPauseSelect">
+            <alias ref="pauseBtnImg" if="playing"/>
+            <alias ref="playPauseBtnImg"/>
+        </select>
+        <area name="stopBtnImg" xywh="136,136,20,20" center="true" border="2"/>
+        <select name="stopSelect">
+            <alias ref="stopBtnImg" if="disabled" tint="#80FFFFFF"/>
+            <alias ref="stopBtnImg"/>
+        
+        </select>
+    
+        <area name="saveIcon" xywh="228,65,35,34" center="true" border="2"/>
+        <area name="soundsIcon" xywh="358,17,64,41" splitx="L63,R0" splity="T40,B0" border="0,5,0,0"/>
+        <area name="beatTypesIcon" xywh="441,19,52,41" splitx="L51,R0" splity="T40,B0" border="0,5,0,0"/>
+        <area name="drumTapperImg1" xywh="508,8,53,55" center="true" border="5"/>
+        <area name="drumTapperImg2" xywh="567,8,53,55" center="true" border="5"/>
+        <select name="drumTapperSelect">
+            <alias ref="drumTapperImg2" if="armed"/>
+            <alias ref="drumTapperImg1"/>
+        
+        </select>
+    
+        <select name="saveIconSelect">
+            <alias ref="saveIcon" if="disabled" tint="#80FFFFFF"/>
+            <alias ref="saveIcon"/>
+        </select>
+    
+        <area name="newRhythmIcon" xywh="271,65,35,34" center="true" border="2"/>
+        <select name="newRhythmIconSelect">
+            <alias ref="newRhythmIcon" if="disabled" tint="#80FFFFFF"/>
+            <alias ref="newRhythmIcon"/>
+        </select>
+    
+        <area name="quickEditRhythmIcon" xywh="449,178,35,34" center="true" border="2"/>
+    
+        <area name="tagBtnImg" xywh="237,36,22,22" splitx="L13,R4" border="4,9,4,5"/>
+        <area name="tagSelectedBtnImg" xywh="283,36,38,22" splitx="L12,R22" border="4,9,4,23"/>
+        <area name="playControlsBgd" xywh="205,105,43,50" splitx="L21,R20"/>
+        <area name="progressIndicatorBgd" xywh="359,122,32,38" splitx="L15,R15" splity="T18,B18"/>
+    
+        <select name="toggleSliderUpIcon">
+            <alias ref="upSliderIcon" if="hidden"/>
+            <alias ref="downSliderHoverIcon" if="hover"/>
+            <alias ref="downSliderIcon"/>
+        </select>
+        
+        <select name="toggleSliderDownIcon">
+            <alias ref="downSliderIcon" if="hidden"/>
+            <alias ref="upSliderHoverIcon" if="hover"/>
+            <alias ref="upSliderIcon"/>
+        </select>
+        
+        <select name="toggleSliderRightIcon">
+            <alias ref="rightSliderIcon" if="hidden"/>
+            <alias ref="leftSliderHoverIcon" if="hover"/>
+            <alias ref="leftSliderIcon"/>
+        </select>
+        
+        <select name="toggleSliderLeftIcon">
+            <alias ref="leftSliderIcon" if="hidden"/>
+            <alias ref="rightSliderHoverIcon" if="hover"/>
+            <alias ref="rightSliderIcon"/>
+        </select>
+        <area name="androidDialog" xywh="262,117,17,21" splitx="L2,R3" splity="T3,B7"/>
+        <area name="androidDialogSpot" xywh="262,117,1,1"/>
+        
+        <area name="whitespot" xywh="56,17,1,1"/>
+        <alias name="white5050transparent" ref="whitespot" tint="#50FFFFFF"/>
+        <alias name="tintedFilter" ref="whitespot" tint="#41082947"/>
+        <alias name="darkTintedFilter" ref="whitespot" tint="#92001529"/>
+
+    </images>
+    
+    <images file="kyb banner w750.png">
+        <area name="bannerColourSpot" xywh="0,0,1,1"/>
+        
+        <grid name="kybWelcomeBanner" weightsX="1,0,1" weightsY="0,1">
+            <alias ref="bannerColourSpot"/>
+            <area xywh="1,0,748,234"/>
+            <alias ref="bannerColourSpot"/>
+            
+            <alias ref="bannerColourSpot"/>
+            <alias ref="bannerColourSpot"/>
+            <alias ref="bannerColourSpot"/>
+        </grid>
+        
+    </images>
+</themes>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/page_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/kyb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dialog"
+        />
+
+    <fragment
+        android:id="@+id/play_rhythm_fragment"
+        android:name="com.stillwindsoftware.keepyabeat.gui.PlayRhythmFragment"
+        class="com.stillwindsoftware.keepyabeat.gui.PlayRhythmFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        />
+
+    <!-- only here for the animation -->
+    <com.stillwindsoftware.keepyabeat.gui.FloatingActionButton
+        android:id="@+id/fab_2"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_marginTop="-26dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/kyb_toolbar"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/fab_background"
+        android:visibility="invisible"
+        android:elevation="@dimen/fab_elevation"
+        android:stateListAnimator="@animator/fab_anim">
+
+        <ImageView
+            android:id="@+id/fab_2_image_view"
+            android:layout_width="@dimen/fab_icon_size"
+            android:layout_height="@dimen/fab_icon_size"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:src="@drawable/ic_save_white_24dp"/>
+
+    </com.stillwindsoftware.keepyabeat.gui.FloatingActionButton>
+
+    <fragment
+        android:id="@+id/rhythms_list_fragment"
+        android:name="com.stillwindsoftware.keepyabeat.gui.RhythmsListFragment"
+        class="com.stillwindsoftware.keepyabeat.gui.RhythmsListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kyb_toolbar"
+        />
+
+    <fragment
+        android:id="@+id/rbt_list_fragment"
+        android:name="com.stillwindsoftware.keepyabeat.gui.RhythmBeatTypesFragment"
+        class="com.stillwindsoftware.keepyabeat.gui.RhythmBeatTypesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kyb_toolbar"
+        />
+
+    <!-- see the comments in dimens -->
+    <FrameLayout
+        android:id="@+id/centrefragmentcontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/load_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="22sp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/load_status"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

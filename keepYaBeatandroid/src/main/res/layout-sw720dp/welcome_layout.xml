@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcome_screen_bgd" >
+
+    <RelativeLayout
+        android:background="@drawable/white_outline_box"
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:layout_gravity="center"
+        android:padding="10dp" >
+
+        <include layout="@layout/welcome_body" />
+    </RelativeLayout>
+
+</FrameLayout>

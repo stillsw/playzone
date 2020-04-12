@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/report_density"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/report_density"
+        android:background="#FF500000" />
+
+    <ImageView
+        android:id="@+id/i2"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/i1"
+        android:layout_toRightOf="@id/i1"
+        android:background="#FF500000" />
+
+    <ImageView
+        android:id="@+id/i3"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/i2"
+        android:layout_toRightOf="@id/i2"
+        android:background="#FF500000" />
+
+    <ImageView
+        android:id="@+id/i4"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/i3"
+        android:layout_toRightOf="@id/i3"
+        android:background="#FF500000" />
+
+    <Button
+        android:id="@+id/navBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="goForwards"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:text="Forwards ->>"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:text="Press me!" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

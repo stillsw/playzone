@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- this is the portrait version of the layout for adding a gift -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/progress_bar_thin_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp" >
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/edit_title_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <requestFocus />
+
+            <!--
+             use a text view to put the image into (as a background)
+             that way the issue of adding text is solved
+            -->
+
+            <TextView
+                android:id="@+id/add_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_gift_image_height"
+                android:layout_below="@id/edit_title"
+                android:background="@drawable/new_gift_image_backgrd"
+                android:gravity="center|top"
+                android:hint="@string/add_image_hint"
+                android:paddingTop="32dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/fabbutton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/fab_size"
+                android:layout_height="@dimen/fab_size"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/add_image_view"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin_overlap"
+                android:background="@drawable/fab_take_picture_ripple"
+                android:contentDescription="@string/take_photo_fab"
+                android:elevation="3dp"
+                android:src="@drawable/camera" />
+
+            <EditText
+                android:id="@+id/added_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_image_view"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/edit_added_text_hint"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/thumb_view"
+                android:layout_width="@dimen/gifts_lists_thumb_size"
+                android:layout_height="@dimen/gifts_lists_thumb_size"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/added_text"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/gift_image"
+                android:src="@drawable/download_image_bgrd" />
+
+            <CheckBox
+                android:id="@+id/link_chain_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/added_text"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:maxLines="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/save_btn"
+            style="@style/FlatButtons"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/upload_button" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            style="@style/FlatButtons"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/save_btn"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/cancel_button" />
+    </RelativeLayout>
+
+</LinearLayout>

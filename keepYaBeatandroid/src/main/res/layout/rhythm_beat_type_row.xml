@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/list_row_background"
+                android:clickable="true"
+                >
+    <TextView
+        android:id="@+id/beat_type_name"
+        style="@style/ListHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:padding="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:clickable="true"
+        />
+
+    <SeekBar
+        android:id="@+id/volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:thumb="@drawable/parts_seekbar_thumb"
+        android:layout_below="@+id/beat_type_name"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="40sp"
+        android:layout_marginEnd="40sp"
+        android:paddingRight="12dp"
+        android:paddingEnd="12dp"
+        android:paddingLeft="14dp"
+        android:paddingStart="14dp"/>
+
+    <TextView
+        android:id="@+id/volume_num"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/beat_type_name"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="100"
+        android:maxLines="1"
+        />
+
+    <ImageButton
+        android:id="@+id/broken_sound_warning_id"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignStart="@id/volume"
+        android:layout_alignLeft="@id/volume"
+        android:layout_below="@+id/volume"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_warning_white_24dp"
+        android:visibility="gone"
+        />
+
+    <com.stillwindsoftware.keepyabeat.gui.ConcreteCompoundButton
+        android:id="@+id/display_numbers_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="56dp"
+        android:layout_height="32dp"
+        android:layout_alignRight="@id/beat_type_name"
+        android:layout_alignEnd="@id/beat_type_name"
+        android:layout_below="@+id/volume"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/toggle_display_numbers_btn_selector"
+        android:clickable="true"
+        android:contentDescription="Toggle display numbers"/>
+
+    <TextView
+        android:id="@+id/one_digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:text="1"
+        android:layout_alignTop="@id/display_numbers_btn"
+        android:layout_alignStart="@+id/display_numbers_btn"
+        android:layout_alignLeft="@+id/display_numbers_btn"
+        />
+
+    <TextView
+        android:id="@+id/two_digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:text="2"
+        android:layout_alignTop="@id/display_numbers_btn"
+        android:layout_toRightOf="@id/one_digit"
+        android:layout_toEndOf="@id/one_digit"
+        />
+
+    <TextView
+        android:id="@+id/three_digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:textSize="8dp"
+        android:text="3"
+        android:layout_alignTop="@id/display_numbers_btn"
+        android:layout_toRightOf="@id/two_digit"
+        android:layout_toEndOf="@id/two_digit"
+        />
+
+    <Spinner
+        android:id="@+id/sound_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/volume"
+        android:layout_toRightOf="@id/broken_sound_warning_id"
+        android:layout_toEndOf="@id/broken_sound_warning_id"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        style="@style/SoundSpinner"/>
+
+    <TextView
+        android:id="@+id/rhythm_beat_type_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/beat_type_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

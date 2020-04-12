@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE themes PUBLIC "-//www.matthiasmann.de//TWL-Theme//EN" "http://hg.l33tlabs.org/twl/raw-file/tip/src/de/matthiasmann/twl/theme/theme.dtd">
+<themes>
+    <!-- top level file, defines fonts and includes everything else the specific theme file -->
+    
+    <fontDef name="normal" filename="openDyslexic_14.fnt" color="black">
+        <fontParam if="error" color="red"/>
+        <fontParam if="warning" color="#F8A30E"/>
+        <fontParam if="disabled" color="gray"/>
+        <fontParam if="textSelection" color="#0910E8"/>
+        <fontParam if="reverseVideo" color="#FFFFFF"/>
+    </fontDef>
+ 
+    <fontDef name="largeTitles" filename="openDyslexic_bld_16.fnt" color="white"/>
+    <fontDef name="rhythmSubBeatsTipsFont" filename="openDyslexic_16.fnt" color="#80FFFFFF"/>
+    
+    <fontDef name="combobox" filename="openDyslexic_14.fnt" color="black">
+        <fontParam if="error" color="#FF0000"/>
+    </fontDef>
+
+    <fontDef name="listbox-display" filename="openDyslexic_14.fnt" color="black">
+        <fontParam if="selected" color="white"/>
+    </fontDef>
+    
+    <fontDef name="frameTitleFont" filename="openDyslexic_16.fnt" color="white">
+        <fontParam unless="keyboardFocus | hasOpenPopups" color="#d4d0c8"/>
+    </fontDef>
+    
+    <fontDef name="popupmenu-button" filename="openDyslexic_14.fnt" color="black">
+        <fontParam if="hover | armed" color="white"/>
+    </fontDef>
+    
+    <fontDef name="beatNumbersNormalFont" filename="openDyslexic_bld_16.fnt" color="#000000">
+        <fontParam if="reverseVideo" color="#FFFFFF"/>
+    </fontDef>
+    
+    <fontDef name="beatNumbersSmallFont" filename="openDyslexic_13.fnt" color="#000000">
+        <fontParam if="reverseVideo" color="#FFFFFF"/>
+    </fontDef>
+    <fontDef name="moduleBarFont" filename="openDyslexic_16.fnt" color="white">
+        <fontParam if="disabled" color="#8D8D8D"/>
+    </fontDef>    
+    
+    <include filename="simpleTheme.xml"/>
+</themes>

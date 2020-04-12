@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+      in a normal app this would probably be a locally stored setting 
+	but here we're supporting multiple users who may also have updated their
+	settings from another device. rather than get into updating the server
+	from the account manager, we'll enforce in-app preference setting only
+	(see preferences.xml)
+    -->
+
+</PreferenceScreen>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cards_backgrd"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:animateLayoutChanges="true"> <!-- 48dp is for the nav bar, as this goes under it, if need more add to 48dp -->
+
+    <include
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        layout="@layout/view_gift_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/card_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.40"
+        android:animateLayoutChanges="true" >
+
+        <ToggleButton
+            android:id="@+id/heart_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="48dp"
+            android:background="@drawable/heart_ripple"
+            android:stateListAnimator="@anim/button_elevation"
+            android:textOff=""
+            android:textOn="" /> <!-- seems elevation just isn't doing anything on my emulator :( -->
+
+        <TextView
+            android:id="@+id/touched_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/heart_btn"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="32dp"
+            android:paddingTop="8dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/touched_by"
+            android:background="@color/primary_dark_transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+
+        <ToggleButton
+            android:id="@+id/obscene"
+            style="@style/FlatButtons"
+            android:layout_width="160dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textOff="@string/gift_flag_obscene_off"
+            android:textOn="@string/gift_flag_obscene_on" />
+
+        <ToggleButton
+            android:id="@+id/inappropriate"
+            style="@style/FlatButtons"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/obscene"
+            android:textOff="@string/gift_flag_inapprop_off"
+            android:textOn="@string/gift_flag_inapprop_on" />
+
+        <ToggleButton
+            android:id="@+id/info_btn"
+            style="@style/FlatButtons"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/gift_info_btn"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textOff="@string/gift_info_btn"
+            android:textOn="@string/gift_info_btn" />
+
+        <TextView
+            android:id="@+id/flagged_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/obscene"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="12dp"
+            android:paddingEnd="64dp"
+            android:paddingStart="8dp"
+            android:paddingTop="24dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/flagged_by"
+            android:background="@color/primary_dark_transparent"
+            android:paddingBottom="24dp"
+            android:paddingTop="8dp" />
+
+        <ImageView
+            android:id="@+id/ic_monkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="@string/flag_image"
+            android:src="@drawable/monkey"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/line2"
+            android:layout_below="@id/line1"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" >
+
+            <TextView
+                android:id="@+id/additional_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/info_btn"
+            android:layout_alignStart="@id/info_btn"
+            android:background="@color/cards_backgrd"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/fabbutton"
+        style="@style/FabButtons"
+        android:background="@drawable/fab_add_gift_ripple"
+        android:contentDescription="@string/add_gift_fab"
+        android:src="@drawable/fab_add"
+        android:visibility="gone" />
+
+</LinearLayout>

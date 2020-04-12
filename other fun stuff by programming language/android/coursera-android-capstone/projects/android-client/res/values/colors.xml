@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#5c6bc0</color>
+    <color name="primary_dark">#3949ab</color>
+    <color name="primary_dark_transparent">#553949ab</color>
+    <color name="accent">#f8bbd0</color>
+    
+    <color name="cards_backgrd">#fff8e1</color>
+    <color name="thumb_image_border">@color/primary</color>
+    <color name="fab_add_gift">#FF00BB</color>
+    <color name="fab_signup">#ed881f</color>
+    
+</resources>

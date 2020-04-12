@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- port above 960x720 (width match_parent) -->
+    <dimen name="add_gift_image_height">384dp</dimen>
+    
+</resources>

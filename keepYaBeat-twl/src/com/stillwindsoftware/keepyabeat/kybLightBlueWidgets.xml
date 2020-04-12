@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE themes PUBLIC "-//www.matthiasmann.de//TWL-Theme//EN" "http://hg.l33tlabs.org/twl/raw-file/tip/src/de/matthiasmann/twl/theme/theme.dtd">
+<themes>
+    <images file="kybLightBlueWidgets.png">
+        <area name="insidePanelColourSpot" xywh="12,36,1,1"/>
+        <area name="frameTitleColourSpot" xywh="11,21,1,1"/>
+        <area name="enterableFieldColourSpot" xywh="102,15,1,1"/>
+        <area name="widgetOutlineColourSpot" xywh="123,87,1,1"/>
+        <area name="widgetDisabledOutlineColourSpot" xywh="123,103,1,1"/>
+        <area name="widgetDisabledColourSpot" xywh="35,124,1,1"/>
+        <area name="whiteSpot" xywh="126,119,1,1"/>
+        <alias name="blackSpot" ref="whiteSpot" tint="#000000"/>
+        <area name="transparentSpot" xywh="96,1,1,1"/>
+        <area name="frameTitleColourLine" xywh="12,26,1,2"/>
+        
+        <area name="frame.resizeable-title" xywh="0,0,49,58" splitx="L22,R25" splity="T37,B19" border="32,5,8,8"/>
+        <area name="frameNoTitleBackground" xywh="54,2,33,44" splitx="L16,R15" splity="T18,B16" border="20,11,13,13"/>
+        <area name="dottedLine" xywh="58,50,8,1" border="20,11,13,13" tiled="true"/>
+        
+        <alias name="insidePanelNoLines" ref="insidePanelColourSpot" border="5,2,10,4"/>
+        <grid name="insidePanelUnderlined" weightsX="1" weightsY="1,0" border="5,2,10,4">
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="frameTitleColourLine"/>
+        </grid>    
+        
+        <grid name="insidePanelBoxed" weightsX="0,1,0" weightsY="0,1,0" border="5,2,10,4">
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+        </grid>
+        <grid name="insideWhiteBoxed" weightsX="0,1,0" weightsY="0,1,0" border="5,2,10,4">
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="whiteSpot"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+            <alias ref="frameTitleColourLine"/>
+        </grid>
+        <area name="standalonePanelBackground" xywh="115,24,28,38" splitx="L15,R16" splity="T15,B13" border="8,8,10,10"/>
+        <area name="playControls.background" xywh="152,2,43,50" splitx="L21,R21" border="8,20,8,20"/>
+
+        <area name="enterableField" xywh="96,10,14,13" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <area name="enterableFieldDisabled" xywh="96,27,14,13" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <area name="outlinedDarkfield" xywh="96,44,14,13" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <alias name="blackField" ref="outlinedDarkfield" tint="#000000"/>
+        <area name="scrollbarBackground" xywh="67,114,14,14" splitx="L6,R7" splity="T6,B7" border="2,2,2,2"/>
+        <area name="scrollbarThumbImg" xywh="83,114,14,14" splitx="L6,R7" splity="T6,B7" border="2,2,2,2"/>
+        <area name="outlinedPanelfield" xywh="102,114,14,13" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <area name="noOutlineDarkfield" xywh="121,66,12,12" splitx="L5,R5" splity="T5,B5" border="0"/>
+        <area name="androidHightlightField" xywh="137,66,12,12" splitx="L5,R5" splity="T5,B5" border="0"/>
+        <area name="noOutlinePanelField" xywh="139,81,13,13" splitx="L6,R6" splity="T6,B6" border="0"/>
+        <area name="widgetOutliningWhite" xywh="120,114,14,13" splitx="L6,R6" splity="T6,B6"/>
+        <area name="whitePanelWidgetNoFillBack" xywh="139,114,13,13" splitx="L6,R6" splity="T6,B6" border="4"/>
+        <area name="whitePanelWidgetBack" xywh="155,114,13,13" splitx="L6,R6" splity="T6,B6" border="4"/>
+        <area name="whitePanelWidgetArmedBackground" xywh="139,98,13,13" splitx="L6,R6" splity="T6,B6" border="4"/>      
+        <area name="closeSlidePanel" xywh="119,3,16,15"/>
+        <area name="radioMark" xywh="30,61,22,22" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <area name="radioMarkDisabled" xywh="2,61,22,22" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <area name="radioBackgroundDisabled" xywh="2,87,22,22" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <area name="radioBackground" xywh="30,87,22,22" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <area name="checkMarkDisabled" xywh="58,60,24,24" border="2,2,2,2" center="true"/>
+        <area name="checkMark" xywh="85,60,25,24" border="2,2,2,2" center="true"/>
+        <area name="checkboxBackgroundDisabled" xywh="58,86,24,24" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+        <area name="checkboxBackground" xywh="85,86,25,24" splitx="L6,R6" splity="T6,B6" border="2,2,2,2"/>
+
+        <area name="downButtonIcon" xywh="4,117,8,7" border="2,2,2,2" center="true"/>
+        <area name="upButtonIcon" xywh="3,117,8,-7" border="2,2,2,2" center="true"/>
+        <!--area name="rightButtonIcon" xywh="3,117,8,7" border="2,2,2,2" center="true" rot="270"/>
+        <area name="leftButtonIcon" xywh="3,117,8,7" border="2,2,2,2" center="true" rot="90"/-->
+        <area name="sliderThumbIcon" xywh="20,118,9,17" border="2,2,2,2" splity="T7,B7"/>
+        <area name="sliderThumbDisabledIcon" xywh="32,118,9,17" border="2,2,2,2" center="true" splity="T7,B7"/>
+
+        <select name="whitePanelButtonBackground">
+            <alias ref="whitePanelWidgetBack" if="disabled" tint="#40FFFFFF"/>
+            <alias ref="whitePanelWidgetArmedBackground" if="pressed | armed" tint="#40FFFFFF"/>
+            <composed><!-- because tinting it down but don't want to tint the background colour only the outline -->
+                <alias ref="noOutlinePanelField" tint="#40FFFFFF"/>
+                <alias ref="whitePanelWidgetNoFillBack" if="hover | selected | defaulted"/>
+                <alias ref="whitePanelWidgetNoFillBack" tint="#80FFFFFF"/>                
+            </composed>
+        </select>
+        <select name="whitePanelToggleButtonBackground">
+            <alias ref="whitePanelWidgetArmedBackground" if="selected"/>
+            <alias ref="whitePanelButtonBackground"/>
+        </select>
+        
+        
+        <select name="sliderThumbBackground">
+            <alias ref="sliderThumbDisabledIcon" if="disabled"/>
+            <alias ref="sliderThumbIcon"/>
+        </select>
+         
+        <select name="sliderOutline">
+            <alias ref="widgetDisabledOutlineColourSpot" if="disabled"/>
+            <alias ref="widgetOutlineColourSpot"/>
+        </select>
+        
+        <grid name="sliderLeftBackground" weightsX="0,1" weightsY="2,0,1,0,2">
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="insidePanelColourSpot"/>
+
+            <alias ref="sliderOutline"/>
+            <alias ref="sliderOutline"/>
+
+            <alias ref="sliderOutline"/>
+            <select>
+                <alias ref="widgetDisabledColourSpot" if="disabled"/>
+                <alias ref="enterableFieldColourSpot"/>
+            </select>
+
+            <alias ref="sliderOutline"/>
+            <alias ref="sliderOutline"/>
+
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="insidePanelColourSpot"/>
+        </grid>
+        
+        <grid name="sliderRightBackground" weightsX="0,1,0" weightsY="2,0,1,0,2">
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="insidePanelColourSpot"/>
+
+            <alias ref="sliderOutline"/>
+            <alias ref="sliderOutline"/>
+            <alias ref="sliderOutline"/>
+
+            <alias ref="sliderOutline"/>
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="sliderOutline"/>
+
+            <alias ref="sliderOutline"/>
+            <alias ref="sliderOutline"/>
+            <alias ref="sliderOutline"/>
+
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="insidePanelColourSpot"/>
+            <alias ref="insidePanelColourSpot"/>
+        </grid>
+        
+        <area name="helpBoxArrowTopBackgrd" xywh="2,144,50,35" border="24,10,10,10" splity="T24,B10" splitx="L39,R10"/>
+        <area name="helpBoxArrowLeftBackgrd" xywh="2,144,50,35" border="10,24,10,10" splity="T24,B10" splitx="L39,R10" rot="270"/>
+        <area name="helpBoxArrowBottomBackgrd" xywh="2,144,50,-35" border="10,10,24,10" splity="T10,B24" splitx="L39,R10"/>
+        <area name="helpBoxArrowRightBackgrd" xywh="2,144,50,35" border="10,10,10,24" splity="T24,B10" splitx="L39,R10" rot="90"/>
+        <area name="helpBoxArrowTopRightBackgrd" xywh="58,134,62,57" border="16,10,10,51" splity="T46,B10" splitx="L10,R51"/>
+        <area name="helpBoxArrowBottomRightBackgrd" xywh="58,134,62,-57" border="10,10,16,51" splity="T10,B46" splitx="L10,R51"/>
+        <area name="helpBoxArrowTopLeftBackgrd" xywh="58,134,-62,57" border="16,51,10,10" splity="T46,B10" splitx="L51,R10"/>
+        <area name="helpBoxArrowBottomLeftBackgrd" xywh="58,134,-62,-57" border="10,51,16,10" splity="T10,B46" splitx="L51,R10"/>        
+        
+        <!-- widget pieces -->
+
+        <alias name="tooltipBackground" ref="enterableField"/>
+        <!-- background for the whole combo including button -->
+        <alias name="comboboxBackground" ref="enterableField"/>
+        <!-- background for the background of the popup in the combobox -->
+        <alias name="comboboxPopupBackground" ref="enterableField"/>
+        <!-- background for highlighting current value in the popup list -->
+        <alias name="rowHighlightSelection" ref="androidHightlightField"/>
+        <alias name="listbox.display.background" ref="rowHighlightSelection" if="selected"/>
+        <alias name="popupmenu.button.background" ref="rowHighlightSelection" if="hover | armed"/>
+        <alias name="table.row.background" ref="rowHighlightSelection" if="rowSelected"/>
+        <alias name="table.row.overlay" ref="none"/>
+        <alias name="table.row.dropmarker" ref="frameTitleColourSpot"/>
+        <alias name="propertysheet.sublist.background" ref="insidePanelBoxed"/>
+        
+        <alias name="valueadjuster.display.background" ref="whitePanelButtonBackground" inset="0,0,4,0"/>
+        <alias name="valueadjuster.incdec.background" ref="whitePanelButtonBackground" border="1,8,4,7" inset="2,0,5,0"/>
+
+        <alias name="scrollbar.thumb.background" ref="scrollbarThumbImg"/>
+        <alias name="scrollbar.background" ref="scrollbarBackground"/>
+        
+        <composed name="columnHeader.background" inset="-3,0">
+            <alias ref="whitePanelButtonBackground"/>
+            <grid weightsX="1,0" weightsY="1">
+                <alias ref="none"/>
+                <select center="true" inset="0,0,0,5">
+                    <alias ref="upButtonIcon" if="sortAscending"/>
+                    <alias ref="downButtonIcon" if="sortDescending"/>
+                </select>
+            </grid>
+        </composed>
+        
+        <select name="editfield.background">
+            <alias ref="enterableFieldDisabled" if="readonly"/>
+            <alias ref="enterableField"/>
+        </select>
+        <area name="-editfield.cursor" xywh="24,10,1,1"/>
+        <animation name="editfield.cursor" timeSource="keyboardFocus">
+            <frame ref="-editfield.cursor" duration="500"/>
+            <frame ref="none" duration="500"/>
+        </animation>
+        <alias name="editfield.selection" ref="frameTitleColourSpot"/>
+
+        <animation name="radiobutton.show" timeSource="selected" count="1" frozenTime="200">
+            <frame duration="50" ref="radioMark" zoom="0.2"/>
+            <frame duration="150" ref="radioMark" zoom="1.4"/>
+            <frame duration="0" ref="radioMark"/>
+        </animation>
+        <animation name="radiobutton.hide" timeSource="selected" count="1" frozenTime="200">
+            <frame ref="radioMark" duration="200" zoomCenterY="0.75"/>
+            <frame ref="radioMark" duration="0" zoom="0" zoomCenterY="0.75"/>
+        </animation>
+        <grid name="radiobutton.background" weightsX="0,1" weightsY="1" border="1,25,1,1">
+            <select center="true">
+                <composed if="selected + disabled">
+                    <alias ref="radioBackgroundDisabled"/>
+                    <alias ref="radioMarkDisabled" center="true"/>
+                </composed>
+                <alias ref="radioBackgroundDisabled" if="disabled"/>
+                <composed if="selected + armed">
+                    <alias ref="radioBackground"/>
+                    <alias ref="radiobutton.show" center="true"/>
+                </composed>
+                <alias ref="radiobutton.show" if="armed"/>
+                <composed if="selected">
+                    <alias ref="radioBackground"/>
+                    <alias ref="radiobutton.show" center="true"/>
+                </composed>
+                <alias ref="radioBackground"/>
+            </select>
+            <alias ref="none"/>
+        </grid>
+
+        <select name="checkbox.background">
+            <alias ref="checkboxBackgroundDisabled" if="disabled"/>
+            <alias ref="checkboxBackground"/>
+        </select>
+        <animation name="checkbox.show" timeSource="selected" count="1" frozenTime="200">
+            <frame duration="50" ref="checkMark" zoom="0.2"/>
+            <frame duration="150" ref="checkMark" zoom="1.4"/>
+            <frame duration="0" ref="checkMark"/>
+        </animation>
+        <animation name="checkbox.hide" timeSource="selected" count="1" frozenTime="200">
+            <frame ref="checkMark" duration="200" zoomCenterY="0.75"/>
+            <frame ref="checkMark" duration="0" zoom="0" zoomCenterY="0.75"/>
+        </animation>
+        <select name="checkbox.overlay">
+            <alias ref="checkMarkDisabled" if="selected + disabled"/>
+            <alias ref="checkbox.show" if="selected"/>
+            <alias ref="checkbox.hide"/>
+        </select>
+
+        <composed name="combobox.button.background" inset="2,0,2,2">
+            <grid weightsX="0,1" weightsY="1">
+                <alias ref="frameTitleColourLine"/>
+                <alias ref="transparentSpot"/>
+            </grid>
+            <alias ref="downButtonIcon" center="true"/>
+        </composed>
+        
+        <alias name="colorselector.cursor" ref="dottedLine"/>
+        
+        <select name="colourSelectorButton.background">
+            <alias ref="enterableFieldDisabled" if="disabled" tint="#20000000"/>
+            <alias ref="widgetOutliningWhite"/>
+        </select>
+        
+        <select name="treepathdisplay.node.background">
+            <alias ref="outlinedPanelfield" if="hover"/>
+            <alias ref="enterableFieldDisabled"/>
+            </select>
+        
+    </images>
+    
+    <!-- include matthias' png for the file selector button images -->
+    <images file="simple-modified.png" format="COLOR">
+        <!-- iconH icon based on famfamfam Icon "arrow_turn_right.png" -->
+        <area name="-iconH" xywh="68,10,15,15"/>
+        <!-- iconI icon based on famfamfam Icon "folder.png" -->
+        <area name="-iconI" xywh="53,10,14,11"/>
+        <!-- iconJ icon based on famfamfam Icon "key.png" -->
+        <area name="-iconJ" xywh="24,41,16,16"/>
+        <!-- iconK icon based on famfamfam Icon "arrow_refresh.png" -->
+        <area name="-iconK" xywh="41,41,16,16"/>
+        <!-- iconL icon based on famfamfam Icon "book_open.png" -->
+        <area name="-iconL" xywh="36,10,16,14"/>
+        <area name="-iconR" xywh="58,41,13,16"/>
+        <!-- the + -->
+        <select name="treetable.treebutton.background" inset="2,1,0,4">
+            <area unless="selected" xywh="0,41,9,9"/>
+            <area xywh="10,41,9,9"/>
+        </select>        
+
+        <composed name="fileselector.buttonOneLevelUp.background">
+            <alias ref="whitePanelButtonBackground"/>
+            <alias ref="-iconH" center="true"/>
+        </composed>
+        <composed name="fileselector.buttonHome.background">
+            <alias ref="whitePanelButtonBackground"/>
+            <alias ref="-iconR" center="true"/>
+        </composed>
+        <composed name="fileselector.buttonShowFolders.background">
+            <alias ref="whitePanelToggleButtonBackground"/>
+            <alias ref="-iconI" center="true"/>
+        </composed>
+        <composed name="fileselector.buttonShowHidden.background">
+            <alias ref="whitePanelToggleButtonBackground"/>
+            <alias ref="-iconJ" center="true"/>
+        </composed>
+        <composed name="fileselector.buttonRefresh.background">
+            <alias ref="whitePanelToggleButtonBackground"/>
+            <alias ref="-iconK" center="true"/>
+        </composed>
+        <composed name="fileselector.buttonMRU.background">
+            <alias ref="whitePanelButtonBackground"/>
+            <alias ref="-iconL" center="true"/>
+        </composed>         
+    </images>
+    
+    <include filename="cursors.xml"/>
+    
+    <inputMapDef name="-defaultInputMap">
+        <action name="selectAll">ctrl A</action>
+        <action name="selectAll">cmd A</action>
+        <action name="cut">ctrl X</action>
+        <action name="cut">cmd X</action>
+        <action name="copy">ctrl C</action>
+        <action name="copy">cmd C</action>
+        <action name="paste">ctrl V</action>
+        <action name="paste">cmd V</action>
+    </inputMapDef>
+
+    <theme name="-defaults">
+        <param name="background"><image>none</image></param>
+        <param name="overlay"><image>none</image></param>
+        <param name="font"><font>normal</font></param>
+        <param name="textAlignment"><enum type="alignment">left</enum></param>
+        <param name="minWidth"><int>0</int></param>
+        <param name="minHeight"><int>0</int></param>
+        <param name="maxWidth"><int>0</int></param>
+        <param name="maxHeight"><int>0</int></param>
+        <param name="inputMap"><inputMap>-defaultInputMap</inputMap></param>
+        <!--
+            a wildcard import in the base theme allows to use
+            any top level theme which has allowWildcard="true"
+            as child theme in any other theme (unless overriden).
+        -->
+        <theme name="" ref="*"/>
+    </theme>
+
+    <theme name="label" ref="-defaults" allowWildcard="true">
+    </theme>
+
+    <theme name="dialoglayout" ref="-defaults" allowWildcard="true">
+        <param name="defaultGap"><dimension>5,5</dimension></param>
+        <param name="smallGap"><dimension>8,8</dimension></param>
+        <param name="mediumGap"><dimension>10,10</dimension></param>
+        <param name="largeGap"><dimension>15,15</dimension></param>
+        <param name="namedGaps"><map/></param>
+    </theme>
+
+    <theme name="button" ref="-defaults" allowWildcard="true">
+        <param name=""><image>button.*</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="textAlignment"><enum type="alignment">center</enum></param>
+    </theme>
+
+    <theme name="combobox" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>enterableField</image></param>
+        <theme name="display" ref="label">
+            <param name=""><image>combobox.display.*</image></param>
+            <param name="border"><border>3</border></param>
+            <param name="minWidth"><int>50</int></param>
+            <param name="textAlignment"><enum type="alignment">left</enum></param>
+            <param name="font"><font>combobox</font></param>
+        </theme>
+        <theme name="button" ref="-defaults">
+            <param name=""><image>combobox.button.*</image></param>
+            <param name="minWidth"><int>18</int></param>
+        </theme>
+    </theme>
+
+    <theme name="hscrollbar" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>scrollbar.background</image></param>
+        <theme name="leftbutton" ref="-defaults">
+            <param name="background"><image>none</image></param>
+            <param name="maxWidth"><int>0</int></param>
+            <param name="maxHeight"><int>0</int></param>
+        </theme>
+        <theme name="rightbutton" ref="-defaults">
+            <param name="background"><image>none</image></param>
+            <param name="maxWidth"><int>0</int></param>
+            <param name="maxHeight"><int>0</int></param>
+        </theme>
+        <theme name="thumb" ref="-defaults">
+            <param name=""><image>scrollbar.thumb.*</image></param>
+        </theme>
+        <param name="scaleThumb"><bool>true</bool></param>
+        <param name="minWidth"><int>48</int></param>
+        <param name="minHeight"><int>16</int></param>
+    </theme>
+
+    <theme name="vscrollbar" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>scrollbar.background</image></param>
+        <theme name="upbutton" ref="-defaults">
+            <param name="background"><image>none</image></param>
+            <param name="maxWidth"><int>0</int></param>
+            <param name="maxHeight"><int>0</int></param>
+        </theme>
+        <theme name="downbutton" ref="-defaults">
+            <param name="background"><image>none</image></param>
+            <param name="maxWidth"><int>0</int></param>
+            <param name="maxHeight"><int>0</int></param>
+        </theme>
+        <theme name="thumb" ref="-defaults">
+            <param name=""><image>scrollbar.thumb.*</image></param>
+        </theme>
+        <param name="scaleThumb"><bool>true</bool></param>
+        <param name="minWidth"><int>16</int></param>
+        <param name="minHeight"><int>48</int></param>
+    </theme>
+
+    <theme name="listbox" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>none</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="cellHeight"><int>font.lineHeight + 4</int></param>
+        <param name="cellWidth"><constant>SINGLE_COLUMN</constant></param>
+        <param name="rowMajor"><bool>true</bool></param>
+        <param name="fixedCellWidth"><bool>false</bool></param>
+        <param name="fixedCellHeight"><bool>false</bool></param>
+        <param name="maxHeight"><int>8000</int></param>
+        <param name="maxWidth"><int>8000</int></param>
+        <param name="minDisplayedRows"><int>1</int></param>
+        <theme name="vscrollbar" ref="vscrollbar"/>
+        <theme name="display" ref="label">
+            <param name=""><image>listbox.display.*</image></param>
+            <param name="font"><font>listbox-display</font></param>
+            <param name="border"><border>2</border></param>
+        </theme>
+    </theme>
+
+    <theme name="comboboxPopup" ref="-defaults">
+        <param name="background"><image>comboboxPopupBackground</image></param>
+        <param name="border"><border>2</border></param>
+        <theme name="listbox" ref="listbox">
+            <param name="background"><image>none</image></param>
+            <param name="border"><border>0</border></param>
+            <param name="minDisplayedRows"><int>5</int></param>
+        </theme>
+        <param name="maxHeight"><int>150</int></param>
+    </theme>
+
+    <theme name="togglebutton" ref="button" allowWildcard="true">
+        <param name=""><image>togglebutton.*</image></param>
+        <param name="border"><border>background.border</border></param>
+    </theme>
+
+    <theme name="radiobutton" ref="button" allowWildcard="true">
+        <param name=""><image>radiobutton.*</image></param>
+        <param name="border"><border>background.border</border></param>
+    </theme>
+
+    <theme name="checkbox" ref="-defaults" allowWildcard="true">
+        <param name=""><image>checkbox.*</image></param>
+        <param name="minWidth"><int>24</int></param>
+        <param name="minHeight"><int>24</int></param>
+    </theme>
+
+    <theme name="editfield" ref="label" allowWildcard="true">
+        <param name=""><image>editfield.*</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="passwordChar"><int>0x25CF</int></param>
+        <param name="maxWidth"><int>32767</int></param>
+        <param name="columns"><int>5</int></param>
+        <theme name="renderer" ref="label"/>
+        <param name="mouseCursor"><cursor>cursor.text</cursor></param>
+        <param name="autocompletion-height"><int>150</int></param>
+    </theme>
+    <theme name="editfield-errorinfowindow" ref="-defaults">
+        <param name="background"><image>tooltipBackground</image></param>
+        <param name="border"><border>background.border</border></param>
+        <theme name="label" ref="label"/>
+    </theme>
+     
+    <!-- the fallback theme is used when the requested theme can't be found -->
+    <theme name="*" ref="-defaults"/>
+    
+    <theme name="resizableframe-title" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>frame.resizeable-title</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="titleAreaTop"><int>4</int></param>
+        <param name="titleAreaLeft"><int>6</int></param>
+        <param name="titleAreaRight"><int>-6</int></param>
+        <param name="titleAreaBottom"><int>35</int></param>
+        <param name="hasCloseButton"><bool>false</bool></param>
+        <param name="closeButtonX"><int>-22</int></param>
+        <param name="closeButtonY"><int>6</int></param>
+        <param name="hasResizeHandle"><bool>false</bool></param>
+        <param name="resizeHandleX"><int>-18</int></param>
+        <param name="resizeHandleY"><int>-18</int></param>
+        <param name="fadeColorInactive"><color>#79acf8</color></param>
+        <param name="fadeDurationActivate"><int>200</int></param>
+        <param name="fadeDurationDeactivate"><int>200</int></param>
+        <param name="fadeDurationShow"><int>200</int></param>
+        <param name="fadeDurationHide"><int>200</int></param>
+        <theme name="title" ref="label">
+            <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+            <param name="font"><font>frameTitleFont</font></param>
+            <param name="border"><border>0,5,0,8</border></param>
+        </theme>
+    </theme>
+    <theme name="resizableframe" ref="resizableframe-title" allowWildcard="true">
+        <param name="background"><image>frameNoTitleBackground</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="titleAreaBottom"><int>4</int></param>
+    </theme>
+    
+    <theme name="valueadjuster" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>none</image></param>
+        <theme name="decButton" ref="button">
+            <param name="font"><font>largeTitles</font></param>
+            <param name="text"><string>-</string></param>
+            <param name=""><image>valueadjuster.incdec.*</image></param>
+            <param name="border"><border>background.border</border></param>
+            <param name="textAlignment"><enum type="alignment">center</enum></param>
+            <param name="minWidth"><int>18</int></param>
+            <param name="maxHeight"><int>18</int></param>
+            </theme>
+        <theme name="incButton" ref="button">
+            <param name="font"><font>largeTitles</font></param>
+            <param name="text"><string>+</string></param>
+            <param name=""><image>valueadjuster.incdec.*</image></param>
+            <param name="border"><border>background.border</border></param>
+            <param name="textAlignment"><enum type="alignment">center</enum></param>
+            <param name="minWidth"><int>18</int></param>
+            <param name="maxHeight"><int>18</int></param>
+            </theme>
+        <theme name="valueDisplay" ref="button">
+            <param name=""><image>valueadjuster.display.*</image></param>
+            <param name="border"><border>background.border</border></param>
+            <param name="textAlignment"><enum type="alignment">center</enum></param>
+            <param name="maxHeight"><int>18</int></param>
+        </theme>
+        <theme name="valueEdit" ref="editfield"/>
+        <param name="width"><int>100</int></param>
+        <param name="useMouseWheel"><bool>true</bool></param>
+        <param name="displayPrefix"><string/></param>
+    </theme>
+
+    <theme name="colorselector" ref="dialoglayout" allowWildcard="true">
+        <theme name="label" ref="label"/>
+        <theme name="colorarea1d" ref="-defaults">
+            <param name="background"><image>insideWhiteBoxed</image></param>
+            <param name="border"><border>2</border></param>
+            <param name="minWidth"><int>30</int></param>
+            <param name="minHeight"><int>128</int></param>
+            <param name=""><image>colorselector.*</image></param>
+        </theme>
+        <theme name="colorarea2d" ref="-defaults">
+            <param name="background"><image>insideWhiteBoxed</image></param>
+            <param name="border"><border>2</border></param>
+            <param name="minWidth"><int>128</int></param>
+            <param name="minHeight"><int>128</int></param>
+            <param name=""><image>colorselector.*</image></param>
+        </theme>
+        <theme name="valueadjuster" ref="valueadjuster">
+            <param name="maxWidth"><int>32767</int></param>
+        </theme>
+        <theme name="previewLabel" ref="label"/>
+        <theme name="preview" ref="-defaults">
+            <param name="background"><image>insideWhiteBoxed</image></param>
+            <param name="border"><border>2</border></param>
+            <param name="minWidth"><int>64</int></param>
+            <param name="minHeight"><int>64</int></param>
+            <theme name="colorarea" ref="-defaults">
+                <param name="background"><image>whiteSpot</image></param>
+            </theme>
+        </theme>
+        <theme name="hexColorEditField" ref="editfield">
+            <param name="tooltip"><string>Current color in ARGB hex format</string></param>
+        </theme>
+    </theme>
+
+    <theme name="scrollpane" ref="-defaults" allowWildcard="true">
+        <theme name="hscrollbar" ref="hscrollbar"/>
+        <theme name="vscrollbar" ref="vscrollbar"/>
+        <param name="minWidth"><int>100</int></param>
+        <param name="minHeight"><int>0</int></param>
+        <param name="maxWidth"><int>32767</int></param>
+        <param name="maxHeight"><int>32767</int></param>
+        <param name="hasDragButton"><bool>false</bool></param>
+        <param name="autoScrollArea"><int>5</int></param>
+        <param name="autoScrollSpeed"><int>10</int></param>
+        <param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
+    </theme>
+    
+    <theme name="-treecellrenderer" ref="-defaults">
+        <param name="treeIndent"><int>15</int></param>
+        <param name="treeButtonSize"><dimension>14,11</dimension></param>
+    </theme>
+    <theme name="-stringcellrenderer" ref="-defaults">
+        <param name="font"><font>listbox-display</font></param>
+        <param name="border"><border>0,3,0,0</border></param>
+    </theme>
+    <theme name="table" ref="-defaults" allowWildcard="true">
+        <param name="rowHeight"><int>font.lineHeight + 6</int></param>
+        <theme name="stringcellrenderer" ref="-stringcellrenderer"/>
+        <theme name="TreeLeafCellRenderer" ref="-treecellrenderer"/>
+        <theme name="TreeNodeCellRenderer" ref="-treecellrenderer"/>
+        <theme name="PropertyEditorCellRender" ref="-treecellrenderer"/>
+        <theme name="PropertyListCellRenderer" ref="-treecellrenderer">
+            <param name=""><image>propertysheet.sublist.*</image></param>
+            <theme name="label" ref="label"/>
+        </theme>
+        <theme name="spanrenderer" ref="-defaults"/>
+        <theme name="treeButton" ref="-defaults">
+            <param name=""><image>treetable.treebutton.*</image></param>
+        </theme>
+        <theme name="columnHeader" ref="button">
+            <param name=""><image>columnHeader.*</image></param>
+        </theme>
+        <param name="columnHeaderWidth"><int>256</int></param>
+        <param name="columnHeaderHeight"><int>24</int></param>
+        <param name="columnDividerDragableDistance"><int>3</int></param>
+        <param name="columnResizeCursor"><cursor>cursor.resizecolumn</cursor></param>
+        <param name="columnDivider"><image>none</image></param>
+        <param name="columnWidths"><map/></param>
+        <param name="ensureColumnHeaderMinWidth"><bool>true</bool></param>
+        <param name="row"><image>table.row.*</image></param>
+        <param name="inputMap"><inputMapDef ref="-defaultInputMap">
+            <action name="toggleSelectionOnLeadRow">ctrl SPACE</action>
+            <action name="selectNextRow">DOWN</action>
+            <action name="selectPreviousRow">UP</action>
+            <action name="selectNextPage">NEXT</action>
+            <action name="selectPreviousPage">PRIOR</action>
+            <action name="selectFirstRow">HOME</action>
+            <action name="selectLastRow">END</action>
+            <action name="extendSelectionToNextRow">shift DOWN</action>
+            <action name="extendSelectionToPreviousRow">shift UP</action>
+            <action name="extendSelectionToNextPage">shift NEXT</action>
+            <action name="extendSelectionToPreviousPage">shift PRIOR</action>
+            <action name="extendSelectionToFirstRow">shift HOME</action>
+            <action name="extendSelectionToLastRow">shift END</action>
+            <action name="moveLeadToNextRow">ctrl DOWN</action>
+            <action name="moveLeadToPreviousRow">ctrl UP</action>
+            <action name="moveLeadToNextPage">ctrl NEXT</action>
+            <action name="moveLeadToPreviousPage">ctrl PRIOR</action>
+            <action name="moveLeadToFirstRow">ctrl HOME</action>
+            <action name="moveLeadToLastRow">ctrl END</action>
+            <action name="expandLeadRow">ADD</action>
+            <action name="collapseLeadRow">SUBTRACT</action>
+        </inputMapDef></param>
+        <theme name="ComboBoxCellRenderer">
+            <param name="comboBoxHeight"><int>20</int></param>
+        </theme>
+        <theme name="EditFieldCellRenderer">
+            <param name="editFieldHeight"><int>20</int></param>
+        </theme>
+    </theme>
+    
+    <theme name="tablesearchwindow" ref="-defaults">
+        <param name="background"><image>standalonePanelBackground</image></param>
+        <param name="border"><border>10</border></param>
+        <theme name="dialoglayout" ref="dialoglayout">
+            <theme name="label" ref="label"/>
+            <theme name="editfield" ref="editfield">
+        		<param name="background"><image>enterableField</image></param>                
+                <param name="columns"><int>20</int></param>
+            </theme>
+        </theme>
+    </theme>
+    
+    <theme name="treepathdisplay" ref="-defaults" allowWildcard="true">
+        <theme name="pathbox" ref="-defaults">
+            <param name="spacing"><int>0</int></param>
+            <theme name="node" ref="label">
+                <param name=""><image>treepathdisplay.node.*</image></param>
+            </theme>
+            <theme name="separator" ref="label">
+                <param name="border"><border>2,0</border></param>
+            </theme>
+            <param name="minHeight"><int>node.font.lineHeight + 4</int></param>
+            <param name="alignment"><enum type="alignment">center</enum></param>
+            <!-- param name="mouseCursor"><cursor>cursor.text</cursor></param-->
+        </theme>
+        <theme name="patheditfield" ref="editfield"/>
+    </theme>
+    <theme name="treecombobox" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>comboboxBackground</image></param>
+        <param name="popupThemeName"><string>treecomboboxPopup</string></param>
+        <theme name="display" ref="treepathdisplay">
+            <param name=""><image>combobox.display.*</image></param>
+            <param name="minWidth"><int>50</int></param>
+            <theme name="pathbox" merge="true">
+                <param name="border"><border>3</border></param>
+                <theme name="node" merge="true">
+                    <param name="font"><font>combobox</font></param>
+                </theme>
+                <theme name="separator" merge="true">
+                    <param name="font"><font>combobox</font></param>
+                </theme>
+            </theme>
+        </theme>
+        <theme name="button" ref="-defaults">
+            <param name=""><image>combobox.button.*</image></param>
+            <param name="minWidth"><int>18</int></param>
+        </theme>
+    </theme>
+    <theme name="treecomboboxPopup" ref="-defaults">
+        <param name="background"><image>comboboxPopupBackground</image></param>
+        <param name="border"><border>2</border></param>
+        <theme name="scrollpane" ref="scrollpane">
+            <theme name="treetable" ref="table">
+                <param name="background"><image>none</image></param>
+                <param name="border"><border>0</border></param>
+                <param name="columnHeaderHeight"><int>0</int></param>
+            </theme>
+        </theme>
+        <param name="minHeight"><int>300</int></param>
+    </theme>
+    
+    <theme name="fileselectorButton" ref="button">
+        <param name="minWidth"><int>26</int></param>
+        <param name="minHeight"><int>26</int></param>
+    </theme>
+    <theme name="fileselector" ref="dialoglayout" allowWildcard="true">
+        <theme name="label" ref="label"/>
+        <theme name="currentFolder" ref="treecombobox">
+            <param name="maxWidth"><int>32767</int></param>
+        </theme>
+        <theme name="buttonUp" ref="fileselectorButton">
+            <param name=""><image>fileselector.buttonOneLevelUp.*</image></param>
+        </theme>
+        <theme name="buttonHome" ref="fileselectorButton">
+            <param name=""><image>fileselector.buttonHome.*</image></param>
+        </theme>
+        <theme name="buttonFoldersMRU" ref="fileselectorButton">
+            <param name=""><image>fileselector.buttonMRU.*</image></param>
+        </theme>
+        <theme name="buttonFilesMRU" ref="fileselectorButton">
+            <param name=""><image>fileselector.buttonMRU.*</image></param>
+        </theme>
+        <theme name="buttonShowFolders" ref="fileselectorButton">
+            <param name=""><image>fileselector.buttonShowFolders.*</image></param>
+        </theme>
+        <theme name="buttonShowHidden" ref="fileselectorButton">
+            <param name=""><image>fileselector.buttonShowHidden.*</image></param>
+        </theme>
+        <theme name="buttonRefresh" ref="fileselectorButton">
+            <param name=""><image>fileselector.buttonRefresh.*</image></param>
+        </theme>
+        <theme name="scrollpane" ref="scrollpane">
+            <param name="background"><image>comboboxPopupBackground</image></param>
+            <param name="border"><border>2</border></param>
+            <theme name="fileTable" ref="table">
+                <param name="columnWidths"><map>
+                    <param name="1"><int>70</int></param>
+                    <param name="2"><int>80</int></param>
+                    <param name="3"><int>140</int></param>
+                </map></param>
+            </theme>
+        </theme>
+        <theme name="fileFiltersBox" ref="combobox"/>
+        <param name="inputMap"><inputMapDef ref="-defaultInputMap">
+            <action name="goOneLevelUp">BACK</action>
+            <action name="acceptSelection">RETURN</action>
+        </inputMapDef></param>
+        <param name="namedGaps"><map>
+            <param name="buttonBarLeft"><gap/></param>
+            <param name="buttonBarSpacer"><gap>20</gap></param>
+            <param name="buttonBarRight"><gap>18</gap></param>
+        </map></param>
+    </theme>
+    <theme name="fileselector-folderMRUpopup" ref="-defaults">
+        <param name="background"><image>standalonePanelBackground</image></param>
+        <param name="border"><border>background.border</border></param>
+        <theme name="listbox" ref="listbox">
+            <param name="background"><image>comboboxPopupBackground</image></param>
+            <param name="border"><border>2</border></param>
+        </theme>
+    </theme>
+    <theme name="fileselector-filesMRUpopup" ref="-defaults">
+        <param name="background"><image>standalonePanelBackground</image></param>
+        <param name="border"><border>background.border</border></param>
+        <theme name="dialoglayout" ref="dialoglayout">
+            <theme name="listbox" ref="listbox">
+                <param name="background"><image>comboboxPopupBackground</image></param>
+                <param name="border"><border>2</border></param>
+            </theme>
+        </theme>
+    </theme>
+    <theme name="fileselector-popup" ref="-defaults">
+        <param name="background"><image>frameNoTitleBackground</image></param>
+        <param name="border"><border>background.border</border></param>
+        <theme name="fileselector" ref="fileselector">
+            <theme name="editfield" ref="editfield"/>
+        </theme>
+    </theme>
+
+    <theme name="editfieldautocompletionwindow" ref="-defaults">
+        <param name="background"><image>comboboxPopupBackground</image></param>
+        <theme name="listbox" ref="listbox"/>
+    </theme>
+    
+    <theme name="popupmenu-button" ref="-defaults">
+        <param name=""><image>popupmenu.button.*</image></param>
+        <param name="font"><font>popupmenu-button</font></param>
+        <param name="border"><border>5,2</border></param>
+    </theme>
+    <theme name="menumanager" ref="-defaults">
+        <theme name="menupopup" ref="dialoglayout">
+            <param name="background"><image>comboboxPopupBackground</image></param>
+            <param name="border"><border>background.border</border></param>
+            <theme name="button" ref="popupmenu-button"/>
+            <theme name="submenu" ref="popupmenu-button"/>
+            <theme name="spacer" ref="-defaults"/>
+            <param name="namedGaps"><map>
+                <param name="menuitem"><gap>0</gap></param>
+            </map></param>
+        </theme>
+    </theme>
+
+     <theme name="tooltipwindow" ref="-defaults">
+        <param name="background"><image>tooltipBackground</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="fadeInTime"><int>50</int></param>
+        <theme name="label" ref="label"/>
+    </theme>
+
+    <theme name="backlesstooltipwindow" ref="tooltipwindow">
+        <param name="background"><image>none</image></param>
+        <param name="border"><border>0</border></param>
+    </theme>
+
+</themes>

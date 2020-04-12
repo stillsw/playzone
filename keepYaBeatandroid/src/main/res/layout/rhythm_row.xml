@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rhythm_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/list_row_background"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/rhythm_name"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="@dimen/vertical_item_separation"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        />
+
+    <com.stillwindsoftware.keepyabeat.gui.BasicRhythmView
+        android:id="@+id/rhythm_img"
+        android:layout_width="@dimen/rhythms_list_rhythm_img_width"
+        android:layout_height="@dimen/rhythms_list_rhythm_img_height"
+        android:layout_below="@id/rhythm_name"
+        android:contentDescription="@string/play_rhythm_img"
+        android:layout_marginTop="@dimen/vertical_item_separation"/>
+
+    <ImageButton
+        android:id="@+id/more_btn"
+        style="@style/Widget.AppCompat.ActionButton.Overflow"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:scaleType="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <com.stillwindsoftware.keepyabeat.gui.wefika.flowlayout.FlowLayout
+        android:id="@+id/formatted_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rhythm_img"
+        android:gravity="start|top"
+        android:layout_marginTop="@dimen/vertical_item_separation"
+        android:layout_marginBottom="@dimen/vertical_item_separation"
+        />
+
+    <TextView
+        android:id="@+id/rhythm_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rhythm_img"
+        android:hint="@string/noTagsMessage"
+        android:layout_marginTop="@dimen/vertical_item_separation"
+        android:layout_marginBottom="@dimen/vertical_item_separation"
+        />
+
+    <include layout="@layout/rhythm_row_options_card"/>
+
+    <!-- hidden data for lookup -->
+
+    <TextView
+        android:id="@+id/encodedBeats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/external_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="1"
+        android:visibility="gone" />
+
+</RelativeLayout>

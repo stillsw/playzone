@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Perhaps it's L-preview, but why is this theme still showing light text on dark
+        backgrounds?
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+
+        
+        <!-- this is overridden in 480dp -->
+        <!-- item name="android:attr/textAppearanceMedium">@android:attr/textAppearanceSmall</item -->
+
+
+        <!--
+        Set the windowContentTransitions flag to enable Activity scene transitions >
+        
+        TRIED THIS FROM EXAMPLES, couldn't get it to work, so the transitionSet isn't used either
+        
+        
+        <item name="android:windowContentTransitions">true</item
+        -->
+
+
+        <!--
+        Set the transitions which are used for the entrance and exit of shared elements >
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/view_gift_transition</item>
+        <item name="android:windowSharedElementExitTransition">            
+            @transition/view_gift_transition</item
+        -->
+
+
+        <!-- specify shared element transitions -->
+        <!--
+        item name="android:windowSharedElementEnterTransition">    
+            @transition/move_image</item>
+        <item name="android:windowSharedElementExitTransition">    
+            @transition/move_image</item
+        -->
+    </style>
+
+    <style name="FlatButtonsVersioned" parent="@android:style/Widget.Material.Light.Button.Borderless" />
+    <style name="SmallButtonVersioned" parent="@android:style/Widget.Material.Light.Button.Small"/>
+    
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:kyb="http://schemas.android.com/apk/res-auto"  >
+
+    <!-- tests only enabled while needing to test specifics -->
+    <!--item
+        android:id="@+id/menu_access_tests"
+        android:title="TESTS"
+        kyb:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/menu_test_warn_message"
+                kyb:showAsAction="always"
+                android:title="Warn with bug report in UI thread"/>
+            <item
+                android:id="@+id/menu_test_warn_not_ui_message"
+                kyb:showAsAction="always"
+                android:title="Warn with bug report background thread"/>
+        </menu>
+    </item-->
+
+    <item
+        android:id="@+id/menu_undo"
+        kyb:showAsAction="always"
+        android:title="@string/NO_UNDO_DESC"
+        android:icon="@drawable/ic_undo_white_24dp"/>
+
+    <item
+        android:id="@+id/menu_rhythm_beat_types"
+        kyb:showAsAction="always"
+        android:title="@string/toggleRhythmBeatTypes"
+        android:icon="@drawable/ic_action_settings"/>
+
+    <item android:id="@+id/menu_rhythms_list"
+          android:title="@string/toggleRhythmsList"
+          android:icon="@drawable/ic_library_music_white_24dp"
+          kyb:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_new_rhythm"
+        kyb:showAsAction="ifRoom"
+        android:title="@string/newRhythm"
+        android:icon="@drawable/ic_add_circle_outline_white_24dp"
+        />
+
+    <item
+        android:id="@+id/menu_beats_sounds"
+        kyb:showAsAction="never"
+        android:title="@string/appMenuBeatsSounds"/>
+
+    <!--item
+        android:id="@+id/menu_save_rhythm"
+        kyb:showAsAction="ifRoom"
+        android:title="@string/saveRhythmLabel"/-->
+
+    <item
+        android:id="@+id/menu_tags"
+        kyb:showAsAction="never"
+        android:title="@string/moduleTags"/>
+
+    <item
+        android:id="@+id/menu_remove_ads"
+        kyb:showAsAction="never"
+        android:title="@string/remove_ads_menu"/>
+
+    <item
+        android:id="@+id/menu_consume_premium"
+        kyb:showAsAction="never"
+        android:title="TESTING ONLY - consume premium"/>
+
+    <item
+        android:id="@+id/menu_test_warn_message"
+        kyb:showAsAction="never"
+        android:title="TESTING ONLY - show warning alert"/>
+
+    <item
+        android:id="@+id/menu_library_export"
+        kyb:showAsAction="never"
+        android:title="TESTING ONLY - export current rhythms list"/>
+
+    <item
+        android:id="@+id/menu_settings"
+        kyb:showAsAction="never"
+        android:title="@string/settingsTitle"/>
+
+    <item
+        android:id="@+id/menu_help"
+        kyb:showAsAction="never"
+        android:title="@string/help_menu"/>
+
+
+</menu>

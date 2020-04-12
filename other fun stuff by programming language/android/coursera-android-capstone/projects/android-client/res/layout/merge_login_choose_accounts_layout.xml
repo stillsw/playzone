@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:animateLayoutChanges="true" >
+
+        <Spinner
+            android:id="@+id/accountNameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:prompt="@string/login_dev_account_name_hint" />
+
+        <!-- fab icon courtesy of http://icons8.com/preview/android-L-icons/ -->
+        <ImageButton
+            android:id="@+id/fabbutton"
+            style="@style/FabButtons"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/accountNameSpinner"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/fab_signup_ripple"
+            android:contentDescription="@string/signup_info_fab"
+            android:src="@drawable/fab_sign_in" />
+
+        <TextView
+            android:id="@+id/choose_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fabbutton"
+            android:layout_margin="16dp"
+            android:layout_toStartOf="@id/fabbutton"
+            android:text="@string/choose_this_user_btn"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/not_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choose_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/not_online_gifts_msg"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/setup_account_btn"
+            style="@style/FlatButtons"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="setupLogin"
+            android:text="@string/another_setup_btn" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/setup_account_btn"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/primary_dark_transparent" />
+
+        <TextView
+            android:id="@+id/login_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/line1"
+            android:layout_alignParentStart="true"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+</merge>

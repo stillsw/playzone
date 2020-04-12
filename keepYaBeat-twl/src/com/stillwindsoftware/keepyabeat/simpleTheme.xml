@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE themes PUBLIC "-//www.matthiasmann.de//TWL-Theme//EN" "http://hg.l33tlabs.org/twl/raw-file/tip/src/de/matthiasmann/twl/theme/theme.dtd">
+<!--
+    Document   : simpleTheme.xml
+    Created on : 27 Aug 2011
+    Author     : Tomas Stubbs
+    Description:
+        Theme for KTB based on simple.xml
+--><themes>
+    <include filename="simple-modified.xml"/>
+    <include filename="kybSpecific.xml"/>
+
+    <images file="kybBackgrd.png">
+        <area name="kybBackgrd" xywh="0,0,400,300" splitx="L100,R100" splity="T100,B100"/>
+    </images>
+
+    <theme name="-normalDialogLayout" ref="dialoglayout" allowWildcard="true">
+        <param name="defaultGap"><dimension>5,5</dimension></param>
+        <param name="smallGap"><dimension>8,8</dimension></param>
+        <param name="mediumGap"><dimension>10,10</dimension></param>
+        <param name="largeGap"><dimension>15,15</dimension></param>
+        <param name="namedGaps"><map/></param>
+        <param name="background"><image>-borderA</image></param>
+        <param name="border"><border>10</border></param>
+    </theme>
+
+    <theme name="plainPanelDialogLayout" ref="-normalDialogLayout">
+    </theme>
+
+    <theme name="columnDataSizedTable" ref="table">
+        <param name="tableCombinedRowsHeight"><int>0</int></param>
+    </theme>
+
+    <theme name="fileselector-popup" ref="-defaults">
+        <param name="background"><image>-borderB</image></param>
+        <param name="border"><border>20</border></param>
+        <theme name="fileselector" ref="fileselector">
+            <theme name="editfield" ref="editfield"/>
+        </theme>
+    </theme>
+
+    <theme name="tableScrollPane" ref="scrollpane">
+        <param name="background"><image>-borderC</image></param>
+        <param name="border"><border>2</border></param>
+    </theme>
+    
+    <theme name="settings" ref="dialoglayout">
+        <theme name="btnAccept" ref="button">
+            <param name="text"><string>Accept</string></param>
+        </theme>
+        <theme name="btnCancel" ref="button">
+            <param name="text"><string>Cancel</string></param>
+        </theme>
+    </theme>
+    <theme name="settingdialog" ref="-defaults">
+        <param name="background"><image>-borderA</image></param>
+        <param name="border"><border>6</border></param>
+        <theme name="settings" ref="settings"/>
+    </theme>
+
+    <theme name="fpscounter" ref="label"/>
+
+    <theme name="volumeSlider" ref="hscrollbar">
+        <param name="minWidth"><int>100</int></param>
+        <param name="trackImageLeft"><image>white</image></param>
+        <theme name="leftbutton" ref="-defaults">
+            <param name="maxWidth"><int>0</int></param>
+            <param name="maxHeight"><int>0</int></param>
+        </theme>
+        <theme name="rightbutton" ref="-defaults">
+            <param name="maxWidth"><int>0</int></param>
+            <param name="maxHeight"><int>0</int></param>
+        </theme>
+    </theme>
+
+    <theme name="persistenceSlider" ref="volumeSlider">
+    </theme>
+
+    <theme name="changeName" ref="editfield">
+        <param name="minWidth"><int>250</int></param>
+        <param name="minHeight"><int>26</int></param>
+    </theme>
+
+    <theme name="colourSelectorButton" ref="label">
+        <param name="minWidth"><int>50</int></param>
+        <param name="minHeight"><int>20</int></param>
+        <param name="background"><image>colourSelectorButton.background</image></param>
+        <param name="border"><border>3,3,3,3</border></param>
+    </theme>
+
+    <!-- minwidth is hoped to prevent right-padding to the field, but it doesn't work in the confirm popup -->
+    <theme name="beatTypeColourSelectorButton" ref="colourSelectorButton">
+        <param name="minWidth"><int>0</int></param>
+    </theme>
+
+    <theme name="soundCombo" ref="combobox">
+    </theme>
+
+    <theme name="-slidingPanel" ref="-defaults">
+        <param name="alwaysshow.x"><int>0</int></param>
+        <param name="alwaysshow.y"><int>0</int></param>
+    </theme>
+
+    <theme name="menuBar" ref="-normalDialogLayout">
+        <param name="background"><image>black</image></param>
+        <param name="alignment"><enum type="alignment">LEFT</enum></param>
+        <param name="spacing"><int>0</int></param>
+        <param name="border"><border>6</border></param>
+    </theme>
+
+    <theme name="moduleBarBtnSpacer" ref="label">
+        <param name="minWidth"><int>0</int></param>
+    </theme>
+
+    <theme name="buttonBox" ref="-defaults">
+        <param name="alignment"><enum type="alignment">CENTER</enum></param>
+        <param name="spacing"><int>2</int></param>
+        <param name="minHeight"><int>25</int></param>
+        <param name="background"><image>none</image></param>
+        <param name="border"><border>0</border></param>
+    </theme>
+
+    <theme name="whiteLabel" ref="label">
+        <param name="font"><font>moduleBarFont</font></param>
+    </theme>
+
+    <theme name="largeTitlesLabel" ref="label">
+        <param name="font"><font>largeTitles</font></param>
+    </theme>
+
+    <theme name="topBoxTitlesLabel" ref="label">
+        <param name="font"><font>moduleBarFont</font></param>
+    </theme>
+
+    <theme name="genericBtn" ref="button">
+        <param name="background"><image>none</image></param>
+        <param name="overlay"><image>highlightedBtnBgdSelect</image></param>
+        <param name="minHeight"><int>26</int></param> <!-- 22 for images + 2x2 border -->
+        <param name="border"><border>2,5,2,5</border></param>
+        <param name="font"><font>moduleBarFont</font></param>
+    </theme>
+
+    <theme name="genericConfirmBtn" ref="genericBtn">
+        <param name="overlay"><image>confirmBtnBgdSelect</image></param>
+        <param name="minWidth"><int>100</int></param>
+    </theme>
+    
+    <theme name="genericPanelBtn" ref="genericBtn"/>
+
+    <theme name="moduleBarBtn" ref="genericBtn">
+        <param name="overlay"><image>none</image></param>
+        <param name="background"><image>menuButtonBgd</image></param>
+    </theme>
+
+    <theme name="menuUndoBtn" ref="moduleBarBtn">
+        <param name="overlay"><image>undoIconSelect</image></param>
+        <param name="minWidth"><int>30</int></param>
+        <param name="minHeight"><int>26</int></param>
+        <param name="maxWidth"><int>30</int></param>
+        <param name="maxHeight"><int>26</int></param>
+    </theme>
+
+    <theme name="moduleBarName" ref="moduleBarBtn">
+        <param name="overlay"><image>none</image></param>
+        <param name="minWidth"><int>100</int></param>
+    </theme>
+
+    <theme name="notification" ref="whiteLabel">
+        <param name="background"><image>black</image></param>
+        <param name="border"><border>7</border></param>
+        <param name="overlay"><image>none</image></param>
+    </theme>
+
+    <theme name="okBtn" ref="genericConfirmBtn">
+        <param name="background"><image>okIcon</image></param>
+    </theme>
+
+    <theme name="cancelBtn" ref="genericConfirmBtn">
+        <param name="background"><image>cancelIcon</image></param>
+    </theme>
+
+    <theme name="newBtn" ref="genericBtn">
+        <param name="background"><image>newIcon</image></param>
+        <param name="minWidth"><int>34</int></param>
+        <param name="minHeight"><int>34</int></param>
+        <param name="maxWidth"><int>34</int></param>
+        <param name="maxHeight"><int>34</int></param>
+    </theme>
+
+    <theme name="panelNewBtn" ref="newBtn"/>
+    
+    <theme name="panelCopyBtn" ref="genericBtn">
+        <param name="background"><image>copyIcon</image></param>
+    </theme>
+
+
+	<!-- this is for lists, not the play controls button (see playControlsPanel below) -->
+    <theme name="playBtn" ref="button">
+        <param name="background"><image>playBtnImg</image></param>
+    </theme>
+
+    <theme name="searchBtn" ref="button">
+        <param name="background"><image>searchIcon</image></param>
+        <param name="minWidth"><int>24</int></param>
+        <param name="minHeight"><int>24</int></param>
+        <param name="maxWidth"><int>24</int></param>
+        <param name="maxHeight"><int>24</int></param>
+    </theme>
+
+    <theme name="listBtn" ref="genericBtn">
+        <param name="background"><image>listIcon</image></param>
+        <param name="minWidth"><int>28</int></param>
+        <param name="minHeight"><int>34</int></param>
+        <param name="maxWidth"><int>28</int></param>
+        <param name="maxHeight"><int>34</int></param>
+    </theme>
+
+    <theme name="searchListBtn" ref="genericBtn">
+        <param name="background"><image>searchListIcon</image></param>
+        <param name="minWidth"><int>36</int></param>
+        <param name="minHeight"><int>36</int></param>
+        <param name="maxWidth"><int>36</int></param>
+        <param name="maxHeight"><int>36</int></param>
+    </theme>
+
+    <theme name="shareBtn" ref="genericBtn">
+        <param name="background"><image>shareIconSelect</image></param>
+        <param name="minWidth"><int>36</int></param>
+        <param name="minHeight"><int>36</int></param>
+        <param name="maxWidth"><int>36</int></param>
+        <param name="maxHeight"><int>36</int></param>
+    </theme>
+
+    <theme name="settingsBtn" ref="genericBtn">
+        <param name="background"><image>settingsIcon</image></param>
+        <param name="minWidth"><int>34</int></param>
+        <param name="minHeight"><int>36</int></param>
+        <param name="maxWidth"><int>34</int></param>
+        <param name="maxHeight"><int>36</int></param>
+    </theme>
+
+    <theme name="undoBtn" ref="genericBtn">
+        <param name="background"><image>undoIconSelect</image></param>
+        <param name="minWidth"><int>32</int></param>
+        <param name="minHeight"><int>38</int></param>
+        <param name="maxWidth"><int>32</int></param>
+        <param name="maxHeight"><int>38</int></param>
+    </theme>
+
+    <theme name="saveBtn" ref="genericBtn">
+        <param name="background"><image>saveIconSelect</image></param>
+        <param name="minWidth"><int>40</int></param>
+        <param name="minHeight"><int>38</int></param>
+        <param name="maxWidth"><int>40</int></param>
+        <param name="maxHeight"><int>38</int></param>
+    </theme>
+
+    <theme name="editBtn" ref="genericBtn">
+        <param name="background"><image>editIcon</image></param>
+        <param name="minWidth"><int>37</int></param>
+        <param name="minHeight"><int>36</int></param>
+        <param name="maxWidth"><int>37</int></param>
+        <param name="maxHeight"><int>36</int></param>
+    </theme>
+
+    <theme name="helpBtn" ref="genericBtn">
+        <param name="background"><image>helpIcon</image></param>
+        <param name="minWidth"><int>24</int></param>
+        <param name="minHeight"><int>30</int></param>
+        <param name="maxWidth"><int>30</int></param>
+        <param name="maxHeight"><int>38</int></param>
+    </theme>
+
+    <theme name="panelHelpBtn" ref="helpBtn"/>
+
+    <theme name="newRhythmBtn" ref="genericBtn">
+        <param name="background"><image>newRhythmIconSelect</image></param>
+        <param name="minWidth"><int>41</int></param>
+        <param name="minHeight"><int>38</int></param>
+        <param name="maxWidth"><int>41</int></param>
+        <param name="maxHeight"><int>38</int></param>
+    </theme>
+
+    <theme name="quickEditRhythmBtn" ref="genericBtn">
+        <param name="background"><image>quickEditRhythmIcon</image></param>
+        <param name="minWidth"><int>38</int></param>
+        <param name="minHeight"><int>38</int></param>
+        <param name="maxWidth"><int>38</int></param>
+        <param name="maxHeight"><int>38</int></param>
+    </theme>
+
+    <theme name="numBeatsAdjuster" ref="valueadjuster">
+        <param name="useMouseWheel"><bool>false</bool></param>
+    </theme>
+
+    <theme name="tagSearchBtn" ref="label">
+        <param name="background"><image>tagSearchIcon</image></param>
+        <param name="minWidth"><int>30</int></param>
+        <param name="minHeight"><int>24</int></param>
+        <param name="maxHeight"><int>24</int></param>
+        <param name="border"><border>0,25,0,2</border></param>
+    </theme>
+
+    <theme name="displayNumbersToggleBtn" ref="togglebutton">
+        <param name="background"><image>eyeSelectImg</image></param>
+    </theme>
+
+    <theme name="prevBtn" ref="genericBtn">
+        <param name="overlay"><image>prevNavSelect</image></param>
+        <param name="minWidth"><int>18</int></param>
+        <param name="minHeight"><int>26</int></param>
+        <param name="maxWidth"><int>18</int></param>
+        <param name="maxHeight"><int>26</int></param>
+    </theme>
+
+    <theme name="nextBtn" ref="genericBtn">
+        <param name="overlay"><image>nextNavSelect</image></param>
+        <param name="minWidth"><int>18</int></param>
+        <param name="minHeight"><int>26</int></param>
+        <param name="maxWidth"><int>18</int></param>
+        <param name="maxHeight"><int>26</int></param>
+    </theme>
+
+    <theme name="helpTipTarget" ref="label">
+        <param name="xOffset"><int>0</int></param>
+        <param name="yOffset"><int>0</int></param>
+    </theme>
+
+    <theme name="helpTipTargetTop" ref="helpTipTarget">
+        <param name="background"><image>simplehelpBoxArrowTopBackgrd</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="xOffset"><int>25</int></param>
+    </theme>
+
+    <theme name="helpTipTargetRight" ref="helpTipTarget">
+        <param name="background"><image>simplehelpBoxArrowRightBackgrd</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="yOffset"><int>25</int></param>
+    </theme>
+
+    <theme name="helpTipTargetBottom" ref="helpTipTarget">
+        <param name="background"><image>simplehelpBoxArrowBottomBackgrd</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="xOffset"><int>25</int></param>
+    </theme>
+
+    <theme name="helpTipTargetLeft" ref="helpTipTarget">
+        <param name="background"><image>simplehelpBoxArrowLeftBackgrd</image></param>
+        <param name="border"><border>background.border</border></param>
+        <param name="yOffset"><int>25</int></param>
+    </theme>
+
+    <theme name="helpTipTargetTopRight" ref="helpTipTarget">
+        <param name="background"><image>simplehelpBoxArrowTopRightBackgrd</image></param>
+        <param name="border"><border>background.border</border></param>
+    </theme>
+
+    <theme name="helpTipTargetTopLeft" ref="helpTipTarget">
+        <param name="background"><image>simplehelpBoxArrowTopLeftBackgrd</image></param>
+        <param name="border"><border>background.border</border></param>
+    </theme>
+
+    <theme name="helpTipTargetBottomLeft" ref="helpTipTarget">
+        <param name="background"><image>simplehelpBoxArrowBottomLeftBackgrd</image></param>
+        <param name="border"><border>background.border</border></param>
+    </theme>
+
+    <theme name="helpTipTargetBottomRight" ref="helpTipTarget">
+        <param name="background"><image>simplehelpBoxArrowBottomRightBackgrd</image></param>
+        <param name="border"><border>background.border</border></param>
+    </theme>
+
+    <theme name="socialMenuBtn" ref="button">
+        <param name="overlay"><image>socialMediaImg</image></param>
+        <param name="maxWidth"><int>205</int></param>
+        <param name="maxHeight"><int>30</int></param>
+    </theme>
+
+    <theme name="socialBtn" ref="genericBtn">
+        <param name="overlay"><image>socialMediaImg</image></param>
+        <param name="maxWidth"><int>205</int></param>
+        <param name="maxHeight"><int>30</int></param>
+    </theme>
+	
+    <theme name="soundsListPanel" ref="-slidingPanel">
+        <theme name="soundsList" ref="-normalDialogLayout">
+            <theme name="topBox" ref="-normalDialogLayout">
+                <param name="minHeight"><int>41</int></param>
+                <param name="maxHeight"><int>41</int></param>
+                <param name="background"><image>soundsIcon</image></param>
+                <param name="border"><border>0</border></param>
+                <param name="largeGap"><dimension>75,40</dimension></param>            </theme>
+            <theme name="soundsScrollpane" ref="scrollpane">
+                <param name="border"><border>background.border</border></param>
+                <theme name="soundsTable" ref="columnDataSizedTable">
+                    <theme name="columnWidths">
+                        <!-- see beatTypesList below for fuller explanations -->
+                        <theme name="0">
+                            <param name="width"><gap>10,50,400</gap></param>
+                            <!-- border in cell renderer uses 2,2 for widths -->
+                            <param name="extraWidth"><int>4</int></param>
+                        </theme>
+                        <theme name="1">
+                             <!-- play button, not data-sized so the actual widget width
+                                  will be this value less any border set in the widget renderer -->
+                             <param name="width"><int>22</int></param>
+                        </theme>
+                        <theme name="2">
+                            <param name="width"><gap>10,50,400</gap></param>
+                            <!-- border in cell renderer uses 2,2 for widths -->
+                            <param name="extraWidth"><int>4</int></param>
+                        </theme>
+                    </theme>
+                    <theme name="buttoncellrenderer" ref="button">
+                        <param name="minHeight"><int>14</int></param>
+                        <param name="maxWidth"><int>40</int></param>
+                    </theme>
+                    <theme name="stringcellrenderer" ref="-defaults">
+                        <param name="border"><border>0,2,0,2</border></param>
+                    </theme>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+    <theme name="beatTypesListPanel" ref="-slidingPanel">
+        <theme name="beatTypesList" ref="-normalDialogLayout">
+            <theme name="topBox" ref="-normalDialogLayout">
+                <param name="minHeight"><int>41</int></param>
+                <param name="maxHeight"><int>41</int></param>
+                <param name="background"><image>beatTypesIcon</image></param>
+                <param name="border"><border>0</border></param>
+                <param name="largeGap"><dimension>60,40</dimension></param>
+            </theme>
+            <theme name="beatTypesScrollpane" ref="scrollpane">
+                <param name="border"><border>background.border</border></param>
+                <theme name="beatTypesTable" ref="columnDataSizedTable">
+                    <theme name="columnWidths">
+                        <theme name="0">
+                            <param name="width"><gap>10,50,400</gap></param>
+                            <!-- border in cell renderer theme (colourSelectorButton) uses 3,3 for widths -->
+                            <param name="extraWidth"><int>6</int></param>
+                            <!-- alternative to using just extraWidth, match border for cell renderer
+                                 but have not yet used it this way, simplest to just do it all with extraWidth -->
+                            <param name="border"><border>0,0,0,0</border></param>
+                            <!-- for example only, not finished, would be set for text sizing, but not for rendering -->
+                            <!--param name="font"><font>normal</font></param-->
+                        </theme>
+                        <theme name="1">
+                             <!-- colour button, not data-sized so the actual widget width
+                                  will be this value less any border set in the widget renderer -->
+                             <param name="width"><int>50</int></param>
+                        </theme>
+                        <theme name="2">
+                            <param name="width"><gap>50,50,400</gap></param>
+                            <!-- combo box 18=button 3x2=displayborder 2=cellborder-->
+                            <param name="extraWidth"><int>26</int></param>
+                        </theme>                    
+                        <theme name="3">
+                            <param name="width"><gap>0,0,400</gap></param>
+                            <!-- combo box 18=button 3x2=displayborder 2=cellborder-->
+                            <param name="extraWidth"><int>26</int></param>
+                        </theme>                    
+                    </theme>
+                    <theme name="stringcellrenderer" ref="-defaults">
+                        <param name="border"><border>0,2,0,2</border></param>
+                    </theme>
+                    <theme name="colourcellrenderer" ref="-defaults">
+                        <param name="border"><border>0,2,1,1</border></param>
+                    </theme>
+                    <theme name="soundcombocellrenderer" ref="-defaults">
+                        <param name="border"><border>0,2,0,0</border></param>
+                    </theme>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+	<!-- top level module for beats and sounds, includes 2 sliding panels
+		 beatTypesList and soundsList -->
+    <theme name="beatsAndSoundsModule" ref="-normalDialogLayout">
+        <param name="background"><image>none</image></param>
+    </theme>
+
+    <theme name="-toggleShowUpBtn" ref="button">
+        <param name="background"><image>toggleSliderUpIcon</image></param>    
+        <param name="minWidth"><int>17</int></param>
+        <param name="maxWidth"><int>17</int></param>
+        <param name="minHeight"><int>13</int></param>
+        <param name="maxHeight"><int>13</int></param>    
+    </theme>
+
+    <theme name="-toggleShowDownBtn" ref="button">
+        <param name="background"><image>toggleSliderDownIcon</image></param>    
+        <param name="minWidth"><int>17</int></param>
+        <param name="maxWidth"><int>17</int></param>
+        <param name="minHeight"><int>13</int></param>
+        <param name="maxHeight"><int>13</int></param>    
+    </theme>
+
+    <theme name="-toggleShowRightBtn" ref="button">
+        <param name="background"><image>toggleSliderRightIcon</image></param>
+        <param name="minWidth"><int>13</int></param>
+        <param name="maxWidth"><int>13</int></param>
+        <param name="minHeight"><int>17</int></param>
+        <param name="maxHeight"><int>17</int></param>    
+    </theme>
+
+    <theme name="-toggleShowLeftBtn" ref="button">
+        <param name="background"><image>toggleSliderLeftIcon</image></param>
+        <param name="minWidth"><int>13</int></param>
+        <param name="maxWidth"><int>13</int></param>
+        <param name="minHeight"><int>17</int></param>
+        <param name="maxHeight"><int>17</int></param>    
+    </theme>
+
+    <theme name="tagsListFlowMaster" ref="-defaults">
+        <param name="buttonsGap"><int>5</int></param>
+        <param name="border"><border>2</border></param>
+        <param name="maxWidth"><int>290</int></param>
+        <param name="maxHeight"><int>400</int></param>
+    </theme>
+
+    <theme name="rootModule" ref="-defaults">
+        <param name="background"><image>kybBackgrd</image></param>
+        <param name="beatImg55"><image>beatImg55</image></param>
+        <param name="selectedImg55"><image>selectedBeatImg55</image></param>
+        <param name="beatImg25"><image>beatImg25</image></param>
+        <param name="selectedImg25"><image>selectedBeatImg25</image></param>
+        <param name="beatImg11"><image>beatImg11</image></param>
+        <param name="selectedImg11"><image>selectedBeatImg11</image></param>
+        <param name="beatImg3"><image>beatImg3</image></param>
+        <param name="beatImg1"><image>white</image></param>
+        <param name="beatImg55Overlay"><image>beatOverlayImg55</image></param>
+        <param name="beatImg25Overlay"><image>beatOverlayImg25</image></param>
+        <param name="beatImg11Overlay"><image>beatOverlayImg11</image></param>
+        <param name="beatImg3Overlay"><image>beatImg3Overlay</image></param>
+        <param name="subZoneImg25Overlay"><image>subZoneImg25Overlay</image></param>
+        <param name="subZoneImg55Overlay"><image>subZoneImg55Overlay</image></param>
+        <param name="fraction_1_4_25high"><image>fraction_1_4_25high</image></param>
+        <param name="fraction_1_3_25high"><image>fraction_1_3_25high</image></param>
+        <param name="fraction_1_2_25high"><image>fraction_1_2_25high</image></param>
+        <param name="fraction_2_3_25high"><image>fraction_2_3_25high</image></param>
+        <param name="fraction_3_4_25high"><image>fraction_3_4_25high</image></param>
+        <param name="fractionLine"><image>fractionLine6</image></param>
+        <param name="fractionHoveredLine"><image>fractionHoveredLine6</image></param>
+        <param name="zoomInIcon22"><image>zoomInIcon22</image></param>
+        <param name="beatDivisionHoriLarge"><image>beatDivisionHoriLarge</image></param>
+        <param name="beatDivisionLeft3x3"><image>beatDivisionLeft3x3</image></param>
+        <param name="beatDivisionRight3x3"><image>beatDivisionRight3x3</image></param>
+        <param name="beatDivision1x1"><image>beatDivision1x1</image></param>
+        <param name="progressMarkerImg"><image>progressIndicatorBgd</image></param>
+        <param name="playedBeatRipple"><image>playedRipple</image></param>
+        <param name="numbersBgd32"><image>numbersBgd32</image></param>
+        <param name="numbersBgd7"><image>white5050transparent</image></param>
+        <param name="explodeBeatImg72"><image>explodeBeatImg</image></param>
+        <param name="fullBeatsFontSmall"><font>beatNumbersSmallFont</font></param>
+        <param name="fullBeatsFontNormal"><font>beatNumbersNormalFont</font></param>
+    </theme>
+
+	<!-- top level module for player, includes playerGroup as main
+		 panel, and rhythmsList sliding panel -->
+    <theme name="playerModule" ref="-defaults">
+        <param name="background"><image>none</image></param>
+    </theme>
+
+    <!-- player rhythm beat types list -->
+    <theme name="playSettingsList" ref="-normalDialogLayout">
+        <theme name="playSettingsScrollpane" ref="scrollpane">
+            <param name="border"><border>background.border</border></param>
+            <theme name="playSettingsTable" ref="columnDataSizedTable">
+                <theme name="columnWidths">
+                    <theme name="0">
+                        <param name="width"><gap>10,50,400</gap></param>
+                        <!-- border in cell renderer uses 0,2 for widths, plus 3,3 for colourSelectorButton -->
+                        <param name="extraWidth"><int>10</int></param>
+                    </theme>
+                    <theme name="1">
+                         <!-- volume adjuster
+                              will be this value less any border set in the widget renderer -->
+                         <param name="width"><int>80</int></param>
+                    </theme>
+                    <theme name="2">
+                        <param name="width"><gap>50,50,400</gap></param>
+                        <!-- combo box 18=button 3x2=displayborder 4=cellborder-->
+                        <param name="extraWidth"><int>28</int></param>
+                    </theme>                    
+                    <theme name="3">
+                        <param name="width"><int>25</int></param>
+                    </theme>                    
+                </theme>
+                <theme name="colourcellrenderer" ref="-defaults">
+                    <param name="border"><border>0,0,1,2</border></param>
+                </theme>
+                <theme name="soundcombocellrenderer" ref="-defaults">
+                    <param name="border"><border>0,2,0,2</border></param>
+                </theme>
+                <theme name="volumecellrenderer" ref="-defaults">
+                    <param name="border"><border>0,2,0,2</border></param>
+                </theme>
+                <theme name="toggledisplaycellrenderer" ref="-defaults">
+                    <param name="border"><border>0,2,0,0</border></param>
+                    <param name="minWidth"><int>24</int></param>
+                    <param name="minHeight"><int>20</int></param>
+                    <param name="maxWidth"><int>24</int></param>
+                    <param name="maxHeight"><int>20</int></param>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+    <!-- beat types list of values -->
+    <theme name="beatTypesLov" ref="-normalDialogLayout">
+        <theme name="topBox" ref="dialoglayout">
+            <param name="border"><border>0</border></param>
+        </theme>
+        <theme name="beatTypesLovScrollpane" ref="scrollpane">
+            <param name="border"><border>background.border</border></param>
+            <theme name="beatTypesLovTable" ref="columnDataSizedTable">
+                <theme name="columnWidths">
+                    <theme name="0">
+                        <param name="width"><gap>200,200,400</gap></param>
+                        <!-- border in cell renderer uses 0,2 for widths, plus 2,2 for strings -->
+                        <param name="extraWidth"><int>8</int></param>
+                    </theme>
+                </theme>
+                <theme name="colourcellrenderer" ref="-defaults">
+                    <param name="border"><border>0,0,1,2</border></param>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+	<!-- sub level for playerModule, contains the playerPanel (for rhythms)
+		 and all the buttons etc to do with playing -->
+    <theme name="playerGroup" ref="-defaults">
+        <param name="background"><image>none</image></param>
+        <theme name="topWidgetsPanel" ref="-slidingPanel">
+            <theme name="topWidgetsLayout" ref="-normalDialogLayout">
+                <param name="overlay"><image>none</image></param>
+                <param name="background"><image>none</image></param>
+                <param name="border"><border>20</border></param>
+            </theme>
+        </theme>
+        <theme name="settingsPanel" ref="-slidingPanel">
+            <theme name="playSettingsList" ref="playSettingsList"/>
+            <theme name="toggleShowSettingsBtn" ref="-toggleShowLeftBtn"/>
+        </theme>
+        <theme name="canvasPanel" ref="-slidingPanel">
+            <param name="overlay"><image>none</image></param>
+            <param name="background"><image>none</image></param>
+            <param name="border"><border>0</border></param>
+            <theme name="playerRhythmCanvas" ref="-defaults">
+                <param name="fullBeatsFontSmall"><font>beatNumbersSmallFont</font></param>
+                <param name="fullBeatsFontNormal"><font>beatNumbersNormalFont</font></param>
+            </theme>
+        </theme>
+    </theme>
+
+    <theme name="rhythmTooltip" ref="resizableframe">
+        <param name="alignment"><enum type="alignment">LEFT</enum></param>
+        <param name="spacing"><int>2</int></param>
+        <param name="minWidth"><int>300</int></param>
+        <param name="minHeight"><int>90</int></param>
+        <param name="maxWidth"><int>300</int></param>
+        <param name="maxHeight"><int>0</int></param>
+        <param name="overlay"><image>none</image></param>
+        <param name="border"><border>5</border></param>
+        <theme name="rhythmName" ref="label">
+            <param name="border"><border>2</border></param>
+        </theme>
+        <theme name="rhythm">
+            <param name="minWidth"><int>290</int></param>
+            <param name="minHeight"><int>70</int></param>
+            <param name="maxWidth"><int>0</int></param>
+            <param name="maxHeight"><int>70</int></param>
+            <param name="border"><border>0</border></param>
+            <param name="overlay"><image>none</image></param>
+            <param name="background"><image>none</image></param>
+        </theme>
+        <theme name="tagsBox" ref="-defaults">
+            <param name="border"><border>0</border></param>
+            <param name="overlay"><image>none</image></param>
+            <param name="background"><image>none</image></param>
+            <theme name="tagsListFlow" ref="tagsListFlowMaster"/>
+        </theme>
+    </theme>
+
+    <theme name="rhythmsListPanel" ref="-slidingPanel">
+	    <theme name="toggleShowRhythmListBtn" ref="-toggleShowRightBtn"/>
+        <theme name="rhythmsList" ref="-normalDialogLayout">
+            <param name="fullBeatsFontSmall"><font>beatNumbersSmallFont</font></param>
+            <param name="fullBeatsFontNormal"><font>beatNumbersNormalFont</font></param>
+
+            <theme name="rhythmsScrollpane" ref="scrollpane">
+                <param name="border"><border>background.border</border></param>
+                <param name="minHeight"><int>22</int></param>
+                <theme name="rhythmsTable" ref="columnDataSizedTable">
+                    <theme name="columnWidths">
+                        <theme name="0">
+                            <param name="width"><int>100</int></param>
+                        </theme>
+                        <theme name="1">
+                            <param name="width"><int>200</int></param>
+                        </theme>
+                    </theme>
+                    <theme name="rhythmimagecellrenderer">
+                        <param name="minHeight"><int>22</int></param>
+                        <param name="maxWidth"><int>1000</int></param>
+                        <param name="border"><border>0</border></param>
+                    </theme>
+                    <theme name="stringcellrenderer" ref="-defaults">
+                        <param name="font"><font>normal</font></param>
+                        <param name="border"><border>0,10,0,10</border></param>
+                    </theme>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+    <theme name="importRhythmsList" ref="-normalDialogLayout">
+        <param name="fullBeatsFontSmall"><font>beatNumbersSmallFont</font></param>
+        <param name="fullBeatsFontNormal"><font>beatNumbersNormalFont</font></param>
+        <param name="background"><image>none</image></param>
+        <param name="border"><border>0</border></param>
+        <theme name="topBox" ref="-normalDialogLayout"/>
+        <theme name="rhythmsScrollpane" ref="scrollpane">
+            <param name="border"><border>background.border</border></param>
+            <param name="minHeight"><int>22</int></param>
+            <theme name="rhythmsTable" ref="columnDataSizedTable">
+                <theme name="columnWidths">
+                    <theme name="0"> <!-- checkbox -->
+                        <param name="width"><int>40</int></param>
+                    </theme>
+                    <theme name="1"> <!-- rhythm image -->
+                        <param name="width"><int>100</int></param>
+                    </theme>
+                    <theme name="2"> <!-- text width rhythm name -->
+                        <param name="width"><gap>50,200,900</gap></param>
+                        <!-- border in cell renderer uses 20 for widths, plus 2,2 for strings -->
+                        <param name="extraWidth"><int>24</int></param>
+                    </theme>
+                </theme>
+                <theme name="checkboxcellrenderer">
+                    <param name="maxWidth"><int>20</int></param>
+                    <param name="border"><border>2,10,2,10</border></param>
+                </theme>
+                <theme name="rhythmimagecellrenderer">
+                    <param name="minHeight"><int>22</int></param>
+                    <param name="maxWidth"><int>1000</int></param>
+                    <param name="border"><border>0</border></param>
+                </theme>
+                <theme name="stringcellrenderer" ref="-defaults">
+                    <param name="font"><font>normal</font></param>
+                    <param name="border"><border>0,10,0,10</border></param>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+    <theme name="selectedTagBtnMaster" ref="button">
+        <param name="background"><image>tagSelectedBtnImg</image></param>
+        <param name="border"><border>background.border</border></param>
+    </theme>
+    
+    <theme name="nameAndTagsBox" ref="-normalDialogLayout">
+        <theme name="tagsScrollpane" ref="scrollpane">
+            <param name="background"><image>-borderF</image></param>
+            <param name="border"><border>2,0,0,0</border></param>
+            <theme name="tagsBox"> 
+                <param name="alignment"><enum type="alignment">TOP</enum></param>
+                <param name="spacing"><int>2</int></param>
+                <param name="maxWidth"><int>0</int></param>
+                <param name="maxHeight"><int>25</int></param>
+                <param name="minWidth"><int>0</int></param>
+                <param name="minHeight"><int>25</int></param>
+                <param name="background"><image>none</image></param>
+                <param name="overlay"><image>none</image></param>
+                <param name="border"><border>0</border></param>
+                <theme name="selectedTagBtn" ref="selectedTagBtnMaster"/>
+                <theme name="tagsSearchLabel" ref="label">
+                    <param name="border"><border>3</border></param>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+    <theme name="setNameTagsPopupBox" ref="nameAndTagsBox">
+        <param name="minWidth"><int>330</int></param>
+        <param name="maxWidth"><int>360</int></param>
+        <param name="maxHeight"><int>450</int></param>
+        <theme name="tagsScrollpane" ref="scrollpane">
+            <param name="minHeight"><int>26</int></param>
+            <param name="maxHeight"><int>400</int></param>
+            <param name="background"><image>-borderF</image></param>
+            <param name="border"><border>0,0,0,0</border></param>
+            <theme name="tagsListFlow" ref="tagsListFlowMaster">
+                <theme name="selectedTagBtn" ref="selectedTagBtnMaster"/>
+                <theme name="tagsSearchLabel" ref="label">
+                    <param name="border"><border>3</border></param>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+    <theme name="tagsListTagBtn" ref="togglebutton">
+        <param name="background"><image>tagBtnImg</image></param>
+        <param name="border"><border>background.border</border></param>
+    </theme>
+
+    <!-- tags master list, not one of the pick methods or flow displays... just a normal list -->
+    <theme name="tagsList" ref="-normalDialogLayout">
+        <theme name="topBox" ref="-normalDialogLayout">
+            <param name="minHeight"><int>41</int></param>
+            <param name="maxHeight"><int>41</int></param>
+            <param name="background"><image>tagListIcon</image></param>
+            <param name="border"><border>0</border></param>
+        </theme>
+        <theme name="tagsScrollpane" ref="scrollpane">
+            <param name="border"><border>background.border</border></param>
+            <theme name="tagsTable" ref="columnDataSizedTable">
+                <theme name="columnWidths">
+                    <theme name="0">
+                        <param name="width"><gap>50,200,400</gap></param>
+                        <!-- tag label 10=borders -->
+                        <param name="extraWidth"><int>10</int></param>
+                    </theme>                    
+                </theme>
+                <theme name="tagcellrenderer" ref="tagsListTagBtn">
+                    <param name="minHeight"><int>22</int></param>
+                    <param name="minWidth"><int>210</int></param>
+                    <param name="maxWidth"><int>400</int></param>
+                    <param name="border"><border>3,5,5,5</border></param>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+    
+    <theme name="tagsPickPopup" ref="resizableframe">
+        <param name="border"><border>8</border></param>
+    </theme>
+
+	<!-- pick list when in popup -->
+    <theme name="tagsPickListFlow" ref="resizableframe">
+        <param name="buttonsGap"><int>5</int></param>
+        <param name="border"><border>5</border></param>
+        <param name="maxWidth"><int>400</int></param>
+        <param name="maxHeight"><int>300</int></param>
+    </theme>
+
+    <theme name="tagsPickScrollpane" ref="scrollpane">
+        <param name="border"><border>0</border></param>
+    </theme>
+    
+    <!-- 2 themes for scrolling region inside confirm dialogs -->
+    <theme name="confirmDlgScrollpane" ref="scrollpane">
+        <param name="border"><border>0</border></param>
+        <param name="background"><image>none</image></param>
+    </theme>
+    <theme name="confirmDlgScrollDialog" ref="-normalDialogLayout">
+        <param name="border"><border>0,0,0,5</border></param>
+        <param name="background"><image>none</image></param>
+    </theme>
+    
+    <theme name="confirmDialog" ref="-normalDialogLayout">
+        <theme name="widget" ref="-defaults">
+            <param name="border"><border>6</border></param>
+        </theme>
+        <param name="background"><image>none</image></param>
+        <theme name="btnOK" ref="okBtn"/>
+        <theme name="btnCancel" ref="cancelBtn"/>
+    </theme>
+
+    <theme name="confirmPopup" ref="-defaults">
+        <theme name="confirmDialog" ref="confirmDialog">
+        </theme>
+    </theme>
+
+    <theme name="confirmPopupTintBackground" ref="confirmPopup">
+        <param name="background"><image>tintedFilter</image></param>
+    </theme>
+
+	<!-- desktop area/editor for rhythms -->
+    <theme name="rhythmEditor" ref="-defaults">
+        <param name="background"><image>kybBackgrd</image></param>
+        <theme name="topWidgetsPanel" ref="-slidingPanel">
+            <theme name="topWidgetsLayout" ref="-normalDialogLayout">
+                <theme name="rhythmEditorTopBarLayout" ref="-normalDialogLayout">
+                    <param name="border"><border>8</border></param>
+                    <theme name="rhythmName" ref="largeTitlesLabel"/>
+                    <param name="background"><image>androidDialog</image></param>
+                </theme>
+                <param name="overlay"><image>none</image></param>
+                <param name="background"><image>none</image></param>
+                <param name="border"><border>0</border></param>
+                <param name="largeGap"><dimension>20,20</dimension></param>
+            </theme>
+        </theme>
+        <theme name="settingsPanel" ref="-slidingPanel">
+            <theme name="playSettingsList" ref="playSettingsList"/>
+            <theme name="toggleShowSettingsBtn" ref="-toggleShowLeftBtn"/>
+        </theme>
+        <theme name="canvasPanel" ref="-slidingPanel">
+            <param name="overlay"><image>none</image></param>
+            <param name="background"><image>none</image></param>
+            <param name="border"><border>0</border></param>
+            <theme name="playerRhythmCanvas" ref="-defaults">
+                <param name="helpTipsFont"><font>rhythmSubBeatsTipsFont</font></param>
+                <param name="fullBeatsFontSmall"><font>beatNumbersSmallFont</font></param>
+                <param name="fullBeatsFontNormal"><font>beatNumbersNormalFont</font></param>
+            </theme>
+        </theme>
+        <theme name="zoomHelp" ref="-defaults">
+            <param name="background"><image>zoomInIcon22</image></param>
+        </theme>
+    </theme>
+
+   <theme name="deleteSoundPanel" ref="-defaults">
+        <theme name="beatTypesScrollpane" ref="scrollpane">
+            <theme name="beatTypesTable" ref="columnDataSizedTable">
+                <theme name="columnWidths">
+                    <theme name="0">
+                        <param name="width"><gap>10,50,400</gap></param>
+                        <!-- border in cell renderer uses 0,2 for widths, plus 2,2 for strings -->
+                        <param name="extraWidth"><int>8</int></param>
+                    </theme>
+                </theme>
+                <theme name="stringcellrenderer" ref="-defaults">
+                    <param name="border"><border>0,2,0,2</border></param>
+                </theme>
+            </theme>
+            <param name="minHeight"><int>0</int></param>
+        </theme>
+        <theme name="changeSoundLabel" ref="label"/>
+        <theme name="changeSoundCombo" ref="combobox"/>
+        <param name="defaultGap"><dimension>5,5</dimension></param>
+        <param name="smallGap"><dimension>8,8</dimension></param>
+        <param name="mediumGap"><dimension>10,10</dimension></param>
+        <param name="largeGap"><dimension>15,15</dimension></param>
+        <param name="namedGaps"><map/></param>
+    </theme>
+
+    <theme name="deleteBeatTypePanel" ref="-defaults">
+        <theme name="rhythmsScrollpane" ref="scrollpane">
+            <theme name="rhythmsTable" ref="columnDataSizedTable">
+                <theme name="columnWidths">
+                    <theme name="0">
+                        <param name="width"><gap>10,50,400</gap></param>
+                        <!-- border in cell renderer uses 0,2 for widths, plus 2,2 for strings -->
+                        <param name="extraWidth"><int>8</int></param>
+                    </theme>
+                </theme>
+                <theme name="stringcellrenderer" ref="-defaults">
+                    <param name="border"><border>0,2,0,2</border></param>
+                </theme>
+            </theme>
+            <param name="minHeight"><int>0</int></param>
+        </theme>
+        <theme name="changeBeatTypeLabel" ref="label"/>
+        <theme name="changeBeatTypeCombo" ref="combobox"/>
+        <param name="defaultGap"><dimension>5,5</dimension></param>
+        <param name="smallGap"><dimension>8,8</dimension></param>
+        <param name="mediumGap"><dimension>10,10</dimension></param>
+        <param name="largeGap"><dimension>15,15</dimension></param>
+        <param name="namedGaps"><map/></param>
+    </theme>
+
+    <theme name="addSoundPanel" ref="-normalDialogLayout" allowWildcard="true">
+        <theme name="addSoundPanelNameLabel" ref="label"/>
+        <theme name="addSoundPanelName" ref="changeName"/>
+        <theme name="addSoundPanelFileLabel" ref="label"/>
+        <theme name="addSoundPanelFileField" ref="changeName">
+            <param name="minWidth"><int>400</int></param>
+        </theme>
+        <theme name="addSoundPanelDurationLabel" ref="label"/>
+        <theme name="addSoundPanelDurationField" ref="label">
+            <param name="minWidth"><int>60</int></param>
+            <param name="minHeight"><int>14</int></param>
+        </theme>
+        <theme name="addSoundPanelPlayButton" ref="playBtn"/>
+        <param name="border"><border>10</border></param>
+    </theme>
+
+    <theme name="addChangeBeatTypePanel" ref="-normalDialogLayout" allowWildcard="true">
+        <param name="border"><border>10</border></param>
+        <theme name="addChangeBeatTypeNameLabel" ref="label"/>
+        <theme name="addChangeBeatTypeName" ref="changeName"/>
+        <theme name="addChangeBeatTypeSoundLabel" ref="label"/>
+        <theme name="addChangeBeatTypeSoundField" ref="combobox"/>
+        <theme name="addChangeBeatTypeFallbackSoundField" ref="combobox"/>
+        <theme name="addChangeBeatTypeColour" ref="colourSelectorButton">
+            <param name="maxWidth"><int>40</int></param>
+        </theme>
+    </theme>
+
+    <theme name="errorText" ref="label">
+        <param name="minHeight"><int>14</int></param>
+    </theme>
+    
+    <!-- in the dialog to set bpm -->
+    <theme name="playerOptionsBPMAdjuster" ref="valueadjuster">
+        <param name="minWidth"><int>300</int></param>
+        <param name="useMouseWheel"><bool>false</bool></param>
+    </theme>
+    <theme name="playerOptionsBpmTapper" ref="button">
+        <param name="minWidth"><int>65</int></param>
+        <param name="minHeight"><int>65</int></param>
+        <param name="overlay"><image>drumTapperSelect</image></param>
+        <!-- don't want default button 'armed' background which
+             looks weird while tapping -->
+        <param name="background"><image>-borderB</image></param>
+    </theme>
+    
+    <!-- in the dialog to set full beat value option -->
+    <theme name="fullBeatValueOptionsBox" ref="-defaults">
+        <param name="alignment"><enum type="alignment">LEFT</enum></param>
+        <param name="spacing"><int>5</int></param>
+    </theme>
+    
+    <!-- in the dialog to set rhythm repeat option -->
+    <theme name="playerOptionsRepeatBox" ref="-defaults">
+        <param name="alignment"><enum type="alignment">LEFT</enum></param>
+        <param name="spacing"><int>5</int></param>
+    </theme>
+    
+    <theme name="playerOptionsRepeatAdjuster" ref="valueadjuster">
+        <param name="minWidth"><int>300</int></param>
+        <param name="useMouseWheel"><bool>false</bool></param>
+    </theme>
+
+    <!-- box layout for each of the play controls -->
+    <theme name="playControlsBoxes" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>playControlsBgd</image></param>
+        <param name="border"><border>8,20,8,20</border></param>
+        <param name="alignment"><enum type="alignment">CENTER</enum></param>
+        <param name="spacing"><int>10</int></param>
+    </theme>
+
+    <theme name="playControlsSlidingPanel" ref="-slidingPanel">
+        <theme name="playControlsPanel" ref="-defaults" allowWildcard="true">
+                <!--param name="background"><image>playControlsBgd</image></param-->
+                <!--param name="border"><border>8,20,8,20</border></param-->
+            <param name="alignment"><enum type="alignment">CENTER</enum></param>
+            <param name="spacing"><int>0</int></param>
+            <param name="minWidth"><int>43</int></param>
+            <param name="minHeight"><int>50</int></param>
+            <param name="maxHeight"><int>50</int></param>
+            <theme name="playPauseStopBox" ref="playControlsBoxes">
+                <theme name="playControlsPlayBtn" ref="button">
+                    <param name="background"><image>playPauseSelect</image></param>
+                </theme>
+                <theme name="playControlsStopBtn" ref="button">
+                    <param name="background"><image>stopSelect</image></param>
+                </theme>
+            </theme>
+            <theme name="playBpmBox" ref="playControlsBoxes">
+                <theme name="playControlsBpmBtn" ref="button">
+                    <param name="background"><image>bpmBgdImg</image></param>
+                    <param name="minHeight"><int>28</int></param>
+                    <param name="minWidth"><int>36</int></param>
+                    <!-- make the numbers near the bottom -->
+                    <param name="border"><border>15,0,0,0</border></param>
+                    <param name="font"><font>moduleBarFont</font></param>
+                </theme>
+            </theme>
+            <theme name="playRepeatsBox" ref="playControlsBoxes">
+                <!-- this box has to accommodate bottom part of the arrow on loop icons
+                     which adds 5 to the height, so make border -5 there -->
+                <param name="border"><border>8,20,3,20</border></param>
+                <theme name="playControlsRepeatBtn" ref="button">
+                    <param name="background"><image>none</image></param>
+                    <param name="overlay"><image>repeatBtnOverlay</image></param>
+                    <param name="font"><font>moduleBarFont</font></param>
+                    <param name="minWidth"><int>57</int></param>
+                    <param name="minHeight"><int>39</int></param>
+                    <!-- make the numbers central -->
+                    <param name="border"><border>4,0,9,0</border></param>
+                    <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+                </theme>
+            </theme>
+        </theme>
+    </theme>
+
+    <theme name="welcomeToggleBox" ref="buttonBox">
+        <param name="spacing"><int>5</int></param>
+    </theme>
+	
+    <theme name="aboutKybDialog" ref="-normalDialogLayout">
+        <param name="background"><image>kybLogoImg</image></param>
+        <param name="border"><border>10</border></param>
+        <param name="minWidth"><int>300</int></param>
+        <param name="minHeight"><int>300</int></param>
+    </theme>
+
+    <theme name="welcomeDialog" ref="-normalDialogLayout">
+        <param name="background"><image>kybWelcomeBanner</image></param>
+        <param name="border"><border>250,10,10,10</border></param>
+        <param name="minWidth"><int>750</int></param>
+        <param name="minHeight"><int>300</int></param>
+    </theme>
+
+    <theme name="settingsDialog" ref="-normalDialogLayout">
+        <theme name="colourSelectorButton" ref="colourSelectorButton">
+            <param name="maxHeight"><int>28</int></param>
+            <param name="maxWidth"><int>50</int></param>
+        </theme>
+    </theme>
+
+    <theme name="bugReportDialog" ref="-normalDialogLayout">
+    </theme>
+
+    <theme name="labelCheckbox" ref="checkbox">
+        <param name="minHeight"><int>20</int></param>
+    </theme>
+</themes>

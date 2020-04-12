@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.courseracapstone.android.GiftsActivity" >
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="always|collapseActionView"
+        android:title="@string/search_hint"/>
+    <item
+        android:id="@+id/show_user_notice_menuitem"
+        android:icon="@drawable/notices_menu_selector"
+        android:showAsAction="always"
+        android:title="@string/menu_user_notice"/>
+    <item
+        android:id="@+id/top_givers_menuitem"
+        android:icon="@drawable/ic_top_givers"
+        android:showAsAction="always"
+        android:title="@string/menu_top_givers"/>
+    <item
+        android:id="@+id/change_login_menuitem"
+        android:showAsAction="never"
+        android:title="@string/menu_login"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

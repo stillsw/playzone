@@ -1,0 +1,9 @@
+run it a bunch of times and at although does quite well, specially with few points,
+eventually runs into a problem where it would be better to replace a section of the cycle and redo it in a shorter way given the new point.
+problem is how to test for the existence of such an optimisation... there's no info that can make it an easy thing to find, perhaps every section
+of the whole thing needs to be re-evaluated.
+
+ideas
+is there something about when this happens that makes it possible to detect?
+eg. some place where a bridge is likely to create a shorter route and a section that gets cut out then needs to be remade and spliced in somehow?
+perhaps proximity of edges or vertices which aren't connected?

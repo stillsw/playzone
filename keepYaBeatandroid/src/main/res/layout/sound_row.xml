@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp">
+
+    <!-- this is the button that does the work of toggling part of the dialog_simple_list -->
+    <com.stillwindsoftware.keepyabeat.gui.ConcreteCompoundButton
+        android:id="@+id/toggle_list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="Toggle view sounds"
+        android:background="@drawable/toggle_navigation_btn_selector"
+        android:clickable="true"/>
+
+    <ImageButton
+        android:id="@+id/play_sound_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:paddingLeft="4dp"
+        android:contentDescription="Play a sound button"
+        android:layout_centerVertical="true"
+        android:onClick="playSound"
+        android:src="@android:drawable/ic_media_play" />
+
+    <!-- this is the new content button on the control rows -->
+    <ImageButton
+        android:id="@+id/add_new_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_circle_outline_white_24dp"
+        />
+
+    <TextView
+        android:id="@+id/sound_name"
+        style="@style/ListHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/play_sound_btn"
+        android:layout_toEndOf="@id/play_sound_btn"
+        android:layout_toLeftOf="@+id/add_new_btn"
+        android:layout_toStartOf="@+id/add_new_btn"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <!-- TODO : put a warning image here if the sound is broken... and have it gone by default -->
+
+    <LinearLayout
+        android:id="@+id/extra_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sound_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <ImageButton
+            android:id="@+id/edit_btn"
+            android:src="@drawable/ic_create_white_24dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            />
+
+        <ImageButton
+            android:id="@+id/delete_btn"
+            android:src="@drawable/ic_delete_white_24dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            />
+
+    </LinearLayout>
+    <!-- hidden data for lookup -->
+
+    <TextView
+        android:id="@+id/sound_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sound_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/sound_type"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/external_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="1"
+        android:visibility="gone" />
+
+</RelativeLayout>

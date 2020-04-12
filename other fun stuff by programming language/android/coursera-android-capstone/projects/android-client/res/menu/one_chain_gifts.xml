@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.courseracapstone.android.GiftsActivity" >
+
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/image_crop_menu"
+            android:showAsAction="never"
+            android:title="@string/image_crop"/>
+        <item
+            android:id="@+id/image_fit_menu"
+            android:showAsAction="never"
+            android:title="@string/image_full"/>
+    </group>
+
+    <item
+        android:id="@+id/change_login_menuitem"
+        android:showAsAction="never"
+        android:title="@string/menu_login"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

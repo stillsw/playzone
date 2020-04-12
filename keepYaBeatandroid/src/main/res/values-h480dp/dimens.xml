@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="welcome_screen_horizontal_margin">10dp</dimen>
+    <dimen name="welcome_screen_vert_space">18dp</dimen>
+    <dimen name="edit_draw_numbers_inside_top_margin">40dp</dimen><!-- edit rhythm, when numbers are placed inside top, smaller dimens for shorter devices -->
+
+</resources>

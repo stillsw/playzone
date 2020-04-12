@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/image_container"
+        android:layout_width="@dimen/gifts_lists_thumb_size"
+        android:layout_height="@dimen/gifts_lists_thumb_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+         >
+
+        <com.courseracapstone.android.ThumbView
+            android:id="@+id/thumb_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/download_image_bgrd" />
+
+        <TextView
+            android:id="@+id/thumb_missing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/thumb_missing"
+            android:textColor="@color/thumb_image_border"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/thumb_progress"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateOnly="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/list_gift_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@id/image_container"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/list_heart_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="67dp"
+        android:contentDescription="@string/touched_image" />
+
+    <ImageView
+        android:id="@+id/list_monkey"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/flag_image"
+        android:src="@drawable/monkey"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/list_touched_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_gift_title"
+        android:layout_toEndOf="@id/image_container"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</merge>

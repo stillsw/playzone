@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="very_small_width">true</bool>
+    <bool name="small_screen">true</bool>
+    <bool name="large_screen">false</bool>
+
+	<!-- whether the rhythms dialog_simple_list can exist as a part of the play rhythm layout
+		rather than overlay it, default to false. On large screens perhaps can
+		 nothing implemented around this yet though -->
+	<bool name="rhythms_list_coexists">false</bool>
+</resources>

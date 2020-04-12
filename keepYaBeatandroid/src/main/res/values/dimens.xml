@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="small_horizontal_margin">8dp</dimen>
+    <dimen name="vertical_item_separation">8dp</dimen>
+
+    <!-- rhythm play bar -->
+    <dimen name="title_bar_name_top_margin">40dp</dimen>
+    <dimen name="title_bar_more_less_min_width">90dp</dimen>
+    <dimen name="title_bar_more_less_right_margin">80dp
+    </dimen><!-- right margin, incorporates fab button and margins (24) -->
+    <dimen name="title_bar_rhythm_name_right_margin">170dp
+    </dimen><!-- right margin, adds both above nb. "more/less" text (lang dependant) -->
+
+    <!-- welcome screen in a wide format doesn't look good with lots of vertical space -->
+    <dimen name="welcome_screen_vert_space">5dp</dimen>
+    <dimen name="welcome_screen_horizontal_margin">5dp</dimen>
+
+    <dimen name="rhythm_beat_types_list_width">400dp
+    </dimen><!-- only used when layout > 400dp, see layout files -->
+    <dimen name="rhythms_list_rhythm_img_width">250dp</dimen>
+    <dimen name="rhythms_list_rhythm_img_height">100dp</dimen>
+
+    <dimen name="rhythm_beat_types_volume_width">200dp</dimen>
+    <dimen name="rhythm_beat_types_display_numbers_size">24dp</dimen>
+
+    <dimen name="play_controls_button_stroke_width">5dp</dimen>
+    <dimen name="play_controls_button_height">70dp</dimen>
+    <dimen name="play_controls_button_width">67dp</dimen>
+    <dimen name="play_controls_button_margin">0dp</dimen>
+    <dimen name="bpm_button_width">90dp</dimen>
+    <dimen name="bpm_button_img_padding">10dp</dimen>
+    <dimen name="bpm_dialog_width">300dp</dimen>
+    <dimen name="bpm_dialog_height">300dp</dimen>
+    <dimen name="repeats_button_width">83dp</dimen>
+
+    <dimen name="undo_menu_button_padding">15dp</dimen>
+
+    <!--rhythm draughting -->
+    <dimen name="edit_draw_numbers_inside_top_margin">10dp
+    </dimen><!-- edit rhythm, when numbers are placed inside top, smaller dimens for shorter devices -->
+    <dimen name="draw_numbers_image_margin">3dp</dimen>
+    <dimen name="drag_dot_stroke">5dp</dimen>
+
+    <!-- to get the same behaviour as a normal dialog (for the centre fragment for popups) -->
+    <item name="dialog_width_portraint" type="fraction">95%</item>
+    <item name="dialog_width_landscape" type="fraction">102.5%</item>
+
+    <!-- fab dimens -->
+    <dimen name="fab_elevation">8dp</dimen>
+    <dimen name="fab_press_translation_z">9dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_size_small">40dp</dimen>
+    <dimen name="fab_icon_size">24dp</dimen>
+    <!-- info button -->
+    <dimen name="secondary_action_size">24dp</dimen>
+
+    <dimen name="beats_and_sounds_extra_button_size">49dp</dimen>
+
+    <!-- default for ad margin means assume screen only wide enough to show 4 action bar icons, dimens(w530) sets the width where can show more) -->
+    <dimen name="native_ad_margin_for_action_bar_icons">200dp</dimen>
+    <dimen name="native_ad_width">280dp</dimen>
+    <dimen name="native_ad_height">80dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

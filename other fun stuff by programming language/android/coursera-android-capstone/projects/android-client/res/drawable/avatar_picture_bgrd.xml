@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <stroke
+        android:width="@dimen/lists_thumb_image_border_width"
+        android:color="@color/thumb_image_border" />
+
+</shape>

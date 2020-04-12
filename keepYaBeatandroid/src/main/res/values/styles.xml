@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!--style name="AppBaseTheme" parent="@style/Theme.AppCompat">
+    </style-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar"> <!--"android:Theme.Holo.Light.DarkActionBar"-->
+        <!-- base theme customizations can go here. -->
+        <item name="android:colorBackground">@color/background_material_dark</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="WelcomeActivityTheme" parent="AppTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppCompatDialogTheme" parent="@style/Theme.AppCompat">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ActivityAsDialogTheme" parent="@style/Theme.AppCompat.Dialog">
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" parent="@style/Widget.AppCompat.Button.Borderless.Colored"/><!-- used for the welcome screen bottom buttons-->
+
+    <style name="PlayControlsButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_margin">@dimen/play_controls_button_margin</item>
+    </style>
+
+    <style name="BpmDrumButton" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_margin">@dimen/play_controls_button_margin</item>
+    </style>
+
+    <style name="BpmButton" parent="@style/Widget.AppCompat.Button.Borderless">
+    </style>
+
+    <style name="RepeatsButton" parent="@style/Widget.AppCompat.Button.Borderless">
+    </style>
+
+    <!-- used by mimic_dialog_list.xml for the popup centre fragment that should look like a normal dialog
+         used by ChooseBeatTypeDialog -->
+    <style name="MimicDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@color/cardview_dark_background
+        </item><!-- at least for now this seems to be the right colour for alert dialog -->
+    </style>
+
+    <style name="MimicDialogTitle" parent="@style/TextAppearance.AppCompat.Title"/>
+
+    <style name="ListHeading">
+        <item name="android:layout_marginLeft">6dip</item>
+        <item name="android:layout_marginRight">6dip</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="SoundSpinner" parent="@style/Widget.AppCompat.Spinner">
+        <item name="android:gravity">left
+        </item><!-- needs work, this style isn't actually achieving anything-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

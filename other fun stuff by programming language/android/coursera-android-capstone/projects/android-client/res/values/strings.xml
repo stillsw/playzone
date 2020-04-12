@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Potlatch</string>
+    <string name="action_settings">Settings</string>
+    <string name="top_givers_section_title">Top Givers</string>
+    <string name="settings_section_title">Settings</string>
+    <string name="search_hint">Search gifts</string>
+
+    <string-array name="gifts_section_titles">
+        <item>All Gifts</item>
+        <item>My Gifts</item>
+        <item>Gift Chains</item>
+        <item>Flagged Obscene</item>
+        <item>Gift Chain</item>
+    </string-array>
+
+    <string name="authlabel">Potlatch</string>
+    <!--
+    string name="signup_title">Create new account</string>
+    <string name="login_label">Log in</string
+    -->
+
+    <string name="ok_button">OK</string>
+    <string name="retry_button">Retry</string>
+    <string name="retry_connect_button">Retry connect</string>
+    <string name="save_button">Save</string>
+    <string name="upload_button">Upload</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="delete_button">Delete</string>
+    <string name="choose_this_user_btn">Choose this user</string>
+    <string name="choose_accounts_dialog">Choose Account</string>
+    <!-- string name="create_new_account_btn">Add new account</string -->
+    <string name="dev_server_we_know_about">10.0.2.2:8443</string>
+    <!--
+		in keystore, if use another dev server
+		the https will fail for no self-signed
+		cert... would then have to use EasyHttpClient instead
+    -->
+    <string name="title_top_givers">Givers Leaderboard</string>
+    <string name="menu_user_notice">Gifts activity updates</string>
+    <string name="menu_login">Change user</string>
+    <string name="menu_top_givers">Givers Leaderboard</string>
+    <string name="current_login_label">Signed in: %1$s %2$s@%3$s</string>
+    <string name="current_no_search_label">\n%2$s</string>
+    <string name="current_search_label">Current search: %1$s\n%2$s</string>
+
+    <string-array name="content_filter_applied">
+        <item></item>
+        <item>Content is filtered</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string name="welcome_login_title">Welcome to Potlatch</string>
+    <string name="welcome_login_msg">Android manages Potlatch accounts.
+         To remove an account, select it from the Potlatch option in your device Settings app and choose remove from the menu.</string>
+    <string name="setup_btn">Sign-up or sign-in</string>
+    <string name="another_setup_btn">Setup another account</string>
+    <string name="setup_problem_toast">Set up failed [%1$s]</string>
+    <string name="potlatch_def">Pot·latch — Chinook for the Native spirit of gift-giving</string>
+    <string name="login_title">Setup Potlatch Account</string>
+    <string name="password_change_title">Password Changed</string>
+    <string name="login_server_domain_hint">Potlatch server domain name</string>
+    <string name="login_dev_server_hint">Dev server domain or IP:port</string>
+    <string name="login_use_dev_hint">Use dev server</string>
+    <string name="login_use_existing_hint">Link to existing account</string>
+    <string name="login_choose_tester_hint">Choose a test user</string>
+    <string name="login_acc_name_hint">User name</string>
+    <string name="login_pass_hint">Password</string>
+    <string name="login_pass_repeat_hint">Repeat password</string>
+    <string name="login_signin_label">Sign in</string>
+    <string name="login_choose_another_account_label">Change user</string>
+    <string name="login_dev_admin_hint">Privileged User (test server only)</string>
+    <string name="login_dev_account_name_hint">Test user</string>
+    <string name="administrator_label">Moderator</string>
+
+    <string-array name="test_users">
+        <item>Bill Gatsby</item>
+        <item>Larry the Lamb</item>
+        <item>Hansel Pretzel</item>
+        <item>admin</item>
+    </string-array>
+
+    <string name="user_not_signed_in_error">Oops, lost your sign-in! Change user from options to reset</string>
+    <string name="login_submit_valid_error">Server, user name and password must be entered</string>
+    <string name="login_submit_valid_server_error">Server must be valid domain name or IP:port</string>
+    <string name="login_submit_connect_error">Could not connect, check domain name and the server is running</string>
+    <string name="login_submit_invalid_resp">Server error [%1$s: %2$s]</string>
+    <string name="login_submit_forbidden_resp">User not on server or server is down, contact administrator</string>
+    <string name="login_submit_badrequest_resp">Password has changed on the server</string>
+    <string name="signup_submit_forbidden_resp">Server may be down, contact administrator</string>
+    <string name="login_submit_passwords_error">Passwords must match</string>
+    <string name="login_submit_dupe_name_error">User name already used (%s)</string>
+    <string name="sign_submit_dupe_error">That user name is already taken</string>
+    <string name="not_online_gifts_msg">Connect to the internet to see Gifts</string>
+    <string name="not_online_action_toast_msg">Oops, you need an internet connection for that</string>
+    <string name="not_online_search_toast_msg">Search needs an internet connection</string>
+    
+    <!-- user notices -->
+    <string name="fresh_sign_in_title">Hi %1$s, recent gifts activity</string>
+    <string name="user_notice_msg">Recent gifts activity</string>
+    <string name="user_notice_touches_up">touches went up</string>
+    <string name="user_notice_touches_down">touches went down</string>
+    <string name="user_notice_flagged">some flagged for content</string>
+    <string name="user_notice_removed">removed %1$s as obscene</string>
+    
+    <string name="network_error_title">Network Error</string>
+    <string name="connect_error">Could not connect, check network, and that the server is running</string>
+    <string name="auth_error_during_update">Oops, the server may have reset: trying to reconnect</string>
+    <!--
+    string name="unknown_error_title">Unknown program error</string>
+    <string name="unknown_error">Please send a bug report</string
+    -->
+
+    <string name="thumb_missing">Image\nmissing</string>
+    <string name="avatar_missing">No picture</string>
+    <string name="image_download_error">Error in\ndownload</string>
+    <string name="list_no_gifts">No matching gifts</string>
+    <string name="list_no_users">No users</string>
+    <string name="list_start_of_rows">Top</string>
+
+    <!-- view gift -->
+    <string name="gift_info">Given by %1$s</string>
+    <string name="delete_gift_menuitem">Delete gift</string>
+    <string name="chain_menuitem">View chain</string>
+    <string name="delete_gift_confirm_title">Confirm delete</string>
+    <string name="delete_gift_confirm">Delete can\'t be undone, are you sure?</string>
+    <string name="gift_went_missing">That gift has recently been removed</string>
+
+    <plurals name="gift_touched_by">
+        <item quantity="one">%d person is touched by this</item>
+        <item quantity="other">%d people are touched by this</item>
+    </plurals>
+    <plurals name="gift_list_touched_by">
+        <item quantity="one">%d touch</item>
+        <item quantity="other">%d touches</item>
+    </plurals>
+    
+    <string name="gift_touched_by_none">Be first to be touched by this</string>
+    <string name="chain_gift_list_count">%d in chain</string>
+    
+    <string-array name="gift_flagged_by">
+        <item>Some find this inappropriate</item>
+        <item>Some find this obscene</item>
+        <item>Some find this inappropriate AND obscene</item>
+    </string-array>
+
+    <string name="gift_flag_inapprop_on">It\'s not inappropriate</string>
+    <string name="gift_flag_inapprop_off">Flag as Inappropriate</string>
+    <string name="gift_flag_obscene_on">It\'s not obscene</string>
+    <string name="gift_flag_obscene_off">Flag as Obscene</string>
+    <string name="image_crop">Image: Fill (crop)</string>
+    <string name="image_full">Image: Fit (shrink)</string>
+
+    <!-- add gift -->
+    <string name="add_gift_dialog_title">Upload a new Gift</string>
+    <string name="edit_title_hint">Title</string>
+    <string name="edit_added_text_hint">Additional text (optional)</string>
+    <string name="add_image_hint">Choose picture</string>
+    <string name="link_chain_to">Chain to %1$s</string>
+    <string name="add_gift_success">Gift uploaded</string>
+    <string name="camera_error_no_sd">Camera needs an SDCard</string>
+    <string name="sdcard_error_no_dir">Failed to allocate SDCard</string>
+    <string name="camera_error_file_delete">Failed to free space on SDCard</string>
+    <string name="camera_error">Failed to retrieve image from camera</string>
+    <string name="scale_error">Failed to scale image</string>
+    <string name="camera_be_patient">Starting camera&#8230;</string>
+    <string name="chooser_be_patient">Starting chooser&#8230;</string>
+    <string name="save_be_patient">Uploading&#8230;</string>
+    <string name="add_gift_invalid">Gift needs a title and an image</string>
+    <string name="add_gift_error">Failed to add Gift, (error %1$s)</string>
+    <string name="add_gift_image_error">Failed to add Gift, image could not be uploaded</string>
+
+    <!-- one chain gifts list -->
+    <string name="one_chain_title_not_visible">Chain: Top gift not visible</string>
+    <string name="one_chain_title_removed">Chain: Top gift removed</string>
+    <string name="one_chain_title">Chain : %1$s</string>
+    
+    <!-- preferences -->
+    <string name="prefkey_filter_content">Filter gifts content</string>
+    <string name="pref_filter_content">Filter gifts content</string>
+    <string name="pref_filter_content_summary">By checking this item, you will not see gifts that have been flagged as inappropriate or obscene</string>
+    <string name="pref_error_bad_request">Server reported an error, sign-in again to refresh values</string>
+    <string name="pref_error_other">An error occurred, check network and server connection</string>
+    <string name="prefkey_interval">Update interval</string>
+    <string name="pref_interval">Time between server updates</string>
+    <string name="pref_interval_summary">
+        Sets the interval for polling the server for updates to gifts 
+        \nCurrently %1$s</string>
+    
+    <string-array name="pref_interval_entries">
+        <item>every minute</item>
+        <item>every 5 minutes</item>
+        <item>every hour</item>
+    </string-array>
+    <string-array name="pref_interval_values">
+        <item>60000</item><!-- 60 * 1000 -->
+        <item>300000</item><!-- 60 * 5000 -->
+        <item>3600000</item><!-- 60 * 60000 -->
+    </string-array>
+    
+    <!-- content descriptions for images -->
+    <string name="signup_info_fab">Sign-up</string>
+    <string name="gift_info_btn">Info</string>
+    <string name="add_gift_fab">Add gift button</string>
+    <string name="take_photo_fab">Add gift button</string>
+    <string name="gift_image">Gift image</string>
+    <string name="flag_image">Flag image</string>
+    <string name="touched_image">Heart image</string>
+    <string name="welcome_image">Welcome background image</string>
+    <string name="straight_chain_image">Chain link background image</string>
+    <string name="pref_icon_image">Preference icon</string>
+    
+</resources>

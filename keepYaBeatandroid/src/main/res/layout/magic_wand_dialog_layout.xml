@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/num_beats_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textIsSelectable="true"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/min_num_beats"
+        android:layout_width="36sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num_beats_value"
+        android:layout_marginTop="7sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:paddingRight="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:text="@integer/minNumBeats" />
+
+    <SeekBar
+        android:id="@+id/seek_num_beats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:thumb="@drawable/parts_seekbar_thumb"
+        android:layout_below="@id/num_beats_value"
+        android:layout_marginLeft="40sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_marginEnd="40sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:max="@integer/maxNumBeats"
+        />
+
+    <TextView
+        android:id="@+id/max_num_beats"
+        android:layout_width="36sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num_beats_value"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:textSize="12sp"
+        android:text="@integer/maxNumBeats" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seek_num_beats"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        >
+        <ImageButton
+            android:id="@+id/colour_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/darker_gray"
+            android:alpha="?android:attr/disabledAlpha"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="Beat type display colour"/>
+
+        <TextView
+            android:id="@+id/beat_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_vertical"
+            android:lines="1"
+            android:textSize="20sp"
+            android:alpha="?android:attr/disabledAlpha"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

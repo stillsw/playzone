@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:clickable="false" >
+
+    <!-- this is the button that does the work of toggling part of the dialog_simple_list -->
+    <com.stillwindsoftware.keepyabeat.gui.ConcreteCompoundButton
+        android:id="@+id/toggle_list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="Toggle view beat types"
+        android:background="@drawable/toggle_navigation_btn_selector"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/filler_tv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        />
+
+    <!-- this is the new content button on the control rows -->
+    <ImageButton
+        android:id="@+id/add_new_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_circle_outline_white_24dp"
+        />
+
+    <TextView
+        android:id="@+id/beat_type_name"
+        style="@style/ListHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/filler_tv"
+        android:layout_toEndOf="@id/filler_tv"
+        android:layout_toLeftOf="@+id/add_new_btn"
+        android:layout_toStartOf="@+id/add_new_btn"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/extra_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/beat_type_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <ImageButton
+            android:id="@+id/play_beat_type_btn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/beats_and_sounds_extra_button_size"
+            android:layout_height="@dimen/beats_and_sounds_extra_button_size"
+            android:onClick="playSound"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/edit_btn"
+            android:src="@drawable/ic_create_white_24dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/beats_and_sounds_extra_button_size"
+            android:layout_height="@dimen/beats_and_sounds_extra_button_size"
+            />
+
+        <ImageButton
+            android:id="@+id/delete_btn"
+            android:src="@drawable/ic_delete_white_24dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/beats_and_sounds_extra_button_size"
+            android:layout_height="@dimen/beats_and_sounds_extra_button_size"
+            />
+
+    </LinearLayout>
+
+    <!-- hidden data for lookup -->
+
+    <TextView
+        android:id="@+id/sound_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sound_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/beat_type_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sound_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/sound_type"
+        android:lines="1"
+        android:paddingLeft="4dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/beat_type_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>

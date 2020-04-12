@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- this is the layout used by Authenticator Activity -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true" >
+
+            <CheckBox
+                android:id="@+id/linkExisting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_use_existing_hint" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <CheckBox
+                    android:id="@+id/useDev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_use_dev_hint" />
+
+                <CheckBox
+                    android:id="@+id/chooseTestUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/useDev"
+                    android:hint="@string/login_choose_tester_hint" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/serverDomain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/login_dev_server_hint"
+                android:inputType="" />
+
+            <EditText
+                android:id="@+id/accountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/login_acc_name_hint" />
+
+            <EditText
+                android:id="@+id/accountPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/login_pass_hint"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/accountRepeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/login_pass_repeat_hint"
+                android:inputType="textPassword" />
+
+            <Spinner
+                android:id="@+id/accountNameSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/test_users"
+                android:padding="10dp"
+                android:prompt="@string/login_dev_account_name_hint" />
+
+            <CheckBox
+                android:id="@+id/isDevAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/login_dev_admin_hint" />
+
+            <!-- fab icon courtesy of http://icons8.com/preview/android-L-icons/ -->
+
+            <ImageButton
+                android:id="@+id/fabbutton"
+                style="@style/FabButtons"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fab_signup_ripple"
+                android:contentDescription="@string/signup_info_fab"
+                android:src="@drawable/fab_sign_in" />
+
+            <Button
+                android:id="@+id/chooseFromExisting"
+                style="@style/FlatButtons"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="end"
+                android:text="@string/login_choose_another_account_label"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

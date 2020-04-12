@@ -1,0 +1,16 @@
+the idea is to find the nearest vertex to the added one, connect to it and then figure out the best one of that vertex's existing sides to eliminate
+
+sounds reasonable but fails because, say get point d in this pic, nearest vertex is a, but obviously don't want to splice in to either of a's edges
+
+
+                          a
+                      /       \
+                  /               \
+              /                        \
+          /                                \ 
+      /                                        \
+  /                                                \
+b----------------------------------------------------c
+                          d
+                          
+                           

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:kyb="http://schemas.android.com/apk/res-auto"  >
+    
+    <item 
+        android:id="@+id/menu_undo"
+        kyb:showAsAction="always"
+        android:title="@string/NO_UNDO_DESC"
+        android:icon="@drawable/ic_undo_white_24dp"/>
+
+    <item
+        android:id="@+id/menu_tags"
+        kyb:showAsAction="never"
+        android:title="@string/moduleTags"/>
+
+    <item
+        android:id="@+id/menu_remove_ads"
+        kyb:showAsAction="never"
+        android:title="@string/remove_ads_menu"/>
+
+    <item
+        android:id="@+id/menu_settings"
+        kyb:showAsAction="never"
+        android:title="@string/settingsTitle"/>
+
+    <item
+        android:id="@+id/menu_help"
+        kyb:showAsAction="never"
+        android:title="@string/help_menu"/>
+
+</menu>

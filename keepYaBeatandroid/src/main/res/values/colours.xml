@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    >
+    <color name="welcome_screen_bgd">#FF8B0000</color>
+    <color name="android_highlight_blue">#33B5E5</color>
+    <color name="android_highlight_blue_with_transparency">#8033B5E5</color>
+    <color name="black_transparency">#70000000</color>
+    <color name="black_transparency_plus">#35000000</color>
+
+    <color name="subzone_artifacts_white">#AADFDFF9</color>
+    <color name="subzone_contrast">#80626283</color><!-- note same as numbers_bgd_stroke but with alpha -->
+    <color name="fullbeat_overlay_edge">#20000000</color>
+    <color name="numbers_bgd_fill">#DFDFF9</color>
+    <color name="numbers_bgd_stroke">#626283</color>
+    <color name="subzone_overlay_fill">#12000000</color>
+
+    <color name="editor_backgrd">#BBBC4D</color>
+
+    <color name="play_controls_stroke">#CCFFFFFF</color><!-- 80% full white -->
+
+    <color name="cardview_background">@color/cardview_dark_background</color>
+
+
+    <!-- fab colours -->
+    <color name="fab_color_1">#ff5252</color>
+    <color name="fab_color_1_muted">#ff8080</color>
+    <color name="fab_color_2">#9c27b0</color>
+    <color name="fab_color_2_muted">#a56ab0</color>
+</resources>

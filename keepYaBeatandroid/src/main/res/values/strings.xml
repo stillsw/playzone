@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- THE FOLLOWING SECTIONS ARE ALL NEW STRINGS NEEDING TRANSLATIONS -->
+    <string name="beat_dialog_title">Beat %1$s : </string>
+    <plurals name="beat_dialog_title_plurals">
+        <item quantity="one">undivided beat</item>
+        <item quantity="other">split into parts</item>
+    </plurals>
+    <plurals name="beat_dialog_parts_plural">
+        <item quantity="one">single part</item>
+        <item quantity="other">%d parts</item>
+    </plurals>
+    <string name="beat_dialog_beat_type_label">%1$s %2$s</string>
+    <plurals name="beat_dialog_beat_type_label_plurals">
+        <item quantity="one"> </item>
+        <item quantity="other">Part %d : </item>
+    </plurals>
+    <string name="beat_dialog_change_sound_volume_warning">Changes to sound/volume apply to all beats of the same type in the rhythm</string>
+    <string name="beat_dialog_dont_show_warning">don\'t show warning again</string>
+    <string name="beat_number_dialog_title">Beat Number</string>
+    <string name="beat_number_dialog_full_beat_num_label">Number</string>
+    <string name="beat_number_dialog_show_beat_num_label">Show as</string>
+    <string name="copy_beat_dialog_title">Copy Beat %1$s to Other Beats</string>
+
+    <string name="settingsKeep_screen_awake_while_playing_label">Keep screen on while playing a rhythm</string>
+    <string name="settingsKeep_screen_awake_while_playing_summaryOn">Keep screen on</string>
+    <string name="settingsKeep_screen_awake_while_playing_summaryOff">Don\'t keep screen on</string>
+
+    <!-- END OF NEW STRINGS -->
+
+    <!-- common strings -->
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="info_abbr">i</string>
+    <string name="remove_tag_from_search_button">Remove from search</string>
+    <string name="help_menu">Help</string>
+    <string name="remove_ads_menu">Upgrade to Premium</string>
+    <string name="consent_ads_menu">Change consent for Ads</string>
+    <string name="thanks_for_upgrading_title">Thank you!</string>
+    <string name="thanks_for_upgrading_msg">Thank you for upgrading to premium!</string>
+    <string name="nag_user_for_ads_title">Keep Ya Beat - Free Version</string>
+    <string name="nag_user_for_ads_msg">You are using Keep Ya Beat free version, please enable internet for ads to show or upgrade to remove ads</string>
+
+    <!-- loading and other system messages -->
+    <string name="checking_install">Checking Installation</string>
+    <string name="loading">Loading</string>
+    <string name="load_installing">Installing</string>
+    <string name="loading_complete">Finished</string>
+    <string name="system_low_memory_title">Low Memory</string>
+    <string name="system_low_memory_body">The system is running low on memory.
+        \n Keep Ya Beat is releasing all resources possible.</string>
+
+    <!-- notifications/audio focus messages for playback -->
+    <string name="notification_playing_n_of_n">Playing %1$s/%2$s</string>
+    <string name="notification_playing">Playing</string>
+    <string name="notification_paused_n_of_n">Paused %1$s/%2$s</string>
+    <string name="notification_paused">Paused</string>
+    <string name="notification_action_play">Play</string>
+    <string name="notification_action_pause">Pause</string>
+    <string name="notification_action_stop">Stop</string>
+    <string name="audio_focus_unavailable_title">Audio unavailable</string>
+    <string name="audio_focus_unavailable_body">Another app may be using audio, do you want to continue playing silently?</string>
+
+    <!-- rhythms dialog_simple_list -->
+    <string name="rhythms_search_hint">Search name&#8230;</string>
+    <string name="rhythms_tags_search_hint">Search tags</string>
+    <string name="rhythms_empty_list">No matching rhythms</string>
+    <!-- rhythm change name/tags -->
+    <string name="setUniqueNameHint">Enter unique name</string>
+    <string name="rhythms_tags_button">Tags</string>
+    <string name="addNewTag">New tag</string>
+    <!-- beat numbering -->
+    <string name="beatNumberLabelHint">Show</string>
+
+    <!-- content descriptions (for accessibility) -->
+    <string name="kyb_banner_desc">Keep Ya Beat banner with dancers and musical instruments</string>
+    <string name="play_rhythm_img">Rhythm image</string>
+    <string name="play_rhythm_backimg">Rhythm background image</string>
+    <string name="play_button_img">Play button</string>
+    <string name="pause_button_img">Pause button</string>
+    <string name="stop_button_img">Stop button</string>
+    <string name="bpm_button_img">BPM button</string>
+    <string name="repeats_button_img">BPM button</string>
+    <string name="kyb_logo_img">Keep Ya Beat logo</string>
+    <string name="bpm_tapper_img">BPM tapper button</string>
+    <string name="undo_button_img">Undo button</string>
+
+    <!-- new/changed errors/warnings -->
+    <string name="email_bug_report">Send report</string>
+    <string name="bugReportSubmitDesc">Please tell us how the error happened here ...</string>
+    <string name="error_calling_change_details">Could not load rhythm for changes, please submit a bug report</string>
+
+    <!-- new settings
+    <string name="settingsPerformanceLabel">Performance</string>
+    <string name="settingsToggleStreamingBeatTrackerLabel">Stream sounds</string>
+    <string name="settingsToggleStreamingBeatTrackerSummaryOn">Using streaming for accurate timing</string>
+    <string name="settingsToggleStreamingBeatTrackerSummaryOff">Not streaming, may improve timing on pre-Lollipop devices</string>
+    -->
+
+    <string name="LOAD_FAILED_INVALID_FORMAT">Sound format not supported</string><!-- sound load error, format -->
+
+    <!-- changes to existing strings -->
+    <string name="welcomeHeading">Thank you for choosing Keep Ya Beat!</string>
+    <string name="welcomeBody">
+Much more than a metronome
+\n
+Play popular rhythms or make your own
+    </string>
+
+    <string name="UNEXPECTED_WRITE_FORMAT_ERROR">An unexpected error occurred during changes.
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.
+    </string>
+
+    <string name="UNEXPECTED_PROGRAM_ERROR">Unexpected program error occurred.
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.
+    </string>
+
+    <string name="non_critical_error_restart_activity">An unexpected non-critical error forced a restart. If problems persist please send us a bug report.</string>
+
+    <string name="UNEXPECTED_SAVE_ERROR">Unexpected error occurred during changes.
+\n\nThe operation could not complete due to a program error.
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.
+    </string>
+
+    <string name="INTERMITTENT_BUG_ERROR">An unexpected but non-serious program error has occurred. 
+\nIf all seems OK it\'s safe to continue. Otherwise please restart the app. 
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.
+	</string>
+
+    <!-- TODO translations (from import errors NOT USED YET) >
+    <string name="UNREADABLE_IMPORT_FILE_ERROR">Could not read file, are you sure it\'s a Keep Ya Beat rhythms data file? 
+\n\nIf you are, it must be a program error. 
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.
+	</string>
+    <string name="ALL_INVALID_IMPORT_FILE_ERROR">It was not possible to read any of the rhythms in the file, 
+\n\nit is likely to be a program error.  
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.
+	</string>
+    
+    <string name="SOME_INVALID_IMPORT_FILE_ERROR">It was not possible to read all of the rhythms in the file, 
+\n\nit is likely there was some program error.  
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.
+	</string>
+    
+    <string name="MISSING_RHYTHMS_IMPORT_FILE_ERROR">Couldn\'t find any rhythms in the file. 
+\n\nDid it come from a reliable source? If so there must be some program error, 
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.
+	</string-->
+
+    <!-- new or changed for beats and sounds -->
+    <string name="beat_types_internal_data">Standard beat types</string>
+    <string name="beat_types_user_data">My beat types</string>
+    <string name="sounds_internal_data">Standard sounds</string>
+    <string name="sounds_user_data">My custom sounds</string>
+    <string name="delete_beat_type_migrate_title">Change references to \'%1$s\'</string>
+    <string name="soundUriLoadedLabel">Sound loaded</string>
+    <!-- IMPORTANT: this one is used for delete sound too now, so don't add beat type in translations-->
+    <string name="changeRefBeatTypeLabel">Change to</string>
+    <string name="delete_sound_migrate_title">Change references to \'%1$s\'</string>
+    <!-- IMPORTANT, these 2 have colons in TWL version, remove in translations-->
+    <string name="deleteBeatTypeRefs">Used by</string>
+    <string name="soundUriHint">Locate sound</string>
+    <string name="uriLabel">URI</string>
+    <string name="allowed_format_label">Supported\nformat</string>
+    <string name="allowed_format_desc">Wave PCM\nMono 22050Hz\nBit depth 16\nMax length 0.4 secs</string>
+    <string name="open_chosen_sound_error">Unable to open file</string>
+    <string name="open_chosen_sound_auth_error">Failed permission to open file</string>
+    <string name="sound_file_compat_error_title">Sound File Error</string>
+    <string name="sound_file_compat_error_format">File format is not supported</string>
+    <!-- NOTE this one has extra params in the original, removed here -->
+    <string name="errorSoundFileLength">Sound is too long for a metronome (max 0.4 seconds)</string>
+    <!-- originally had a sound name for fallback, and didn't include the fix it part) -->
+    <string name="rbtTableSoundError">Sound file error, play will use fallback sound. (Fix it in Beats &amp; Sounds)</string>
+    <!-- new -->
+    <string name="beatTypesSoundError">Sound file error (Fix it in Sounds)</string>
+    <string name="customSoundDeleteConfirm">Warning: to undo this deletion a new file must be attached</string>
+    <string name="deleteSoundInvalidReferencesRhythms">Sound referenced by Rhythm(s), delete not allowed</string>
+    <!--string name="beatTypeMissingName">[name is missing]</string-->
+
+    <!-- new or changed for rhythms -->
+    <string name="menuSetNameRhythm">Change details</string>
+    <string name="menuOpenRhythm">Open</string>
+    <string name="menuEditRhythm">Edit</string>
+    <string name="menuDeleteRhythm">Delete</string>
+    <string name="menuCloneRhythm">Duplicate</string>
+    <string name="saveRhythmLabel">Save rhythm</string>
+    <string name="rhythmDetailsMore">More</string>
+    <string name="rhythmDetailsLess">Less</string>
+
+    <!-- changed for rhythm editor -->
+    <string name="editRhythmLabel">%1$s [edit]</string><!-- was 'editting' -->
+    <string name="invokeDragBeatType">Press and hold to select</string>
+
+    <!-- new for settings -->
+    <string name="settingsToggleWelcomeLabel">Show welcome at startup</string>
+    <string name="settingsRhythmPlayerHeadingLabel">Rhythm Beat Numbering</string>
+    <!--string name="settingsGeneralHeadingLabel">General</string> not used atm -->
+    <string name="settingsToggleDrawBeatNumsAboveLabel">Place numbers above beats</string>
+    <string name="settingsToggleDrawBeatNumsLabel">Show beat numbers</string>
+    <string name="settingsToggleAnimateBeatsUpwardsLabel">Animate upwards</string>
+    <string name="settingsToggleColourPlayedFullBeatsLabel">Tint played beats</string>
+    <string name="settingsToggleColourPlayedSubBeatsLabel">Tint played part beats</string>
+    <string name="settingsPlayedFullBeatsColourLabel">Tint colour</string>
+    <string name="settingsPlayedSubBeatsColourLabel">Tint colour</string>
+    <string name="settingsToggleBeatRipplesLabel">Show sound ripple effect</string>
+    <string name="settingsBeatMovementDistanceLabel">Movement distance</string>
+    <string name="settingsBeatMovementDistanceTooltip">Slide to the right to move beats further</string>
+    <string name="settingsBeatMovementSpeedLabel">Movement speed</string>
+    <string name="settingsBeatMovementSpeedTooltip">Slide to the right to slow movement down</string>
+    <!-- used to be joined to prev -->
+    <string name="settingsToggleDrawBeatNumsAboveSummaryOn">Show above the beats (except in the rhythm editor)</string>
+    <string name="settingsToggleDrawBeatNumsAboveSummaryOff">Show inside the beats</string>
+    <string name="settingsToggleDrawBeatNumsSummaryOn">Show unless unset for a particular rhythm</string>
+    <string name="settingsToggleDrawBeatNumsSummaryOff">Never show beat numbers</string>
+    <string name="settingsToggleAnimateBeatsUpwardsSummaryOn">Move playing beats upwards</string>
+    <string name="settingsToggleAnimateBeatsUpwardsSummaryOff">Move playing beats downwards</string>
+    <string name="settingsToggleProgressIndSummaryOn">Show a bar to indicate play position</string>
+    <string name="settingsToggleProgressIndSummaryOff">Don\'t show play position</string>
+    <string name="settingsRedefaultButtonSummary">Clears all settings and resets to installation values</string>
+
+    <string name="drawSilentPartBeatTitle">Show silent parts of split beats</string>
+    <string name="drawSilentPartBeatSummary">A part that has no sound may be shown only when played, always or never</string>
+    <string-array name="drawSilentPartBeat_options">
+        <item>Always</item>
+        <item>Only when they are played</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="drawSilentPartBeat_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="UNDONE_FEEDBACK">Undoing %1$s</string>
+    <string name="UNDONE_FEEDBACK_WITH_CONTEXT">Undoing %1$s (%2$s)</string>
+    <string name="UNDO_NOT_RECOVERABLE">A data error prevented safe undo and has been rectified. If problems persist, try restarting the app.
+\n\nWe would really like to know about this because it should never happen! Please send us a bug report.</string>
+
+    <!-- THE FOLLOWING SECTIONS ARE ALL EXISTING STRINGS THAT DON'T NEED TRANSLATIONS -->
+
+    <string name="app_name">Keep Ya Beat</string>
+    <string name="appVersion">android %1$s</string>
+    <string name="APP_EMAIL">stillwind.software@gmail.com</string>
+
+    <!-- menu bar and modules -->
+    <string name="appMenuPlayer">Play Rhythms</string>
+    <string name="appMenuBeatsSounds">Beats &amp; Sounds</string>
+    <string name="moduleTags">Tags</string>
+
+    <!-- web links -->
+    <string name="tourHelpLink">https://www.youtube.com/playlist?list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4</string>
+    <string name="rhythmPlayerLink">https://www.youtube.com/watch?v=UlcUMuMb7gE&amp;t=0s&amp;list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4&amp;index=3</string>
+    <string name="rhythmsListLink">https://www.youtube.com/watch?v=RSQkcIgjWSo&amp;list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4&amp;index=3</string>
+    <string name="rhythmEditorLink">https://www.youtube.com/watch?v=WehRaFbdaBg&amp;index=4&amp;list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4</string>
+    <string name="beatsSoundsLink">https://www.youtube.com/watch?v=ACRCiHkqWNg&amp;index=5&amp;list=PL9KQFB_gTGGSrwfNjtWeR9YCDEAb209m4</string>
+
+    <!-- welcome screen -->
+    <string name="welcomeHelpLabel">Tour</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Español</item>
+    </string-array>
+    <!-- language-codes here is an array that matches the languages strings array, keep in step and same order -->
+    <string-array name="language_codes">
+        <item>en</item>
+        <item>es</item>
+    </string-array>
+    <string name="welcomeToggleLabel">Show welcome next time</string>
+
+    <!-- generic options and confirmations -->
+    <string name="confirmCancelEditsTitle">Confirm Cancel</string>
+    <string name="confirmCancelEditsBody">Cancel losing all changes?</string>
+    <string name="enterUniqueName">Please enter a unique name</string>
+    <string name="nameUsed">Name is already in use</string>
+    <string name="nameLabel">Name</string>
+
+    <!-- beat types and sounds sub headings -->
+    <string name="titleBeatTypes">Types of Beat</string>
+    <string name="titleSounds">Sounds</string>
+    <string name="colourLabel">Colour</string>
+    <string name="addNewBeatTypeTitle">Add New Beat Type</string>
+    <string name="changeBeatTypeTitle">Change Beat Type</string>
+    <string name="soundLabel">Sound</string>
+    <string name="fallbackSoundLabel">Fallback</string>
+    <string name="menuDeleteBeatType">Delete beat type</string>
+    <string name="menuChangeBeatType">Change beat type</string>
+    <string name="menuChangeSoundName">Change name</string>
+    <string name="menuRepairSound">Repair sound</string>
+    <string name="repairSoundTitle">Repair Sound</string>
+    <string name="menuDeleteSound">Delete sound</string>
+    <string name="changeSoundNameTitle">Change Sound Name</string>
+    <string name="addNewSoundTitle">Add New Sound</string>
+    <string name="fileLabel">File</string>
+    <string name="testBtnLabel">Try it</string>
+
+    <!-- default sounds -->
+    <string name="BEEP1_SOUND_NAME">Beep 1</string>
+    <string name="BEEP2_SOUND_NAME">Beep 2</string>
+    <string name="BEEP3_SOUND_NAME">Beep 3</string>
+    <string name="CLAP_HIGH_SOUND_NAME">Clap (high)</string>
+    <string name="CLAP_LOW_SOUND_NAME">Clap (low)</string>
+    <string name="CLAP_DOUBLE_SOUND_NAME">Clap (double)</string>
+    <string name="HIGH_HAT_SOUND_NAME">Hi Hat</string>
+    <string name="BASS_DRUM_SOUND_NAME">Bass Drum</string>
+    <string name="MARACAS_SOUND_NAME">Maracas</string>
+    <string name="TAMBORINE_SOUND_NAME">Tamborine</string>
+    <string name="TICK_MIDDLE_SOUND_NAME">Tick (mid)</string>
+    <string name="TICK_WOODEN_SOUND_NAME">Tick (wooden)</string>
+    <string name="TOCK_LOW_SOUND_NAME">Tock (low)</string>
+    <string name="TOCK_SHALLOW_SOUND_NAME">Tock (shallow)</string>
+    <string name="TOCK_WOODEN_SOUND_NAME">Tock (wooden)</string>
+    <string name="NO_SOUND_NAME">Silent</string>
+
+    <!-- default beat types -->
+    <string name="NORMAL_BEAT_TYPE_NAME">Normal beat</string>
+    <string name="ACCENT_BEAT_TYPE_NAME">Accent beat</string>
+    <string name="ALTERNATE_BEAT_TYPE_NAME">Alternative beat</string>
+    <string name="SILENT_BEAT_TYPE_NAME">Silent beat</string>
+    <string name="FIRST_BEAT_TYPE_NAME">First beat</string>
+    <string name="GHOST_BEAT_TYPE_NAME">Ghost beat</string>
+
+    <!-- default colours -->
+    <string name="normalColour">#FF17B0A1</string>
+    <string name="accentColour">#FFB7B701</string>
+    <string name="alternateColour">#FFD764BD</string>
+    <string name="quietColour">#FF19A419</string>
+    <string name="firstColour">#FFE24D34</string>
+    <string name="ghostColour">#FF7475AA</string>
+
+    <!-- play controls -->
+    <string name="changeBpmTitle">Set BPM</string>
+    <string name="changeRepeatsTitle">Set Repeat</string>
+    <string name="tooltipPlayPause">Play/Pause</string>
+    <string name="tooltipStopPlay">Stop</string>
+    <string name="tooltipSetBpm">Set BPM</string>
+    <string name="tooltipBpmTapper">Tap rhythm to set BPM</string>
+    <string name="tooltipSetRepeat">Set repetition</string>
+    <string name="labelRepeatInfinite">Continuous</string>
+    <string name="labelNoRepeat">Play once</string>
+    <string name="labelRepeatN">Number of repetitions</string>
+
+    <!-- rhythm module -->
+    <string name="newRhythm">New rhythm</string> <!-- CAREFUL, DON'T CHANGE THE KEY TO THIS ONE, IT'S HARD-CODED IN A DB VIEW -->
+    <string name="saveNewRhythm">Save New Rhythm</string>
+
+    <!-- tags -->
+    <string name="tagsSearchTooltip">Choose tags</string>
+    <string name="noTagsMessage">No tags</string>
+    <string name="changeTagMenu">Rename tag</string>
+    <string name="changeTagTitle">Rename Tag</string>
+    <string name="deleteTagMenu">Delete tag</string>
+
+    <!-- settings -->
+    <string name="settingsTitle">Settings</string>
+    <string name="settingsPlayAnimationsHeadingLabel">Animations and Effects</string>
+    <string name="settingsToggleAnimateBeatsLabel">Animate playing beats</string>
+    <string name="settingsToggleBeatsKeepBouncingLabel">Playing beats keep bouncing</string>
+    <string name="settingsToggleProgressIndLabel">Show playing progress</string>
+    <string name="settingsRedefaultButtonLabel">Reset defaults</string>
+
+    <!-- errors -->
+    <string name="titleLoadingProblems">Problems Loading Data</string>
+    <string name="unexpectedErrorTitle">Unexpected Error</string>
+    <string name="errorSelectFile">Please select a file</string>
+
+    <!-- rhythms (and editing) -->
+    <string name="NEW_RHYTHM_NAME">New Rhythm</string>
+    <string name="toggleRhythmsList">List rhythms</string>
+    <string name="toggleRhythmBeatTypes">Rhythm beat type settings</string>
+    <string name="quickEditTooltip">Magic wand, change number of beats</string>
+    <string name="quickEditRhythmTitle">Change Number of Beats</string>
+    <string name="changeDisplayColour">Change colour</string>
+    <string name="addChangeBeatTypeTooltip">Add or change a beat type</string>
+    <string name="lovChooseBeatType">Choose beat type</string>
+    <string name="VALIDATION_ALREADY_MAX_BEATS">Rhythm is already at maximum length (%1$s beats)</string>
+    <string name="VALIDATION_ALREADY_MIN_BEATS">Rhythm must have at least one beat</string>
+
+    <!-- beat length change options -->
+    <string name="beatLenFullLabel">Full beat length</string>
+    <string name="beatLenQuarterLabel">Quarter of a beat</string>
+    <string name="beatLenThirdLabel">Third of a beat</string>
+    <string name="beatLenHalfLabel">Half a beat</string>
+    <string name="beatLen2ThirdsLabel">Two thirds of a beat</string>
+    <string name="beatLen3QuartersLabel">Three quarters of a beat</string>
+
+    <!-- undoing -->
+    <string name="UNDO_DESC_PREFIX">Undo %1$s</string>
+    <string name="NO_UNDO_DESC">Undo &lt;nothing to undo&gt;</string>
+
+    <string name="UNDO_IMPORT_RHTYHMS">import rhythms</string>
+    <string name="UNDO_ADD_BEAT_TYPE">add beat type</string>
+    <string name="UNDO_CLONE_BEAT_TYPE">clone beat type</string>
+    <string name="UNDO_DELETE_BEAT_TYPE">delete beat type</string>
+    <string name="UNDO_CHANGE_BEAT_TYPE">change beat type</string>
+    <string name="UNDO_CHANGE_COLOUR">change colour</string>
+    <string name="UNDO_CHANGE_BEAT_SOUND">change beat sound</string>
+    <string name="UNDO_CHANGE_BEAT_FALLBACK_SOUND">change beat fallback sound</string>
+    <string name="UNDO_ADD_SOUND">add sound</string>
+    <string name="UNDO_CHANGE_SOUND">change sound name</string>
+    <string name="UNDO_DELETE_SOUND">delete sound</string>
+
+    <string name="UNDO_RHYTHM_CHANGE_REPEATS_NAME">change repetition</string>
+    <string name="UNDO_RHYTHM_CHANGE_BPM_NAME">change BPM</string>
+    <string name="UNDO_RHYTHM_DELETE_NAME">delete rhythm</string>
+    <string name="UNDO_SAVE_RHYTHM">save rhythm</string>
+    <string name="UNDO_CHANGE_VOLUME_COMMAND">change volume</string>
+    <string name="UNDO_CHANGE_DISPLAY_NUMBERS_COMMAND">Toggle show beat numbers</string>
+    <string name="UNDO_CHANGE_BEAT_SOUND_COMMAND">change beat sound</string>
+
+    <string name="UNDO_EDIT_BEAT_PARTS_COMMAND">split beat parts</string>
+    <string name="UNDO_DELETE_FULL_BEAT_COMMAND">delete beat</string>
+    <string name="UNDO_MOVE_FULL_BEAT_COMMAND">move beat</string>
+    <string name="UNDO_REPLACE_FULL_BEAT_COMMAND">replace beat</string>
+    <string name="UNDO_COPY_TO_OTHER_BEATS">copy beat</string>
+    <string name="UNDO_CHANGE_NUM_FULLBEATS_COMMAND">change rhythm length</string>
+    <string name="UNDO_CHANGE_BEAT_TYPE_COMMAND">change beat type</string>
+    <string name="UNDO_ADD_NEW_BEAT_COMMAND">add new beat</string>
+    <string name="UNDO_CLONE_FULL_BEAT_COMMAND">duplicate beat</string>
+    <string name="UNDO_RENUMBER_BEAT_ONE_COMMAND">change beat numbered 1</string>
+    <string name="UNDO_CHANGE_DISPLAY_NUMBER_COMMAND">change number shown</string>
+    <string name="UNDO_MAKE_IRREGULAR_BEAT_COMMAND">make short beat</string>
+    <string name="UNDO_CHANGE_BEAT_VALUE_COMMAND">change beat length</string>
+    <string name="UNDO_CLONE_RHYTHM_COMMAND">duplicate rhythm</string>
+
+    <string name="UNDO_ADD_TAG_COMMAND">add tag</string>
+    <string name="UNDO_CHANGE_TAG_COMMAND">rename tag</string>
+    <string name="UNDO_DELETE_TAG_COMMAND">delete tag</string>
+
+    <!-- menu options for beat changes (invoked from core) -->
+    <string name="MENU_EDIT_BEAT">Split beat parts</string>
+    <string name="MENU_COPY_TO_OTHER_BEATS">Copy to other beats</string>
+    <string name="MENU_EDIT_BEAT_NUMBERING">Beat numbering</string>
+    <string name="MENU_DELETE_FULL_BEAT">Delete beat</string>
+    <string name="MENU_RENUMBER_BEAT_ONE">Count 1 from this beat</string><!-- moved from menu to option in dialog-->
+    <string name="MENU_MAKE_IRREGULAR_BEAT">Make short beat</string>
+    <string name="MENU_CHANGE_BEAT_VALUE">Change beat length</string>
+    <string name="MENU_CLONE_FULL_BEAT">Duplicate beat</string>
+
+    <!-- core messages -->
+    <string name="UNREADABLE_INSTALL_RHYTHMS_DATA_ERROR">Failed to install default rhythms set, please send us a bug report</string>
+    <string name="ILLEGAL_SOUND_FILE_LIBRARY_ERROR">Load Sound error, file type not supported on this platform: %1$s</string>
+    <string name="MISSING_SOUND_FILE_LIBRARY_ERROR">Data incomplete, missing Sound file: %1$s</string>
+    <string name="MISSING_SOUND_BEAT_TYPE_ERROR">Missing sound for beat type \'%1$s\', using fallback sound for playback</string>
+    <string name="CORRUPT_LIBRARY_ERROR">Unexpected error library file may be corrupt, please send us a bug report</string>
+    <string name="NOT_INIT_SOUNDS_ERROR">Unexpected sound initialisation errors have occurred, please send us a bug report</string>
+    <string name="INSTALL_DEFAULT_RHYTHMS_DATA_WARNINGS_TITLE">Loaded default rhythms with warnings : %1$s</string>
+    <string name="MALFORMED_RHYTHM_ERROR">Rhythm data is malformed and can\'t be read</string>
+    <string name="MISSING_BEAT_TYPE_RHYTHM_ERROR">Rhythm data is missing a Beat type</string>
+    <string name="MISSING_SOURCE_EDIT_RHYTHM_ERROR">Playback rhythm has inconsistent state, defaulted to unsaved</string>
+    <string name="NO_UTF8_LIBRARY_ERROR">Unexpected internal error, platform does not support UTF-8 encode, please send us a bug report</string>
+    <string name="CORRUPT_RHYTHM_LIBRARY_ERROR">At least one rhythm\'s data is malformed and can\'t be read, loading without it</string>
+    <string name="INCONSISTENT_BEATS_RHYTHM_ERROR">Playback rhythm contains inconsistent beats, repaired</string>
+    <string name="UNREACHABLE_SOUND_LIBRARY_ERROR">Library contains unreachable sound file, open Beats &amp; Sounds to correct problem</string>
+    <string name="DUPLICATE_IGNORED_BEAT_TYPE_ERROR">Duplicate beat type \'%1$s\' ignored</string>
+    <string name="DUPLICATE_NAME_BEAT_TYPE_ERROR">Duplicate beat type name \'%1$s\' reset to \'%2$s\', open Beats &amp; Sounds to change</string>
+    <string name="DUPLICATE_IGNORED_SOUND_ERROR">Duplicate sound ignored</string>
+
+    <!-- import errors -->
+    <string name="SOME_INVALID_IMPORT_FILE_ERROR_BATCH_MODE">There were problems loading default rhythms</string>
+    <string name="VERSION_HIGHER_IMPORT_FILE_ERROR">The rhythms were loaded from a later version of Keep Ya Beat than yours, 
+\n\nthey are usable but you may not have everything that was included. 
+\n\nIt would be a good idea to get the latest version.</string>
+    <string name="MISSING_INTERNAL_SOUND_IMPORT_FILE_ERROR">Missing default sound (%1$s) changed to \'%2$s\', upgrade to get new sounds</string>
+    <string name="MISSING_CUSTOM_SOUND_IMPORT_FILE_ERROR">Custom sound (%1$s) was loaded but is missing its file. Open Beats &amp; Sounds to change it
+\n&#8230; or perhaps whoever shared the rhythms file can give you the sound file too?</string>
+
+    <!-- report a bug -->
+    <string name="bugReportTitle">Some problem with Keep Ya Beat</string>
+    <string name="dark_semi_transparent_shadow">Dark semi-transparent shadow</string>
+
+</resources>

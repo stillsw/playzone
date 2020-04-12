@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">fragments animate transitions (portrait only)</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="blue_red_colours">
+        <item>#FF0000AA</item>
+        <item>#FFAA0000</item>
+    </string-array>
+    
+</resources>

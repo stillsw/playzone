@@ -1,0 +1,70 @@
+How to run the various examples, and the trial runs of things
+
+intro - running gridworld
+-------------------------
+python gridworld.py -h							: help on options
+python gridworld.py -m							: run it manually
+python gridworld.py -g MazeGrid					: crappy default agent
+
+individual autograder runs by any particular question:
+eg. python autograder.py -q q8
+
+
+q1 - ValueIterationAgent
+------------------------
+python gridworld.py -a value -i 100 -k 10		: Press a key to cycle through values, Q-values, and the simulation
+
+q2 - BridgeGrid
+---------------
+This is an autograder question where analysis.py is changed to get the correct answer, to experiment with values run:
+
+python gridworld.py -a value -i 100 -g BridgeGrid --discount 0.9 --noise 0.2
+
+correct answer values:
+    answerDiscount = 0.9
+    answerNoise = 0
+
+q3 - DiscountGrid
+-----------------
+also an analysis.py question, experiment with this:
+
+python gridworld.py -a value -i 100 -g DiscountGrid --discount 1.0 --noise 0.0 --livingReward=10.0
+
+correct answer values:
+3a: answerDiscount = 0.1,answerNoise = 0.0,answerLivingReward = 0.0
+3b: answerDiscount = 0.2,answerNoise = 0.2,answerLivingReward = 0.0
+3c: answerDiscount = 0.9,answerNoise = 0.0,answerLivingReward = 0.0
+3d: answerDiscount = 0.9,answerNoise = 0.2,answerLivingReward = 0.0
+3e: answerDiscount = 1.0,answerNoise = 0.0,answerLivingReward = 1.0
+
+q4 - q learning
+---------------
+see some examples (change -k to higher values for learning to take longer - ie. more episodes)
+python gridworld.py -a q -k 5
+python gridworld.py -a q -k 5 -g DiscountGrid
+python gridworld.py -a q -k 10 -g BridgeGrid
+
+run same with -m for manual control
+
+
+q5 - epsilon-greedy action selection
+------------------------------------
+python gridworld.py -a q -k 100 
+
+crawler also uses this:
+python crawler.py
+
+q7 - q learning
+---------------
+to see a few learning episodes (pacman will die in all very quickly):
+python pacman.py -p PacmanQAgent -n 10 -l smallGrid -a numTraining=10
+
+to run a full training on the same grid, and see what is learnt by the end:
+python pacman.py -p PacmanQAgent -x 2000 -n 2010 -l smallGrid 
+
+q8 - approximate q learning
+---------------------------
+trials:
+python pacman.py -p ApproximateQAgent -x 2000 -n 2010 -l smallGrid 
+python pacman.py -p ApproximateQAgent -a extractor=SimpleExtractor -x 50 -n 60 -l mediumGrid 
+python pacman.py -p ApproximateQAgent -a extractor=SimpleExtractor -x 50 -n 60 -l mediumClassic 

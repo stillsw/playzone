@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cards_backgrd" >
+    </ListView>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/list_no_users"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible"  />
+
+    <ProgressBar
+        android:id="@+id/top_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:indeterminateOnly="true"
+        android:visibility="invisible" >
+    </ProgressBar>
+
+    <ProgressBar
+        android:id="@+id/bottom_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentBottom="true"
+        android:indeterminateOnly="true"
+        android:visibility="invisible" >
+    </ProgressBar>
+
+</RelativeLayout>

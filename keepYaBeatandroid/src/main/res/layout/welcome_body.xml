@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.stillwindsoftware.keepyabeat.gui.KybBannerSvgView
+        android:id="@+id/welcome_banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/welcome_screen_vert_space"
+        android:contentDescription="@string/kyb_banner_desc"
+        android:paddingTop="12dp" />
+
+    <TextView
+        android:id="@+id/welcome_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/welcome_screen_vert_space"
+        android:gravity="center"
+        android:text="@string/welcomeHeading"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/welcome_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/welcome_screen_horizontal_margin"
+        android:layout_marginRight="@dimen/welcome_screen_horizontal_margin"
+        android:layout_marginTop="@dimen/welcome_screen_vert_space"
+        android:fillViewport="true" >
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:gravity="center_horizontal"
+                android:text="@string/welcomeBody"
+                android:paddingBottom="10dp" />
+
+            <CheckBox
+                android:id="@+id/show_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcomeToggleLabel"
+                android:checked="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <Spinner
+                    android:id="@+id/languages_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/languages" />
+
+                <Button
+                    style="@style/ButtonBarButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="showTour"
+                    android:text="@string/welcomeHelpLabel" />
+
+                <Button
+                    style="@style/ButtonBarButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="okPressed"
+                    android:text="@string/ok_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

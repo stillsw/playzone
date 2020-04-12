@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:id="@+id/linear_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/bpm_drum_tapper"
+                style="@style/BpmDrumButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/bpm_tapper_img"
+                android:focusable="true"
+                android:src="@drawable/bpm_drum_tapper_selector" />
+
+            <EditText
+                android:id="@+id/bpm_value"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:clickable="true"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:maxLength="3"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textIsSelectable="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/min_bpm"
+            android:layout_width="36sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_parent"
+            android:layout_marginTop="7sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:textSize="12sp" />
+
+        <SeekBar
+            android:id="@+id/seek_bpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_parent"
+            android:thumb="@drawable/parts_seekbar_thumb"
+            android:layout_marginLeft="40sp"
+            android:layout_marginStart="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginEnd="40sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <TextView
+            android:id="@+id/max_bpm"
+            android:layout_width="36sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- IMPORTANT: the keys used here must match the constants in SettingsManager
+         the defaults don't matter because readSettings() defaults them -->
+
+    <CheckBoxPreference
+        android:key="welcome"
+        android:title="@string/settingsToggleWelcomeLabel"
+        android:defaultValue="true"/>
+
+    <Preference
+        android:key="redefault_btn"
+        android:title="@string/settingsRedefaultButtonLabel"
+        android:summary="@string/settingsRedefaultButtonSummary"/>
+
+    <Preference
+        android:key="consent_btn"
+        android:title="@string/consent_ads_menu"/>
+
+    <PreferenceCategory android:title="@string/settingsRhythmPlayerHeadingLabel">
+
+        <CheckBoxPreference
+            android:key="drawBeatNums"
+            android:title="@string/settingsToggleDrawBeatNumsLabel"
+            android:summaryOn="@string/settingsToggleDrawBeatNumsSummaryOn"
+            android:summaryOff="@string/settingsToggleDrawBeatNumsSummaryOff"
+            android:defaultValue="true"
+            android:disableDependentsState="false"/>
+
+        <CheckBoxPreference
+            android:key="drawBeatNumsAbove"
+            android:title="@string/settingsToggleDrawBeatNumsAboveLabel"
+            android:summaryOn="@string/settingsToggleDrawBeatNumsAboveSummaryOn"
+            android:summaryOff="@string/settingsToggleDrawBeatNumsAboveSummaryOff"
+            android:defaultValue="true"
+            android:dependency="drawBeatNums"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settingsPlayAnimationsHeadingLabel">
+
+        <CheckBoxPreference
+            android:key="keepScreenAwake"
+            android:title="@string/settingsKeep_screen_awake_while_playing_label"
+            android:summaryOn="@string/settingsKeep_screen_awake_while_playing_summaryOn"
+            android:summaryOff="@string/settingsKeep_screen_awake_while_playing_summaryOff"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:key="showProgressInd"
+            android:title="@string/settingsToggleProgressIndLabel"
+            android:summaryOn="@string/settingsToggleProgressIndSummaryOn"
+            android:summaryOff="@string/settingsToggleProgressIndSummaryOff"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="animatePlayedBeats"
+            android:title="@string/settingsToggleAnimateBeatsLabel"
+            android:defaultValue="true"
+            android:disableDependentsState="false"/>
+
+        <CheckBoxPreference
+            android:key="animatePlayedBeatsUp"
+            android:title="@string/settingsToggleAnimateBeatsUpwardsLabel"
+            android:summaryOn="@string/settingsToggleAnimateBeatsUpwardsSummaryOn"
+            android:summaryOff="@string/settingsToggleAnimateBeatsUpwardsSummaryOff"
+            android:defaultValue="false"
+            android:dependency="animatePlayedBeats"/>
+
+        <com.stillwindsoftware.keepyabeat.gui.SeekBarPreference
+            android:key="animatePlayedBeatsDistance"
+            android:title="@string/settingsBeatMovementDistanceLabel"
+            android:summary="@string/settingsBeatMovementDistanceTooltip"
+            android:defaultValue="30"
+            android:dependency="animatePlayedBeats"/>
+
+        <com.stillwindsoftware.keepyabeat.gui.SeekBarPreference
+            android:key="animatePlayedBeatsSpeed"
+            android:title="@string/settingsBeatMovementSpeedLabel"
+            android:summary="@string/settingsBeatMovementSpeedTooltip"
+            android:defaultValue="15"
+            android:dependency="animatePlayedBeats"/>
+
+        <CheckBoxPreference
+            android:key="keepBouncingBeats"
+            android:title="@string/settingsToggleBeatsKeepBouncingLabel"
+            android:defaultValue="false"
+            android:dependency="animatePlayedBeats"/>
+
+        <!--CheckBoxPreference
+            android:key="soundRipples"
+            android:title="@string/settingsToggleBeatRipplesLabel"
+            android:defaultValue="true"
+            android:dependency="animatePlayedBeats"/-->
+
+        <CheckBoxPreference
+            android:key="showPlayingFullBeatColour"
+            android:title="@string/settingsToggleColourPlayedFullBeatsLabel"
+            android:defaultValue="true"
+            android:disableDependentsState="false"/>
+
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:key="playingFullBeatColour"
+            android:defaultValue="0x50FFFFFF"
+            app:supportsAlpha="true"
+            android:title="@string/settingsPlayedFullBeatsColourLabel"
+            android:shouldDisableView="true"
+            android:dependency="showPlayingFullBeatColour" />
+
+        <CheckBoxPreference
+            android:key="showPlayingSubBeatColour"
+            android:title="@string/settingsToggleColourPlayedSubBeatsLabel"
+            android:defaultValue="true"
+            android:disableDependentsState="false"/>
+
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:key="playingSubBeatColour"
+            android:defaultValue="0x96000000"
+            app:supportsAlpha="true"
+            android:shouldDisableView="true"
+            android:title="@string/settingsPlayedSubBeatsColourLabel"
+            android:dependency="showPlayingSubBeatColour" />
+
+        <ListPreference
+            android:key="drawSilentPartBeat"
+            android:title="@string/drawSilentPartBeatTitle"
+            android:summary="@string/drawSilentPartBeatSummary"
+            android:entries="@array/drawSilentPartBeat_options"
+            android:entryValues="@array/drawSilentPartBeat_values" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

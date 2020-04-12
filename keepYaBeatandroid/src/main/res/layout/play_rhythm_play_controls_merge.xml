@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_buttons_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/play_controls_backgrd"
+    android:visibility="invisible"><!-- animations control the visibility -->
+
+    <com.stillwindsoftware.keepyabeat.gui.PlayPauseButton
+        android:id="@+id/play_button"
+        style="@style/PlayControlsButton"
+        android:layout_width="@dimen/play_controls_button_width"
+        android:layout_height="@dimen/play_controls_button_height"
+        android:layout_weight="1"
+        android:contentDescription="@string/play_button_img"
+        android:src="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/stop_button"
+        style="@style/PlayControlsButton"
+        android:layout_width="@dimen/play_controls_button_width"
+        android:layout_height="@dimen/play_controls_button_height"
+        android:layout_weight="1"
+        android:contentDescription="@string/stop_button_img"
+        android:src="@drawable/ic_notification_stop_playing"
+        />
+
+    <FrameLayout
+        android:layout_width="@dimen/repeats_button_width"
+        android:layout_height="@dimen/play_controls_button_height"
+        android:layout_margin="@dimen/play_controls_button_margin"
+        android:layout_weight="1">
+
+        <com.stillwindsoftware.keepyabeat.gui.BpmButton
+            android:id="@+id/bpm_button"
+            style="@style/BpmButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/bpm_button_img"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="@android:color/white"
+            />
+
+        <!-- to have the same button press backgrd as the other buttons, layer this over the textual one -->
+        <ImageButton
+            android:id="@+id/bpm_button_press"
+            style="@style/PlayControlsButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/repeats_button_width"
+        android:layout_height="@dimen/play_controls_button_height"
+        android:layout_margin="@dimen/play_controls_button_margin"
+        android:layout_weight="1">
+
+        <com.stillwindsoftware.keepyabeat.gui.RepeatsButton
+            android:id="@+id/repeats_button"
+            style="@style/RepeatsButton"
+            android:layout_width="@dimen/repeats_button_width"
+            android:layout_height="@dimen/play_controls_button_height"
+            android:layout_gravity="center"
+            android:contentDescription="@string/repeats_button_img"
+            android:textColor="@android:color/white" />
+
+        <!-- to have the same button press backgrd as the other buttons, layer this over the textual one -->
+        <ImageButton
+            android:id="@+id/repeats_button_press"
+            style="@style/PlayControlsButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </FrameLayout>
+
+</LinearLayout>

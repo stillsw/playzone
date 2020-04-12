@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+         default for smaller widths larger
+    	 in other resources, but need margin between rows too
+    -->
+    <dimen name="gifts_lists_row_height">116dp</dimen>
+    <dimen name="all_chains_gifts_lists_row_height">150dp</dimen>
+    <dimen name="gifts_lists_thumb_size">100dp</dimen>
+    <dimen name="lists_vertical_margin">116dp</dimen>
+    <dimen name="lists_thumb_image_border_width">2dp</dimen>
+
+    <!-- for adding a new gift, want the image size to be about
+    	40% the height in port and 50% in land, need to set these
+    	dimensions for each step up in size both port and land -->
+    	
+    <!-- port up to 640x480 (width match_parent) -->
+    <dimen name="add_gift_image_height">172dp</dimen>
+    
+    
+    <!-- fab dimensions -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_margin">34dp</dimen>
+    <dimen name="fab_margin_overlap">-34dp</dimen>
+    <dimen name="fab_margin_mini">26dp</dimen>
+    <dimen name="fab_margin_mini_overlap">-26dp</dimen>
+    
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_normal_elevation">2dp</dimen>
+    <dimen name="card_vertical_margin">4dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    
+</resources>

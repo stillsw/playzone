@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/gift_chain"
+        android:icon="@drawable/ic_chain"
+        android:showAsAction="ifRoom"
+        android:title="@string/chain_menuitem"/>
+    <item
+        android:id="@+id/delete_gift"
+        android:icon="@drawable/delete_menu_selector"
+        android:showAsAction="ifRoom"
+        android:title="@string/delete_gift_menuitem"/>
+    <item
+        android:id="@+id/top_givers_menuitem"
+        android:icon="@drawable/ic_top_givers"
+        android:showAsAction="always"
+        android:title="@string/menu_top_givers"/>
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/image_crop_menu"
+            android:showAsAction="never"
+            android:title="@string/image_crop"/>
+        <item
+            android:id="@+id/image_fit_menu"
+            android:showAsAction="never"
+            android:title="@string/image_full"/>
+    </group>
+
+    <item
+        android:id="@+id/change_login_menuitem"
+        android:showAsAction="never"
+        android:title="@string/menu_login"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

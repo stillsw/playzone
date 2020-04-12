@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/beatTitle"
+            style="@style/MimicDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/beatTitle2"
+            style="@style/MimicDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="8sp"
+            android:layout_marginLeft="8sp"
+            app:layout_constraintStart_toEndOf="@id/beatTitle"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Space
+            android:id="@+id/spacer"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/beat_type_btn"
+            app:layout_constraintTop_toBottomOf="@+id/beatTitle"
+            />
+
+        <com.stillwindsoftware.keepyabeat.gui.PartBeatButton
+            android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            app:layout_constraintBottom_toTopOf="@+id/beat_type_btn"
+            app:layout_constraintEnd_toStartOf="@id/button1"
+            app:layout_constraintStart_toEndOf="@id/spacer"
+            app:layout_constraintTop_toBottomOf="@+id/beatTitle"
+            />
+
+        <com.stillwindsoftware.keepyabeat.gui.PartBeatButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/button0"
+            app:layout_constraintEnd_toStartOf="@id/button2"
+            app:layout_constraintStart_toEndOf="@id/button0"
+            app:layout_constraintTop_toTopOf="@id/button0"
+            />
+
+        <com.stillwindsoftware.keepyabeat.gui.PartBeatButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/button0"
+            app:layout_constraintEnd_toStartOf="@id/button3"
+            app:layout_constraintStart_toEndOf="@id/button1"
+            app:layout_constraintTop_toTopOf="@id/button0"
+            />
+
+        <com.stillwindsoftware.keepyabeat.gui.PartBeatButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/button0"
+            app:layout_constraintEnd_toStartOf="@id/button4"
+            app:layout_constraintStart_toEndOf="@id/button2"
+            app:layout_constraintTop_toTopOf="@id/button0"
+            />
+
+        <com.stillwindsoftware.keepyabeat.gui.PartBeatButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/button0"
+            app:layout_constraintEnd_toStartOf="@id/button5"
+            app:layout_constraintStart_toEndOf="@id/button3"
+            app:layout_constraintTop_toTopOf="@id/button0"
+            />
+
+        <com.stillwindsoftware.keepyabeat.gui.PartBeatButton
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/button0"
+            app:layout_constraintEnd_toStartOf="@id/button6"
+            app:layout_constraintStart_toEndOf="@id/button4"
+            app:layout_constraintTop_toTopOf="@id/button0"
+            />
+
+        <com.stillwindsoftware.keepyabeat.gui.PartBeatButton
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/button0"
+            app:layout_constraintEnd_toStartOf="@id/button7"
+            app:layout_constraintStart_toEndOf="@id/button5"
+            app:layout_constraintTop_toTopOf="@id/button0"
+            />
+
+        <com.stillwindsoftware.keepyabeat.gui.PartBeatButton
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/button0"
+            app:layout_constraintEnd_toEndOf="@id/ok_btn"
+            app:layout_constraintStart_toEndOf="@id/button6"
+            app:layout_constraintTop_toTopOf="@id/button0"
+            />
+
+        <Button
+            android:id="@+id/beat_type_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintBottom_toTopOf="@+id/soundDetails"
+            app:layout_constraintTop_toBottomOf="@id/button0"
+            app:layout_constraintEnd_toEndOf="@id/button0"/>
+
+        <LinearLayout
+            android:id="@+id/soundDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/beat_type_btn"
+            app:layout_constraintBottom_toTopOf="@+id/cancel_btn"
+            app:layout_constraintStart_toStartOf="@id/beat_type_btn"
+            app:layout_constraintEnd_toEndOf="@id/beat_type_btn"
+            >
+
+            <Spinner
+                android:id="@+id/soundSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="0"
+                />
+
+            <SeekBar
+                android:id="@+id/soundVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:thumb="@drawable/parts_seekbar_thumb"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"
+                />
+
+            <TextView
+                android:id="@+id/volume_num"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:text="100"
+                android:maxLines="1"
+                android:layout_weight="0"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok_btn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/ok_button"
+            app:layout_constraintTop_toBottomOf="@id/soundDetails"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/cancel_button"
+            app:layout_constraintBottom_toBottomOf="@id/ok_btn"
+            app:layout_constraintEnd_toStartOf="@+id/ok_btn"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/black_transparency"
+        >
+
+        <TextView
+            android:id="@+id/beat_parts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/MimicDialogTitle"
+            android:layout_centerHorizontal="true"
+            />
+
+        <SeekBar
+            android:id="@+id/parts_seekbar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/beat_parts"
+            android:max="7"
+            android:progress="1"
+            android:thumb="@drawable/parts_seekbar_thumb"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

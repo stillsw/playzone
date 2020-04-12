@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/dialog_rl"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/full_beat_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/full_beat_num_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beat_number_dialog_full_beat_num_label"
+        android:layout_alignBaseline="@+id/full_beat_num"
+        android:layout_toLeftOf="@id/full_beat_num"
+        android:layout_toStartOf="@id/full_beat_num"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:id="@+id/field_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beat_number_dialog_show_beat_num_label"
+        android:layout_below="@+id/full_beat_num"
+        android:layout_alignRight="@+id/full_beat_num_label"
+        android:layout_alignEnd="@+id/full_beat_num_label"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        />
+
+    <EditText
+        android:id="@+id/display_label"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:maxLength="@integer/beatNumberLabelLen"
+        android:layout_alignBaseline="@+id/field_label"
+        android:layout_alignLeft="@id/full_beat_num"
+        android:layout_alignStart="@id/full_beat_num"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/textLenIndicator"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_label"
+        android:layout_alignEnd="@+id/display_label"
+        android:layout_alignRight="@+id/display_label"
+        />
+
+    <CheckBox
+        android:id="@+id/renumber_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLenIndicator"
+        android:layout_alignStart="@+id/full_beat_num"
+        android:layout_alignLeft="@+id/full_beat_num"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:id="@+id/renumber_label"
+        android:text="@string/MENU_RENUMBER_BEAT_ONE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/renumber_checkbox"
+        android:layout_alignEnd="@+id/full_beat_num_label"
+        android:layout_alignRight="@+id/full_beat_num_label"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        />
+
+</RelativeLayout>

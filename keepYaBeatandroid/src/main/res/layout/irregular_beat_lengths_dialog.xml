@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/beat_lengths_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/ro_beatLenFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/beatLenFullLabel"/>
+
+        <RadioButton
+            android:id="@+id/ro_beatLenQuarter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/beatLenQuarterLabel"/>
+
+        <RadioButton
+            android:id="@+id/ro_beatLenThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/beatLenThirdLabel"/>
+
+        <RadioButton
+            android:id="@+id/ro_beatLenHalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/beatLenHalfLabel"/>
+
+        <RadioButton
+            android:id="@+id/ro_beatLen2Thirds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/beatLen2ThirdsLabel"/>
+
+        <RadioButton
+            android:id="@+id/ro_beatLen3Quarters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/beatLen3QuartersLabel"/>
+    </RadioGroup>
+
+</ScrollView>

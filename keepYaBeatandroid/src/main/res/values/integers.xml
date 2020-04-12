@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="disabled_alpha">127</integer>
+    <integer name="nTimesRepeatsMin">2</integer>
+    <integer name="nTimesRepeatsMax">99</integer>
+    <!-- max values means range = min to min + max (ie. 2 - 99) -->
+    <integer name="nTimesRepeatsMaxValues">97</integer>
+    <!-- match up with twl setting in Rhythms -->
+    <integer name="maxRhythmNameLen">50</integer>
+    <!-- match up with twl setting in Tags -->
+    <integer name="maxTagNameLen">25</integer>
+    <!-- min/max number of beats in a rhythm match up with setting in Rhythms -->
+    <integer name="minNumBeats">1</integer>
+    <integer name="maxNumBeats">24</integer>
+    <integer name="open_rhythm_animation_duration">300</integer>
+    <!-- optional beat number label -->
+    <integer name="beatNumberLabelLen">5</integer>
+</resources>

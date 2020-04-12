@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:kyb="http://schemas.android.com/apk/res-auto"  >
+    <!--android:icon="@drawable/ic_graphic_eq_white_24dp"/-->
+
+    <!--item
+        android:id="@+id/menu_save_rhythm"
+        kyb:showAsAction="ifRoom"
+        android:title="@string/saveRhythmLabel"
+        android:icon="@drawable/ic_content_save"/-->
+
+    <item
+        android:id="@+id/menu_undo"
+        kyb:showAsAction="always"
+        android:title="@string/NO_UNDO_DESC"
+        android:icon="@drawable/ic_undo_white_24dp"/>
+
+    <item
+        android:id="@+id/menu_add_change_beat_type"
+        kyb:showAsAction="always"
+        android:title="@string/addChangeBeatTypeTooltip"
+        android:icon="@drawable/ic_add_circle_outline_white_24dp"
+        />
+
+    <item
+        android:id="@+id/menu_magic_wand"
+        kyb:showAsAction="always"
+        android:title="@string/quickEditTooltip"
+        android:icon="@drawable/ic_magic_wand"/>
+
+    <item
+        android:id="@+id/menu_rhythm_beat_types"
+        kyb:showAsAction="always"
+        android:title="@string/toggleRhythmBeatTypes"
+        android:icon="@drawable/ic_action_settings"/>
+
+    <item
+        android:id="@+id/menu_remove_ads"
+        kyb:showAsAction="never"
+        android:title="@string/remove_ads_menu"/>
+
+    <item
+        android:id="@+id/menu_help"
+        kyb:showAsAction="never"
+        android:title="@string/help_menu"/>
+
+</menu>

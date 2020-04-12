@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="small_screen">false</bool>
+    <bool name="large_screen">true</bool>
+    
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" >
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:contentDescription="@string/gift_image"
+            android:src="@drawable/download_image_bgrd" />
+
+        <TextView
+            android:id="@+id/image_missing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:gravity="center"
+            android:text="@string/thumb_missing"
+            android:textColor="@color/thumb_image_border"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/thumb_progress"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:indeterminateOnly="true" />
+
+        <ImageView
+            android:id="@+id/tint_status_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:contentDescription="@string/gift_image"
+            android:src="@drawable/tint_status_bar_gradient" />
+
+    </RelativeLayout>
+
+
+</merge>
