@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="big_margin">16dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="led_size">65dp</dimen>
+    <dimen name="led_border">2dp</dimen>
+    <dimen name="led_highlight_offset">8dp</dimen>
+    <dimen name="led_white_offset">30dp</dimen>
+    <dimen name="cards_elevation">8dp</dimen>
+    <dimen name="guessPuzzleTextSize">40dp</dimen>
+    <dimen name="debugPuzzleTextSize">24dp</dimen>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.vtechtestapp.guesstheletters.data.GuessViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GuessActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/AppTheme.AppBarOverlay" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/big_margin"
+            android:elevation="@dimen/cards_elevation"
+            app:layout_constraintBottom_toTopOf="@id/current_guess"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/big_margin"
+                android:animateLayoutChanges="false"
+                app:flow_horizontalAlign="center"
+                app:flow_verticalAlign="bottom"
+                tools:itemCount="3"
+                tools:listitem="@layout/recyclerview_item" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/clickButtonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:onClick="buttonClicked"
+            android:text="@string/button_a_label"
+            android:theme="@style/GuessButtonTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/clickButtonB"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/clickButtonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonClicked"
+            android:text="@string/button_b_label"
+            android:theme="@style/GuessButtonTheme"
+            android:layout_marginHorizontal="@dimen/small_margin"
+            app:layout_constraintEnd_toStartOf="@id/clickButtonC"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/clickButtonA"
+            app:layout_constraintTop_toTopOf="@id/clickButtonA" />
+
+        <Button
+            android:id="@+id/clickButtonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonClicked"
+            android:text="@string/button_c_label"
+            android:theme="@style/GuessButtonTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/clickButtonB"
+            app:layout_constraintTop_toTopOf="@id/clickButtonA" />
+
+        <TextView
+            android:id="@+id/current_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="@{viewmodel.randomPuzzle.guessEntered}"
+            android:textAppearance="@style/GuessText"
+            app:layout_constraintBottom_toTopOf="@id/clickButtonA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="ABC" />
+
+        <TextView
+            android:id="@+id/current_puzzle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:text="@{viewmodel.randomPuzzle.currentPuzzle}"
+            android:textAppearance="@style/DebugPuzzleText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/answerLabel"
+            tools:text="ABC" />
+
+        <TextView
+            android:id="@+id/answerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:text="@string/answer"
+            android:textAppearance="@style/DebugPuzzleText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fab_margin"
+            app:layout_constraintBottom_toTopOf="@id/clickButtonA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_go_again" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

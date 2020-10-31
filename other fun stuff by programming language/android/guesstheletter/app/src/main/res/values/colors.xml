@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6C7DCB</color>
+    <color name="colorPrimaryDark">#2B335A</color>
+    <color name="colorAccent">#f04d26</color>
+    <color name="darkGrey">#FF424242</color>
+    <color name="midGrey">#FF727272</color>
+    <color name="lightGrey">#FFC7C7C7</color>
+    <color name="ledHighlight">#55FFFFFF</color>
+    <color name="ledShine">#88FFFFFF</color>
+</resources>

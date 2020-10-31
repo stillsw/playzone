@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.vtechtestapp.guesstheletters.ui.GuessStatefulImage
+        android:id="@+id/state_image"
+        android:layout_width="@dimen/led_size"
+        android:layout_height="@dimen/led_size"
+        android:background="@drawable/led_shape"
+        android:layout_margin="@dimen/big_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  views hidden, keeping around for test  -->
+    <TextView
+        android:id="@+id/guess_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/big_margin"
+        android:textAppearance="@style/DebugText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guess_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textAppearance="@style/DebugText"
+        app:layout_constraintTop_toBottomOf="@id/guess_id"
+        app:layout_constraintBottom_toTopOf="@+id/guess_state"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/guess_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textAppearance="@style/DebugText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guess_letter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

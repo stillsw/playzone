@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GuessStatefulImage">
+        <attr name="correct" format="boolean" />
+        <attr name="partial" format="boolean" />
+        <attr name="wrong" format="boolean" />
+        <attr name="none" format="boolean" />
+    </declare-styleable>
+
+</resources>

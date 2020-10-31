@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:correct="true" android:color="@android:color/holo_green_light"/>
+    <item app:partial="true" android:color="@android:color/holo_orange_light"/>
+    <item app:wrong="true" android:color="@android:color/holo_red_light"/>
+    <item android:color="@color/midGrey"/>
+
+</selector>

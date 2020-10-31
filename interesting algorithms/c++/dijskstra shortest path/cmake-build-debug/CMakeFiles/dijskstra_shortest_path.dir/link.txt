@@ -1,0 +1,1 @@
+/usr/sbin/c++  -g   CMakeFiles/dijskstra_shortest_path.dir/main.cpp.o  -o dijskstra_shortest_path 

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Guess The Letters</string>
+    <string name="button_a_label">A</string>
+    <string name="button_b_label">B</string>
+    <string name="button_c_label">C</string>
+    <string name="ask_restart">Play Again?</string>
+    <string name="confirm_restart">Yes</string>
+    <string name="got_it">Got it</string>
+    <string name="correct_string">Well Done!</string>
+    <string name="ok_button">Play Again</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="answer">answer</string>
+    <string name="action_toggle_answer">Toggle Answer</string>
+    <string name="first_time_help">Keep pressing buttons to guess again</string>
+</resources>

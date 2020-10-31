@@ -1,0 +1,37 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="GuessButtonTheme" parent="ThemeOverlay.MaterialComponents">
+        <item name="android:textSize">@dimen/guessPuzzleTextSize</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:colorButtonNormal">@drawable/guess_button_color</item>
+    </style>
+
+    <style name="GuessText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/guessPuzzleTextSize</item>
+    </style>
+
+    <style name="DebugText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/midGrey</item>
+    </style>
+
+    <style name="DebugPuzzleText" parent="DebugText">
+        <item name="android:textSize">@dimen/debugPuzzleTextSize</item>
+    </style>
+
+</resources>

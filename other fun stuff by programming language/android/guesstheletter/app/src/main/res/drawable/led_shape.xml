@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    border -->
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="@dimen/led_border" android:color="@color/midGrey"/>
+        </shape>
+    </item>
+
+<!--    led colour -->
+    <item android:left="@dimen/led_border"
+        android:top="@dimen/led_border"
+        android:right="@dimen/led_border"
+        android:bottom="@dimen/led_border">
+        <shape android:shape="oval">
+            <solid android:color="@drawable/led_color"/>
+        </shape>
+    </item>
+
+<!--    semi-transparent highlight -->
+    <item android:left="@dimen/led_highlight_offset"
+        android:top="@dimen/led_highlight_offset"
+        android:right="@dimen/led_highlight_offset"
+        android:bottom="@dimen/led_highlight_offset">
+        <shape android:shape="oval">
+            <solid android:color="@drawable/led_highlight_color"/>
+        </shape>
+    </item>
+
+<!--    shine (except for no guess) -->
+    <item android:left="@dimen/led_white_offset"
+        android:top="@dimen/led_white_offset"
+        android:right="@dimen/led_white_offset"
+        android:bottom="@dimen/led_white_offset">
+        <shape android:shape="oval">
+            <solid android:color="@drawable/led_shine_color"/>
+        </shape>
+    </item>
+
+</layer-list>
